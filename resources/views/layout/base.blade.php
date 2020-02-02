@@ -11,53 +11,24 @@
     <title>@yield('title')</title>
   </head>
   <body>
-    <div class="row fixed-top no-gutters font-weight-bold ">
-        <div class="col ">
-	      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    		      <a class="navbar-brand" href="#">
-                <img src="img/aii.png" width="35" height="35" class="d-inline-block align-top rounded-circle" alt="">
-              </a>
-    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		    <span class="navbar-toggler-icon"></span>
-    		  </button>
-    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		    <ul class="navbar-nav mr-auto">
-    		      <li class="nav-item">
-    		        <a class="nav-link" href="{{ url('/') }}">BERANDA</a>
-    		      </li>
-    		      <li class="nav-item">
-    		        <a class="nav-link" href="{{ url('/about') }}">TENTANG KAMI</a>
-    		      </li>
-    		      <li class="nav-item dropdown">
-    		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    		          PRODUK
-    		        </a>
-    		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    		          <a class="dropdown-item" href="{{ url('/barang') }}">Power Meter</a>
-    		          <a class="dropdown-item" href="#">Analog Meter</a>
-                  <a class="dropdown-item" href="#">Digital Meter</a>
-    		          <div class="dropdown-divider"></div>
-    		          <a class="dropdown-item" href="#">Something else here</a>
-    		        </div>
-    		      </li>
-    		      <li class="nav-item">
-    		        <a class="nav-link" href="{{ url('/kontak') }}" tabindex="-1" aria-disabled="true">KONTAK</a>
-    		      </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">BERITA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">SERVIS</a>
-              </li>
-    		    </ul>
-    		    <form class="form-inline my-2 my-lg-0">
-    		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    		      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    		    </form>
-    		  </div>
-		    </nav>
-	    </div>
-    </div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link" href="{{ url('/') }}">Home</a>
+			<a class="nav-item nav-link" href="{{ url('/about') }}">About</a>
+			<a class="nav-item nav-link" href="{{ url('/barang') }}">Product</a>
+			<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		  </div>
+		</div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
 
     @yield('container')
     

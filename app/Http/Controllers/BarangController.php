@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;              //menambahkan function pemanggilan database
+use App\ampt;
 
 class BarangController extends Controller
 {
@@ -13,7 +15,10 @@ class BarangController extends Controller
      */
     public function index()
     {
-        return view('barang/index');
+        // $barang = DB::table('amptron')->get(); 
+        // dump($barang);
+        $barang = ampt::all();
+        return view('barang/index', ['barang' => $barang]);
     }
 
     /**

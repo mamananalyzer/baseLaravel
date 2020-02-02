@@ -11,7 +11,8 @@
     <title>@yield('title')</title>
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {{-- header --}}
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,8 @@
 			<a class="nav-item nav-link" href="{{ url('/') }}">Home</a>
 			<a class="nav-item nav-link" href="{{ url('/about') }}">About</a>
 			<a class="nav-item nav-link" href="{{ url('/barang') }}">Product</a>
-			<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			<a class="nav-item nav-link" href="#">News</a>
+			<a class="nav-item nav-link" href="#">Services</a>
 		  </div>
 		</div>
     <form class="form-inline">
@@ -29,10 +31,24 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </nav>
+    {{-- end header --}}
+
 
     @yield('container')
     
 
+    {{-- footer --}}
+    <div class="card text-dark bg-light">
+      <div class="card-header">
+        <a href="">aii.com</a> Global Website
+      </div>
+      <div class="card-body text-right">
+        <blockquote class="blockquote mb-0">
+          <footer class="blockquote-footer">PT. Amptron Instrumindo |<cite title="Source Title"> © Amptron Instrumindo 1997-2020</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+    {{-- end footer --}}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

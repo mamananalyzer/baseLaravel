@@ -15,12 +15,12 @@
       </video>
 
     <div class="container">
-      <div class="row">
+      {{-- <div class="row">
         <div class="col text-center">
           <h1></h1>
         </div>
       </div>
-      <br>
+      <br> --}}
       <div class="row">
         <div class="col-md text-center">
           <div class="card container border-info">

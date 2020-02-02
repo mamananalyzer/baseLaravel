@@ -23,17 +23,17 @@
     		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     		    <ul class="navbar-nav mr-auto">
     		      <li class="nav-item">
-    		        <a class="nav-link" href="/">BERANDA</a>
+    		        <a class="nav-link" href="{{ url('/') }}">BERANDA</a>
     		      </li>
     		      <li class="nav-item">
-    		        <a class="nav-link" href="/about">TENTANG KAMI</a>
+    		        <a class="nav-link" href="{{ url('/about') }}">TENTANG KAMI</a>
     		      </li>
     		      <li class="nav-item dropdown">
     		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     		          PRODUK
     		        </a>
     		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    		          <a class="dropdown-item" href="#">Power Meter</a>
+    		          <a class="dropdown-item" href="{{ url('/barang') }}">Power Meter</a>
     		          <a class="dropdown-item" href="#">Analog Meter</a>
                   <a class="dropdown-item" href="#">Digital Meter</a>
     		          <div class="dropdown-divider"></div>
@@ -41,7 +41,7 @@
     		        </div>
     		      </li>
     		      <li class="nav-item">
-    		        <a class="nav-link" href="kontak.php" tabindex="-1" aria-disabled="true">KONTAK</a>
+    		        <a class="nav-link" href="{{ url('/kontak') }}" tabindex="-1" aria-disabled="true">KONTAK</a>
     		      </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">BERITA</a>

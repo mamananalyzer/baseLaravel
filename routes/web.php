@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+// Route::get('/about', function () {
+//     return view('about');
+// });
+
+Route::get('/', 'BaseController@home');
+Route::get('/about', 'BaseController@about');
+
+Route::get('/barang', 'BarangController@index');

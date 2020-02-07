@@ -1,7 +1,7 @@
 @extends('layout/base')
 
 @section('title', 'Amptron Instrumindo')
-    
+
 @section('container')
     <div class="jumbotron jumbotron-fluid" style="background-image: url('img/jumbo.jpg'); background-size: 120%">
       <div class="container text-center">
@@ -10,9 +10,9 @@
         <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
       </div>
     </div>
-      <video loop autoplay>
+      {{-- <video loop autoplay>
         <source src="img/DigitalMultimeter.webm" type="video/webm">
-      </video>
+      </video> --}}
 
     <div class="container">
       {{-- <div class="row">
@@ -93,7 +93,7 @@
         </div>
         <div class="col-md text-center">
           <div class="card container border-info">
-            <img src="img/risheine+.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/jumbo2.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Eine+</h5>
               <hr>

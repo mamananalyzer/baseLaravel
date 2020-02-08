@@ -1,0 +1,43 @@
+.jumbotron {
+    background-image: url(../img/bg-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+}
+.jumbotron img {
+    width: 200px;
+    border: 5px solid rgb(187, 187, 187);
+    box-shadow: 1px 1px 10px rgba(92, 10, 10, 0.8);
+}
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(92, 10, 10, 0.8);
+}
+.base.Show {
+    opacity: 1;
+    transform: rotate3d();
+    transition: 3s;
+}
+.pKiri {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 3s;
+}
+.pKanan {
+    opacity: 0;
+    transform: translate(50px, 0) rotate(-15deg);
+    transition: 3s
+}
+.pKiri.pShow, .pKanan.pShow {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 3s;
+}
+.portfolio .thumbnail.show{
+    opacity: 1;
+    transform: translate(0, 0);
+}

@@ -3,9 +3,9 @@
 @section('title', 'Amptron Instrumindo')
 
 @section('container')
-    <div class="jumbotron jumbotron-fluid" style="background-image: url('img/jumbo.jpg'); background-size: 120%">
-      <div class="container text-center">
-        <img src="img/aii.png" width="200" class="rounded-circle">
+    <div class="jumbotron jumbotron-fluid" style="height:500px; background-image: url('img/bg-2.jpg'); background-size: 100%; background-position: 0 -50px;">
+      <div class="container text-center base" style="color: white;">
+        <img src="img/aii.png" class="rounded-circle">
         <h1 class="display-3">Amptron Instrumindo</h1>
         <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
       </div>

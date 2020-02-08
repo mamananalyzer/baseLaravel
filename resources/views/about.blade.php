@@ -30,11 +30,11 @@
     {{-- end sub-nav --}}
 
 
-    <div class="jumbotron jumbotron-fluid" id="home" style="background-image: url('img/jumbo.jpg'); background-size: 120%">
-      <div class="container text-center">
-        <img src="img/aii.png" width="200" class="rounded-circle">
+    <div class="jumbotron jumbotron-fluid" id="home">
+      <div class="container text-left">
+        <img src="img/aii.png" class="rounded-circle offset-md-2">
         <h1 class="display-3">Amptron Instrumindo</h1>
-        <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
+        <p class="lead offset-md-1 pl-2">Sole Agent Electrical Intrument for Indonesian Territory</p>
       </div>
     </div>
       {{-- <video loop autoplay>
@@ -50,7 +50,7 @@
       <br> --}}
       <div class="row" id="product">
         <div class="col-md text-center">
-          <div class="card container border-info">
+          <div class="card container border-info pKiri">
             <img src="img/acuvimII.jpg" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim II Series</h5>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="col-md text-center">
-          <div class="card container border-info">
+          <div class="card container border-info pKiri">
             <img src="img/acuvimL.jpg" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim L Series</h5>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="col-md text-center">
-          <div class="card container border-info">
+          <div class="card container border-info pKanan">
             <img src="img/aculink810.jpg" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Aculink 810</h5>
@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="col-md text-center">
-          <div class="card container border-info">
+          <div class="card container border-info pKanan">
             <img src="img/analogrishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Ammeters and Voltmeters</h5>
@@ -95,8 +95,8 @@
         </div>
       </div>
       <br>
-      <div class="row" id="contact">
-        <div class="col-md text-center">
+      <div class="row portfolio" id="contact">
+        <div class="col-md text-center thumbnail">
           <div class="card container border-info">
             <img src="img/a2000.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-md text-center thumbnail">
           <div class="card container border-info">
             <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-md text-center thumbnail">
           <div class="card container border-info">
             <img src="img/risheine+.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -129,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-md text-center thumbnail">
           <div class="card container border-info">
             <img src="img/stroboscope.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">

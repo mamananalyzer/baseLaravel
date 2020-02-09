@@ -1,3 +1,6 @@
+#about, #contact {
+    min-height: 500px;
+}
 .jumbotron {
     background-image: url(../img/bg-1.jpg);
     background-attachment: fixed;
@@ -6,7 +9,7 @@
     overflow: hidden;
 }
 .jumbotron img {
-    width: 200px;
+    width: 20%;
     border: 5px solid rgb(187, 187, 187);
     box-shadow: 1px 1px 10px rgba(92, 10, 10, 0.8);
 }
@@ -40,4 +43,16 @@
 .portfolio .thumbnail.show{
     opacity: 1;
     transform: translate(0, 0);
+}
+.grey {
+    color: #999;;
+}
+.gold {
+    color: #EDBB00;
+}
+.blue {
+    color: #004D98;
+}
+.bg-grey {
+    background-color: #333333;
 }

@@ -14,16 +14,16 @@
   <body>
     {{-- header --}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Amptron
+      <a class="navbar-brand" href="{{ url('/') }}">
+        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+        Amptron Instrumindo
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0 offset-md-2">
+        <form class="form-inline my-2 my-lg-0 offset-md-1">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
@@ -54,7 +54,31 @@
 
 
     {{-- footer --}}
-    <div class="card text-dark bg-light">
+    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
+        <div class="col-md-3 pl-5">
+            <h6>JAM KERJA</h6>
+            <hr class="bg-warning">
+            <p>Senin - Jum'at : 08.15 - 17.15</p>
+            <p>Sabtu - Minggu : Tutup</p>
+        </div>
+        <div class="col-md-3">
+            <h6>BERITA TERKINI</h6>
+            <hr class="bg-warning">
+        </div>
+        <div class="col-md-3">
+            <h6>SITEMAP</h6>
+            <hr class="bg-warning">
+        </div>
+        <div class="col-md-3">
+            <h6>KONTAK KAMI</h6>
+            <hr class="bg-warning">
+            <p>Komplek Rukan Taman Blok M-51, Meruya Utara, Kembangan, RT.6/RW.7, Meruya Utara, Jakarta Barat, DKI Jakarta, Daerah Khusus Ibukota Jakarta 11620</p>
+            <p>Website</p>
+        </div>
+    </div>
+
+
+    {{-- <div class="card text-dark bg-light">
       <div class="card-header">
         <a href="">aii.com</a> Global Website
       </div>
@@ -63,8 +87,9 @@
           <footer class="blockquote-footer">PT. Amptron Instrumindo |<cite title="Source Title"> © Amptron Instrumindo 1997-2020</cite></footer>
         </blockquote>
       </div>
-    </div>
+    </div> --}}
     {{-- end footer --}}
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.1.1.min.js"></script>

@@ -22,3 +22,7 @@ Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
 
 Route::get('/barang', 'BarangController@index');
+
+    Route::get('/test', function () {
+        return view('test');
+    });

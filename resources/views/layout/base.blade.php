@@ -55,7 +55,7 @@
 
     {{-- footer --}}
     <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
-        <div class="col-md-3 pl-5">
+        <div class="col-md-3">
             <h6>JAM KERJA</h6>
             <hr class="bg-warning">
             <p>Senin - Jum'at : 08.15 - 17.15</p>

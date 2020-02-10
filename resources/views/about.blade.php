@@ -39,20 +39,10 @@
         <p class="lead offset-md-1 pl-2">Sole Agent Electrical Intrument for Indonesian Territory</p>
       </div>
     </div>
-      {{-- <video loop autoplay>
-        <source src="img/DigitalMultimeter.webm" type="video/webm">
-      </video> --}}
 
-    <div class="container">
-      {{-- <div class="row">
-        <div class="col text-center">
-          <h1></h1>
-        </div>
-      </div>
-      <br> --}}
-      <div class="row pt-4" id="about">
+      <div class="row pt-4 offset-md-1 container" id="about">
         <div class="col-md-5 text-center">
-          <div class="container border-info pKiri">
+          <div class="border-info pKiri">
             <img src="img/aiisepfamily.jpg" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Amptron & Suryamas Family</h5>
@@ -62,7 +52,7 @@
           </div>
         </div>
 
-        <div class="accordion col-md-7 pKanan" id="accordionExample">
+        <div class="accordion col-md-6 pKanan" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
@@ -97,56 +87,80 @@
               </div>
             </div>
           </div>
-
-
       </div>
       <br>
-      <div class="row portfolio" id="partner">
-        <div class="col-md text-center thumbnail">
-          <div class="card container border-info">
-            <img src="img/a2000.png" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">A2000 Multifunctional Power Meter</h5>
-              <hr>
-              <p class="card-text text-info">The A2000 acquires voltages, current, frequency and phase displacement in 3 and 4-wire systems</p>
-              <a href="listproduk.php" class="btn btn-info">Read more ...</a>
+
+    <div class="section container">
+        <div class="row">
+            <div class="col text-center">
+              <h2>Partner Kami</h2>
             </div>
-          </div>
         </div>
-        <div class="col-md text-center thumbnail">
-          <div class="card container border-info">
-            <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Rish Master 3430</h5>
-              <hr>
-              <p class="card-text text-info">On site programmable PT/CT ratios, True RMS measurement, User selectable 3 phase 3W or 4W</p>
-              <a href="listproduk.php" class="btn btn-info">Read more ...</a>
+        <div class="portfolio" id="partner">
+            <div class="row" id="">
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md text-center thumbnail">
-          <div class="card container border-info">
-            <img src="img/risheine+.png" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Rish Eine+</h5>
-              <hr>
-              <p class="card-text text-info">specially designed to measure electrical parameters like DC Voltage or DC Current and display it in terms of any parameter or process value.</p>
-              <a href="listproduk.php" class="btn btn-info">Read more ...</a>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md text-center thumbnail">
-          <div class="card container border-info">
-            <img src="img/stroboscope.png" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nova-Pro™ 300 LED Stroboscopes/Tachometers</h5>
-              <hr>
-              <p class="card-text text-info">Nova-Pro™ is a series of powerful portable visual inspection and speed measurement tools.</p>
-              <a href="listproduk.php" class="btn btn-info">Read more ...</a>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
             </div>
-          </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
         </div>
-      </div>
-      <br>
+            <div class="row">
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 text-center thumbnail">
+                <div class="card border-light">
+                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
 @endsection

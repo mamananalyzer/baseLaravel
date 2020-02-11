@@ -43,7 +43,7 @@
       <div class="row pt-4 offset-md-1 container" id="about">
         <div class="col-md-5 text-center">
           <div class="border-info pKiri">
-            <img src="img/amptronsepfamily.jpg" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/amptronsepfamily.jpeg" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Amptron & Suryamas Family</h5>
               <hr>

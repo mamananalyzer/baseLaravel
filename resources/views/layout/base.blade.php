@@ -31,7 +31,7 @@
         <ul class="navbar-nav navbar-right offset-md-3">
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/barang') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
           <a class="nav-item nav-link pr-4" href="#">News</a>
           <a class="nav-item nav-link pr-4" href="#">Services</a>
           {{-- <li class="nav-item dropdown">
@@ -55,7 +55,7 @@
 
 
     {{-- footer --}}
-    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
+    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5 pb-5">
         <div class="col-md-3">
             <h6>JAM KERJA</h6>
             <hr class="bg-warning">
@@ -73,8 +73,30 @@
         <div class="col-md-3">
             <h6>KONTAK KAMI</h6>
             <hr class="bg-warning">
-            <p>Komplek Rukan Taman Blok M-51, Meruya Utara, Kembangan, RT.6/RW.7, Meruya Utara, Jakarta Barat, DKI Jakarta, Daerah Khusus Ibukota Jakarta 11620</p>
-            <p>Website</p>
+            <div class="row">
+              <div class="col-1">
+                <object data="img/loc.svg" type="img/loc.svg">
+                  <img src="img/loc.svg" />
+                </object>
+              </div>
+              <div class="col-10">
+                <p>Komplek Rukan Taman Meruya
+                <br>Blok M-51, Meruya Utara, Kembangan, Jakarta Barat, 
+                <br>Daerah Khusus Ibukota Jakarta 11620</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <object data="img/phone.svg" type="img/phone.svg">
+                  <img src="img/phone.svg"/>
+                </object>
+              </div>
+              <div class="col-10">
+                <p>(+62-21) 585 5055
+                <br>(+62-21) 586 0826
+                <br>(+62-21) 586 0828</p>
+              </div>
+            </div>
         </div>
     </div>
 

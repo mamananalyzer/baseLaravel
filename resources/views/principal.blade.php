@@ -18,10 +18,10 @@
             <a class="nav-link page-scroll" href="#home"><h3>Home</h3></a>
             </li>
             <li class="nav-item pr-5">
-            <a class="nav-link page-scroll" href="#about"><h3>Tentang Kami</h3></a>
+            <a class="nav-link page-scroll" href="#brand"><h3>Our Brand</h3></a>
             </li>
             <li class="nav-item pr-5">
-            <a class="nav-link page-scroll" href="#partner"><h3>Partner Kami</h3></a>
+            <a class="nav-link page-scroll" href="#about"><h3>Partner Kami</h3></a>
             </li>
         </ul>
         <span class="navbar-text">
@@ -40,154 +40,128 @@
       </div>
     </div>
 
-      <div class="row pt-4 offset-md-1 container" id="about">
-        <div class="col-md-5 text-center">
-          <div class="border-info pKiri">
-            <img src="img/amptronsepfamily.jpeg" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Amptron & Suryamas Family</h5>
-              <hr>
-              <p class="card-text grey">Fasilitas kami terletak di area seluas 900 m2 dimana diantaranya seluas 320 m2 adalah untuk kantor operasional, dan selebihnya untuk ruang laboratorium, gudang, dan workshop.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion col-md-6 pKanan" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <div class="gold">
-                        <h6>TENTANG KAMI</h6>
-                    </div>
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body grey">
-                    PT. Amptron Instrumindo adalah perusahaan Sole Agent dari produk-produk berkualitas dengan total pengetahuan dan pengalaman lebih dari 20 tahun di bidang Electrical. Kami menjual peralatan kebutuhan project, serta memberikan jasa engineering. Spesialisasi kami adalah menganalisa kebutuhan dan memberi solusi dengan produk-produk untuk Electrical Project.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="gold">
-                        <h6>VISI DAN MISI</h6>
-                    </div>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body grey">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <br>
-
     <div class="section container">
-        <div class="row">
-            <div class="col text-center">
-              <h2>Partner Kami</h2>
-              <hr>
-            </div>
+      <div class="row">
+        <div class="col text-center">
+          <h2>Our Brand</h2>
+          <hr>
         </div>
-        <div class="portfolio" id="partner">
-          <div class="row" id="">
-              <div class="col-sm-2 text-center thumbnail">
-                  <div class="card border-light">
-                      <img src="img/partner/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+      </div>
+      <div class="portfolio" id="brand">
+        <div class="row" id="">
+          <div class="col-sm-3 text-center thumbnail">
+            <div class="card border-light">
+              <a href="">
+                <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
+                <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/siemens.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/alan.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>LED Backlight Annunciators</p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/abb.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/bauser.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p></p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/bnr.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>Perfection in Automation Complete automation solution from Austria for over 30 years</p>
                       <hr>
-                  </div>
-              </div>
-              <div class="col-sm-2 text-center thumbnail">
-                  <div class="card border-light">
-                      <img src="img/partner/tamco.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <hr>
-                  </div>
-              </div>
-              <div class="col-sm-2 text-center thumbnail">
-                  <div class="card border-light">
-                      <img src="img/partner/techsea.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <hr>
+                    </a>
                   </div>
               </div>
           </div>
           <div class="row">
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/mitraida.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/cb.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>Programmable Power Tranducers / Barriers/ Transmitters</p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/gspe.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/dold.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>Monitoring & Control Relays</p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/altrak.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/emh.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p></p>
                       <hr>
+                    </a>
                   </div>
               </div>
-              <div class="col-sm-2 text-center thumbnail">
+              <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                      <img src="img/partner/exabb.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <a href="">
+                      <img src="img/principal/leipole.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p></p>
                       <hr>
-                  </div>
-              </div>
-              <div class="col-sm-2 text-center thumbnail">
-                  <div class="card border-light">
-                      <img src="img/partner/gae.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <hr>
-                  </div>
-              </div>
-              <div class="col-sm-2 text-center thumbnail">
-                  <div class="card border-light">
-                      <img src="img/partner/ge.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <hr>
+                    </a>
                   </div>
               </div>
           </div>
           <div class="row">
-            <div class="col-sm-4 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/partner/ume.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/partner/indokordsa.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
+              <div class="col-sm-3 text-center thumbnail">
+                  <div class="card border-light">
+                    <a href="">
+                      <img src="img/principal/monarch.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>Stroboscope, Tachometer, Vibration Measurement, Process Chart Recorder</p>
+                      <hr>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-3 text-center thumbnail">
+                  <div class="card border-light">
+                    <a href="">
+                      <img src="img/principal/rishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p></p>
+                      <hr>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-sm-3 text-center thumbnail">
+                  <div class="card border-light">
+                    <a href="">
+                      <img src="img/principal/wharton.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p></p>
+                      <hr>
+                    </a>
+                  </div>
+              </div>
           </div>
         </div>
+    </div>
+
+    <div class="row pt-4 offset-md-1 container" id="about">
+      <div class="col-md-5 pKiri">
+        
+      </div>
+      <div class="col-md-6 pKanan" id="">
+            
+      </div>
     </div>
 @endsection

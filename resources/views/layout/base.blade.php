@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
 
     <link rel="icon" href="img/aii.png">
     <title>@yield('title')</title>
@@ -59,8 +61,18 @@
         <div class="col-md-3">
             <h6>JAM KERJA</h6>
             <hr class="bg-warning">
-            <p>Senin - Jum'at : 08.15 - 17.15</p>
-            <p>Sabtu - Minggu : Tutup</p>
+            <div class="row">
+              <div class="col-1 mr-4">
+                <object data="img/work.svg" type="img/work.svg">
+                  <img src="img/work.svg"/>
+                </object>
+              </div>
+              <div class="col-10">
+                <p>Senin - Jum'at : 08.15 - 17.15</p>
+                <p>Sabtu - Minggu : Tutup</p>
+              </div>
+            </div>
+            
         </div>
         <div class="col-md-3">
             <h6>BERITA TERKINI</h6>
@@ -74,7 +86,7 @@
             <h6>KONTAK KAMI</h6>
             <hr class="bg-warning">
             <div class="row">
-              <div class="col-1">
+              <div class="col-1 mr-2">
                 <object data="img/loc.svg" type="img/loc.svg">
                   <img src="img/loc.svg" />
                 </object>
@@ -86,7 +98,17 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-1">
+              <div class="col-1 mr-2">
+                <object data="img/email.svg" type="img/email.svg">
+                  <img src="img/email.svg"/>
+                </object>
+              </div>
+              <div class="col-10">
+                <p>amptron@cbn.net.id</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1 mr-2">
                 <object data="img/phone.svg" type="img/phone.svg">
                   <img src="img/phone.svg"/>
                 </object>

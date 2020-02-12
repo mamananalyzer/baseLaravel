@@ -1,3 +1,6 @@
+head, body {
+    font-family: 'Lora', serif;
+}
 #about, #contact {
     min-height: 500px;
 }
@@ -55,4 +58,8 @@
 }
 .bg-grey {
     background-color: #333333;
+}
+a, a:hover {
+    color: black;
+    text-decoration: none;
 }

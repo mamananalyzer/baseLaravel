@@ -9,7 +9,7 @@ $('.page-scroll').on('click', function(){
 
     //pindahkan scroll
     $('html, body').animate({
-        scrollTop: elemenTujuan.offset().top - 130
+        scrollTop: elemenTujuan.offset().top - 140
     }, 1250, 'easeInOutExpo');
 
 })

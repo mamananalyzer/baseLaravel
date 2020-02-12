@@ -97,70 +97,96 @@
             </div>
         </div>
         <div class="portfolio" id="partner">
-            <div class="row" id="">
-            <div class="col-sm-2 text-center thumbnail">
+          <div class="row" id="">
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/siemens.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/abb.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/tamco.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/techsea.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/mitraida.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/gspe.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/altrak.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/exabb.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/gae.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+              <div class="col-sm-2 text-center thumbnail">
+                  <div class="card border-light">
+                      <img src="img/ge.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <hr>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 text-center thumbnail">
                 <div class="card border-light">
-                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <img src="img/ume.png" width="100%" height="100%" class="card-img-top" alt="...">
                     <hr>
                 </div>
             </div>
-            <div class="col-sm-2 text-center thumbnail">
+            <div class="col-sm-4 text-center thumbnail">
                 <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
+                    <img src="img/indokordsa.png" width="100%" height="100%" class="card-img-top" alt="...">
                     <hr>
                 </div>
             </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-        </div>
-            <div class="row">
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/pln.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-            <div class="col-sm-2 text-center thumbnail">
-                <div class="card border-light">
-                    <img src="img/schneider.png" width="100%" height="100%" class="card-img-top" alt="...">
-                    <hr>
-                </div>
-            </div>
-        </div>
+          </div>
         </div>
     </div>
 @endsection

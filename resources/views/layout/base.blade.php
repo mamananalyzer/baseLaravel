@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
 
 
     <link rel="icon" href="img/aii.png">
@@ -72,7 +72,7 @@
                 <p>Sabtu - Minggu : Tutup</p>
               </div>
             </div>
-            
+
         </div>
         <div class="col-md-3">
             <h6>BERITA TERKINI</h6>
@@ -93,7 +93,7 @@
               </div>
               <div class="col-10">
                 <p>Komplek Rukan Taman Meruya
-                <br>Blok M-51, Meruya Utara, Kembangan, Jakarta Barat, 
+                <br>Blok M-51, Meruya Utara, Kembangan, Jakarta Barat,
                 <br>Daerah Khusus Ibukota Jakarta 11620</p>
               </div>
             </div>

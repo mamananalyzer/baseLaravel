@@ -1,5 +1,5 @@
 head, body {
-    font-family: 'Lora', serif;
+    font-family: 'Lora', serif !important;
 }
 #about, #contact {
     min-height: 500px;
@@ -61,5 +61,5 @@ head, body {
 }
 a, a:hover {
     color: black;
-    text-decoration: none;
+    text-decoration: none !important;
 }

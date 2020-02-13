@@ -48,13 +48,13 @@
         </div>
       </div>
       <div class="portfolio" id="brand">
-        <div class="row" id="">
-          <div class="col-sm-3 text-center thumbnail">
-            <div class="card border-light">
-              <a href="">
-                <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
-                <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
-                      <hr>
+            <div class="row align-items-start">
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                    <a href="">
+                        <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
+                        <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
+                        <hr>
                     </a>
                   </div>
               </div>
@@ -86,7 +86,8 @@
                   </div>
               </div>
           </div>
-          <div class="row">
+          <div class="w-100"></div>
+          <div class="row align-items-start">
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
                     <a href="">
@@ -124,6 +125,7 @@
                   </div>
               </div>
           </div>
+          <div class="w-100"></div>
           <div class="row">
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
@@ -158,10 +160,10 @@
 
     <div class="row pt-4 offset-md-1 container" id="about">
       <div class="col-md-5 pKiri">
-        
+
       </div>
       <div class="col-md-6 pKanan" id="">
-            
+
       </div>
     </div>
 @endsection

@@ -33,9 +33,9 @@
         <ul class="navbar-nav navbar-right offset-md-3">
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="#">News</a>
-          <a class="nav-item nav-link pr-4" href="#">Services</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown

@@ -11,19 +11,19 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-// Route::get('/about', function () {
-//     return view('about');
-// });
+
+
+
 
 Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
-Route::get('/product', 'BaseController@product');
+Route::get('/principal', 'BaseController@principal');
 
-// Route::get('/barang', 'BarangController@index');
+Route::get('/product', 'BarangController@index');
 
-//     Route::get('/test', function () {
-//         return view('test');
-//     });
+// contoh menggunakan route sederhana
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+

@@ -15,8 +15,9 @@ class BarangController extends Controller
      */
     public function index()
     {
-        // $barang = DB::table('amptron')->get(); 
-        // dump($barang);
+        // $barang = DB::table('amptron')->get();       teknik query builder.
+        // dump($barang);                               cek database.
+
         $barang = ampt::all();
         return view('barang/index', ['barang' => $barang]);
     }

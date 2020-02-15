@@ -1,12 +1,12 @@
 @extends('layout/base')
 
-@section('title', 'Power Meter')
-    
+@section('title', 'List Product')
+
 @section('container')
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="mt-3">Power Meter</h1>
+          <h1 class="mt-3">Product</h1>
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -36,7 +36,7 @@
                 <th scope="col">{{ $brg->serialnumber }}</th>
                 <th scope="col">{{ $brg->spec }}</th>
                 <th scope="col">{{ $brg->customer }}</th>
-                
+
               </tr>
               @endforeach
             </tbody>

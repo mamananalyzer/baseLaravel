@@ -20,9 +20,34 @@ Route::get('/about', 'BaseController@about');
 Route::get('/principal', 'BaseController@principal');
 
 Route::get('/products', 'ProductsController@index');
+
 Route::get('/acuvim', function () {
         return view('/listofproduct/acuvim');
     });
+Route::get('/acuviml', function () {
+        return view('/listofproduct/acuviml');
+    });
+Route::get('/aculink810', function () {
+        return view('/listofproduct/aculink810');
+    });
+Route::get('/AVmeter', function () {
+        return view('/listofproduct/AVmeter');
+    });
+Route::get('/a2000', function () {
+        return view('/listofproduct/a2000');
+    });
+Route::get('/3430', function () {
+        return view('/listofproduct/3430');
+    });
+Route::get('/risheineplus', function () {
+        return view('/listofproduct/risheineplus');
+    });
+Route::get('/stroboscopes', function () {
+        return view('/listofproduct/stroboscopes');
+    });
+
+
+
 
 // contoh menggunakan route sederhana
 

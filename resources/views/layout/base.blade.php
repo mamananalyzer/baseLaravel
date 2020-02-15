@@ -121,6 +121,11 @@
             </div>
         </div>
     </div>
+    <div class="row mr-auto text-center">
+        <div class="col mr-auto text-light bg-grey font-italic">
+            <p>copyright 2020</p>
+        </div>
+    </div>
 
 
     {{-- <div class="card text-dark bg-light">

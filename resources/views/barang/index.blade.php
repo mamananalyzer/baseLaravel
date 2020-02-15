@@ -7,7 +7,28 @@
       <div class="row">
         <div class="col">
           <h1 class="mt-3">Product</h1>
-          <table class="table">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {{-- <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
@@ -40,7 +61,7 @@
               </tr>
               @endforeach
             </tbody>
-          </table>
+          </table> --}}
         </div>
       </div>
     </div>

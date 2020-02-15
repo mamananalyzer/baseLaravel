@@ -19,7 +19,10 @@ Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
 Route::get('/principal', 'BaseController@principal');
 
-Route::get('/product', 'BarangController@index');
+Route::get('/products', 'ProductsController@index');
+Route::get('/acuvim', function () {
+        return view('/listofproduct/acuvim');
+    });
 
 // contoh menggunakan route sederhana
 

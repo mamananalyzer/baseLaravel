@@ -29,7 +29,7 @@
               <h5 class="card-title">Acuvim II Series</h5>
               <hr>
               <p class="card-text text-info">Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration.</p>
-              <a href="listproduk.php" class="btn btn-info">Read more ...</a>
+              <a href="/acuvim" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>

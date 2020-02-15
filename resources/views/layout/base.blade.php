@@ -30,12 +30,12 @@
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav navbar-right offset-md-3">
+        <ul class="navbar-nav navbar-right offset-md-2">
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="#">News</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a>
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown

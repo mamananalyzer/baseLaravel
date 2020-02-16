@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'Acuvim L Series')
+@section('title', 'AC ammeters and voltmeters')
 
 @section('container')
 
@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>High Performance Power and Energy Meter</h2>
+                            <h2>Moving Iron meter AC ammeters and voltmeters 90deg (EQ)</h2>
                         </div>
                     </button>
                     </h2>
@@ -29,18 +29,19 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Acuvim II Series</h2>
+                        <h2>AC ammeters and voltmeters</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>All Rishabh meters are fitted with scales which slide in guide slots and there is a window which click-fits into the housing after the scale is fitted or removed. This is the only meter in India which offers this interchangeable scale feature. The advantage is that it reduces the inventory of the stockists, panel builders as well as end users. The basic meters are accurate to 1% and the variation scale to scale is less than 0.5% giving a total accuracy of 1.5% max. The guide slots are very accurately designed such that the pointer cannot be damaged even by the most unskilled user. At the same time the window is such that it closes automatically if left open inadvertently when the meter is fitted in the panel. Out of the four directions in which the dial can be inserted, there is only one correct position in which the dial can be inserted. The dial has a small slot by which it can be pulled out easily either using nail or a tip of a pen or clip.</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3>New Feature Power Meter</h3>
+                            <h3>New Feature Moving Iron meter</h3>
                         </div>
                     </button>
                     </h2>
@@ -49,23 +50,16 @@
                     <div class="card-body grey">
                         <div class="card-body grey">
                             <ul class="font-weight-bold">
-                                <li>Level 2 DNP3 and IEC61850 2nd Edition</li>
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
-                            </ul>
-                            <ul>
-                                <li>Four different models for different applications</li>
-                                <li>Revenue grade ANSI C12.20 class 0.2 & IEC 62053-22 class 0.2s</li>
-                                <li>Built-in MODBUS RTU via RS485 port</li>
-                                <li>Plug-in modules for BACNET, Ethernet, Profibus & WiFi</li>
-                                <li>Optional data logging, time-of-use and power quality monitoring</li>
-                                <li>Choose panel mount meter with digital display or DIN rail mount transducer</li>
-                                <li>Free Cloud Metering Data Storage + Analytics</li>
-                                <li>5 year warranty guarantee</li>
+                                <li>Polycarbonate housing having UL 94 V-0</li>
+                                <li>Scale Interchangeability</li>
+                                <li>Knife edge Pointer</li>
+                                <li>Terminal screws and clamps</li>
+                                <li>Terminal protection with click-fitting back cover</li>
+                                <li>Mounting arrangement</li>
+                                <li>Easy replacement of glass and bezel</li>
+                                <li>IP-52 Protection</li>
                             </ul>
                             <hr>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -80,10 +74,8 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://rishabh.co.in/uploads/product/EQ1.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://rishabh.co.in/uploads/product/Instruction_Manual_Analogue_Panel_Meters_type_EQ.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
                 </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'Acuvim L Series')
+@section('title', 'A2000')
 
 @section('container')
 
@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>High Performance Power and Energy Meter</h2>
+                            <h2>Multifunctional Power Meter for 3-Phase Systems</h2>
                         </div>
                     </button>
                     </h2>
@@ -29,12 +29,13 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Acuvim II Series</h2>
+                        <h2>A2000</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>The A2000 multifunctional power meter measures all values for three-phase systems.</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -49,20 +50,16 @@
                     <div class="card-body grey">
                         <div class="card-body grey">
                             <ul class="font-weight-bold">
-                                <li>Level 2 DNP3 and IEC61850 2nd Edition</li>
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
-                            </ul>
-                            <ul>
-                                <li>Four different models for different applications</li>
-                                <li>Revenue grade ANSI C12.20 class 0.2 & IEC 62053-22 class 0.2s</li>
-                                <li>Built-in MODBUS RTU via RS485 port</li>
-                                <li>Plug-in modules for BACNET, Ethernet, Profibus & WiFi</li>
-                                <li>Optional data logging, time-of-use and power quality monitoring</li>
-                                <li>Choose panel mount meter with digital display or DIN rail mount transducer</li>
-                                <li>Free Cloud Metering Data Storage + Analytics</li>
-                                <li>5 year warranty guarantee</li>
+                                <li>2 Analog inputs for standard signal or Pt1000 sensors e.g. for temperature measurements at transformators</li>
+                                <li>RS 232 and RS 485 interfaces included</li>
+                                <li>Adjustable voltage and current transformer ratios</li>
+                                <li>A single device for 1 A and 5 A current transformers</li>
+                                <li>Limit value and analog outputs included as standard equipment</li>
+                                <li>2 pulse outputs for read-out of active and reactive energy</li>
+                                <li>Data memory for continuous recording of measurement values or for events recording - 8 years puffered</li>
+                                <li>Additional range of power supply 20 .. 27 VAC / 45 .. 450 Hz and 20 .. 36 VDC</li>
+                                <li>Made in Germany</li>
+                                <li>3 Years Warranty</li>
                             </ul>
                             <hr>
                             <br>
@@ -80,10 +77,9 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://www.gmc-instruments.de/media/gb/a2000-db_gb.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://www.gmc-instruments.de/media/gb/product_manual/a2000-ba_gb.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
+                    <a href="https://www.gmc-instruments.de/media/gb/a2000-sb_modbus1_gb.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
                 </div>
             </div>
           </div>

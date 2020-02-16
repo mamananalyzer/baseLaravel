@@ -4,15 +4,15 @@
 
 @section('container')
 
-      <div class="row pt-4 offset-md-1 container" id="home">
+    <div class="row pt-4 offset-md-1 container" id="home">
         <div class="col-md-5 text-center">
-          <div class="border-info">
-            <img src="img/acuviml.png" width="100%" height="100%" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <hr>
+            <div class="border-info">
+                <img src="img/acuviml.png" width="100%" height="100%" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title"></h5>
+                <hr>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="accordion col-md-6" id="accordionExample">
@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>High Performance Power and Energy Meter</h2>
+                            <h2>Power And Energy Panel Meters</h2>
                         </div>
                     </button>
                     </h2>
@@ -29,12 +29,13 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Acuvim II Series</h2>
+                        <h2>Acuvim L Series</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>This three phase energy meter is ideal for applications that require standard parameters for monitoring and controlling power distribution systems, medium to low voltage systems, industrial automation and commercial facilities. Acuvim L power meters comes with a choice of a built-in communication Modbus RTU, pulse output or none for panel meters.</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -48,24 +49,17 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body grey">
                         <div class="card-body grey">
-                            <ul class="font-weight-bold">
-                                <li>Level 2 DNP3 and IEC61850 2nd Edition</li>
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
-                            </ul>
                             <ul>
-                                <li>Four different models for different applications</li>
-                                <li>Revenue grade ANSI C12.20 class 0.2 & IEC 62053-22 class 0.2s</li>
-                                <li>Built-in MODBUS RTU via RS485 port</li>
-                                <li>Plug-in modules for BACNET, Ethernet, Profibus & WiFi</li>
-                                <li>Optional data logging, time-of-use and power quality monitoring</li>
-                                <li>Choose panel mount meter with digital display or DIN rail mount transducer</li>
-                                <li>Free Cloud Metering Data Storage + Analytics</li>
-                                <li>5 year warranty guarantee</li>
+                                <li>Six different models for different applications</li>
+                                <li>NEMA 4 rated tough and watertight design</li>
+                                <li>3-Line LCD display with backlight</li>
+                                <li>Multiple current transformer options</li>
+                                <li>Class leading 5 year warranty</li>
+                                <li>Built-in MODBUS RTU (some models)</li>
+                                <li>Optional digital/analog I/O or PROFIBUS (some models)</li>
+                                <li>Optional DIN rail mount transducer (some models)</li>
                             </ul>
                             <hr>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -80,10 +74,10 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-L-Power-Meter-Brochure-1030E1210.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-L-Panel-Submeter-Power-Energy-Meter-User-Manual1030E2202.pdf"><button type="button" class="btn btn-primary">Software</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuview-Free-Energy-Management-datalogging-Software.zip"><button type="button" class="btn btn-primary">User's Manual</button></a>
+                    <a href="https://www.accuenergy.com/support/acuvim-l-modbus-map/"><button type="button" class="btn btn-primary">Modbus Map</button></a>
                 </div>
             </div>
           </div>

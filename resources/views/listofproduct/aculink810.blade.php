@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'Acuvim L Series')
+@section('title', 'Aculink 810')
 
 @section('container')
 
@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>High Performance Power and Energy Meter</h2>
+                            <h2>Data Acquisition Server</h2>
                         </div>
                     </button>
                     </h2>
@@ -29,18 +29,20 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Acuvim II Series</h2>
+                        <h2>AcuLink 810</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>Accuenergy’s AcuLink 810 is a data acquisition server and gateway designed to collect aggregated energy data from up to 32 Modbus meters and field sensors in a facility such as water, gas and electricity. This information is locally stored until it is ready to be distributed to remote servers or controllers via an IP-based network</p>
+                        <p>AcuLink 810 provides an easy solution to manage, collect and store data from all connected metering points from a single web interface.</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3>New Feature Power Meter</h3>
+                            <h3>New Feature Data Acquisition</h3>
                         </div>
                     </button>
                     </h2>
@@ -49,23 +51,31 @@
                     <div class="card-body grey">
                         <div class="card-body grey">
                             <ul class="font-weight-bold">
-                                <li>Level 2 DNP3 and IEC61850 2nd Edition</li>
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
+                                <li>Added MQTT protocol, a new data integration protocol for IoT applications</li>
+                                <li>Support reading SunSpec devices. Simplified integration with any SunSpec supported meters and inverters</li>
+                                <li>Data Acquisition via BACnet-IP. Now supports four acquisition protocols: Modbus-RTU (standard + SunSpec), Modbus-TCP/IP, BACnet-MS/TP and BACnet-IP</li>
+                                <li>Rapid logger. Log data in 1-second interval (previously support 1-minute interval)</li>
+                                <li>Support building BACnet device template by converting EPICS file</li>
+                                <li>Pulse counter data can be polled via Modbus-TCP and BACnet-IP directly</li>
                             </ul>
                             <ul>
-                                <li>Four different models for different applications</li>
-                                <li>Revenue grade ANSI C12.20 class 0.2 & IEC 62053-22 class 0.2s</li>
-                                <li>Built-in MODBUS RTU via RS485 port</li>
-                                <li>Plug-in modules for BACNET, Ethernet, Profibus & WiFi</li>
-                                <li>Optional data logging, time-of-use and power quality monitoring</li>
-                                <li>Choose panel mount meter with digital display or DIN rail mount transducer</li>
-                                <li>Free Cloud Metering Data Storage + Analytics</li>
-                                <li>5 year warranty guarantee</li>
+                                <li>BACnet-MSTP data acquisition</li>
+                                <li>AcuMesh support on AcuLink 810 (Wirelessly query meters with RS485)</li>
+                                <li>BACnet gateway (Convert Modbus-RTU and BACnet-MSTP to BACnet-IP)</li>
+                                <li>Remote device access</li>
+                                <li>Maintain high availability by RSTP protocol (two ports connect to same subnet)</li>
+                                <li>Ethernet gateway for Modbus RS485 and digital output devices</li>
+                                <li>Access energy information remotely via web server, or push to IP-based master devices or software</li>
+                                <li>Data acquisition and logging with 8GB on-board memory</li>
+                                <li>Embedded web-server for real-time data and easy configurations</li>
+                                <li>Controller/Master system can poll data from all RTU devices via Modbus-TCP/IP Protocol</li>
+                                <li>Dual ethernet RJ45 port and WiFi communication channels</li>
+                                <li>Enhanced cybersecurity for critical infrastructure deployment</li>
+                                <li>Compact DIN rail mount design</li>
+                                <li>Track energy usage and peak demand</li>
+                                <li>Quick and simple software-free setup</li>
                             </ul>
                             <hr>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -80,10 +90,8 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/AcuLink-810-data-aquisition-server-brochure.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Aculink810-Manual.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
                 </div>
             </div>
           </div>

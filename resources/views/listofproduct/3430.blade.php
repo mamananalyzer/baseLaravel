@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'Acuvim L Series')
+@section('title', 'Rish Master 3430')
 
 @section('container')
 
@@ -29,12 +29,13 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Acuvim II Series</h2>
+                        <h2>Rish Master 3430</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>On site programmable PT/CT ratios, True RMS measurement, User selectable 3 phase 3W or 4W</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -50,19 +51,16 @@
                         <div class="card-body grey">
                             <ul class="font-weight-bold">
                                 <li>Level 2 DNP3 and IEC61850 2nd Edition</li>
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
-                            </ul>
-                            <ul>
-                                <li>Four different models for different applications</li>
-                                <li>Revenue grade ANSI C12.20 class 0.2 & IEC 62053-22 class 0.2s</li>
-                                <li>Built-in MODBUS RTU via RS485 port</li>
-                                <li>Plug-in modules for BACNET, Ethernet, Profibus & WiFi</li>
-                                <li>Optional data logging, time-of-use and power quality monitoring</li>
-                                <li>Choose panel mount meter with digital display or DIN rail mount transducer</li>
-                                <li>Free Cloud Metering Data Storage + Analytics</li>
-                                <li>5 year warranty guarantee</li>
+                                <li>User selectable PT Secondary</li>
+                                <li>User selectable CT Secondary 5A/1A</li>
+                                <li>User selectable 3 phase 3W or 4W</li>
+                                <li>Onsite selection of Auto scroll / Fixed Screen</li>
+                                <li>True RMS measurement</li>
+                                <li>High brightness 3 line 4 digits LED display</li>
+                                <li>Number of parameters measured: up to 48</li>
+                                <li>Optional MODBUS (RS485) Output</li>
+                                <li>Optional Pulse Output </li>
+                                <li>Enclosure Protection for dust and water</li>
                             </ul>
                             <hr>
                             <br>
@@ -80,10 +78,8 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://rishabh.co.in/uploads/product/Rish_Master_34301.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://rishabh.co.in/uploads/product/Rish_Master_3430_Manual.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
                 </div>
             </div>
           </div>

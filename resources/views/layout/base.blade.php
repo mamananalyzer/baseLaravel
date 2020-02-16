@@ -57,7 +57,7 @@
 
 
     {{-- footer --}}
-    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5 pb-5">
+    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5 pb-1">
         <div class="col-md-3">
             <h6>JAM KERJA</h6>
             <hr class="bg-warning">
@@ -123,7 +123,14 @@
     </div>
     <div class="row mr-auto text-center">
         <div class="col mr-auto text-light bg-grey font-italic">
-            <p>copyright 2020</p>
+            <blockquote class="blockquote mb-0 card-body">
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    <cite title="Amptron Instrumindo">Fast Response for Excellent Support</cite>
+                    &copy; Amptron Instrumindo 1997 - 2020
+                  </small>
+                </footer>
+            </blockquote>
         </div>
     </div>
 

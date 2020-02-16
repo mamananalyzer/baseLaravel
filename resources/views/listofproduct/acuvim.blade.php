@@ -32,9 +32,10 @@
                         <h2>Acuvim II Series</h2>
                         <hr>
                         <br>
-                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration, controlling power distribution systems & other speciality applications.</p>              </div>
+                        <p>Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, & controlling power distribution systems.</p>
                     </div>
                 </div>
+            </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -65,7 +66,6 @@
                                 <li>5 year warranty guarantee</li>
                             </ul>
                             <hr>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -80,10 +80,10 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="doc/AcuRev 1310 Modbus Map.pdf"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Multifunction-Power-Energy-Meter-Brochure-Datasheet.pdf"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuview-Free-Energy-Management-datalogging-Software.zip"><button type="button" class="btn btn-primary">Software</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Power-Meter-User-Manual-1040E1303.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
+                    <a href="https://www.accuenergy.com/support/acuvim-ii-modbus-map/"><button type="button" class="btn btn-primary">Modbus Map</button></a>
                 </div>
             </div>
           </div>

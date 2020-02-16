@@ -22,29 +22,29 @@
       </div>
       <br> --}}
       <div class="row">
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/acuvimII.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim II Series</h5>
               <hr>
-              <p class="card-text text-info">Quality engineered energy submeters provides a simple robust solution for power monitoring, power quality analysis, kWh metering, system integration.</p>
+              <p class="card-text text-info">Simple robust solution for power monitoring, power quality analysis & system integration.</p>
               <a href="{{ url('/acuvim') }}" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/acuvimL.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim L Series</h5>
               <hr>
-              <p class="card-text text-info">This three phase energy meter is ideal for applications that require standard parameters for monitoring and controlling power distribution systems.</p>
+              <p class="card-text text-info">Ideal 3 phase energy meter for standard parameters & controlling power distribution systems.</p>
               <a href="{{ url('/acuviml') }}" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/aculink810.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/analogrishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -69,7 +69,7 @@
       </div>
       <br>
       <div class="row">
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/a2000.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
@@ -80,33 +80,36 @@
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Rish Master 3430</h5>
+              <h5 class="card-title">Rish Master
+                  <br> 3430</h5>
               <hr>
-              <p class="card-text text-info">On site programmable PT/CT ratios, True RMS measurement, User selectable 3 phase 3W or 4W</p>
+              <p class="card-text text-info">On site programmable PT/CT ratios,
+                <br> True RMS measurement,
+                <br> User selectable 3 phase 3W or 4W</p>
               <a href="{{ url('/3430') }}" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/risheineplus.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Eine+</h5>
               <hr>
-              <p class="card-text text-info">specially designed to measure electrical parameters like DC Voltage or DC Current and display it in terms of any parameter or process value.</p>
+              <p class="card-text text-info">specially designed to measure electrical parameters like DC Voltage or DC Current and display it in any parameter or process value.</p>
               <a href="{{ url('/risheineplus') }}" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>
-        <div class="col-md text-center">
+        <div class="col-lg-3 text-center">
           <div class="card container border-info">
             <img src="img/stroboscope.png" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Nova-Pro™ 300 LED Stroboscopes/Tachometers</h5>
+              <h5 class="card-title">Nova-Pro™ 300 LED Stroboscopes / Tachometers</h5>
               <hr>
               <p class="card-text text-info">Nova-Pro™ is a series of powerful portable visual inspection and speed measurement tools.</p>
               <a href="{{ url('/stroboscopes') }}" class="btn btn-info">Read more ...</a>

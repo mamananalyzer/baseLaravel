@@ -40,7 +40,7 @@
               <h5 class="card-title">Acuvim L Series</h5>
               <hr>
               <p class="card-text text-info">Ideal 3 phase energy meter for standard parameters & controlling power distribution systems.</p>
-              <a href="{{ url('/acuviml') }}" class="btn btn-info">Read more ...</a>
+              <a href="{{ url('/acuvimL') }}" class="btn btn-info">Read more ...</a>
             </div>
           </div>
         </div>

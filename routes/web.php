@@ -21,6 +21,9 @@ Route::get('/principal', 'BaseController@principal');
 
 Route::get('/products', 'ProductsController@index');
 
+Route::get('/underconstruction', function () {
+        return view('/underconstruction');
+    });
 Route::get('/acuvim', function () {
         return view('/listofproduct/acuvim');
     });

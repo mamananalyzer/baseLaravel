@@ -4,6 +4,12 @@ head, body {
 #about, #contact {
     min-height: 500px;
 }
+#notyet {
+    min-height: 25px;
+}
+.besar {
+    font-size: 19pt;
+}
 .jumbotron {
     background-image: url(../img/bg-2.jpg);
     background-attachment: fixed;

@@ -7,7 +7,7 @@
     <div class="row pt-4 offset-md-1 container" id="home">
         <div class="col-md-5 text-center">
             <div class="border-info">
-                <img src="img/acuviml.png" width="100%" height="100%" class="card-img-top" alt="...">
+                <img src="img/acuvimL.png" width="100%" height="100%" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title"></h5>
                 <hr>

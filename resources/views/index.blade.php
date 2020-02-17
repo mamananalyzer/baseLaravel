@@ -3,7 +3,7 @@
 @section('title', 'Amptron Instrumindo')
 
 @section('container')
-    <div class="jumbotron jumbotron-fluid" style="height:500px; background-image: url('img/bg-1.jpg'); background-size: 100%; background-position: 0 -50px;">
+    <div class="jumbotron jumbotron-fluid" style="height:500px; background-image: url('img/bg-1.jpg'); background-position: 0 0px;">
       <div class="container text-center base">
         <img src="img/aii.png" class="rounded-circle">
         <h1 class="display-3">Amptron Instrumindo</h1>

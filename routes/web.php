@@ -24,8 +24,8 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/acuvim', function () {
         return view('/listofproduct/acuvim');
     });
-Route::get('/acuviml', function () {
-        return view('/listofproduct/acuviml');
+Route::get('/acuvimL', function () {
+        return view('/listofproduct/acuvimL');
     });
 Route::get('/aculink810', function () {
         return view('/listofproduct/aculink810');

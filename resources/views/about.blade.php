@@ -33,9 +33,9 @@
 
 
     <div class="jumbotron jumbotron-fluid" id="home">
-      <div class="container text-left" style="color: white;">
+      <div class="container text-left">
         <img src="img/aii.png" class="rounded-circle offset-md-2">
-        <h1 class="display-3">Amptron Instrumindo</h1>
+        <h1 class="display-3 blue">Amptron Instrumindo</h1>
         <p class="lead offset-md-1 pl-2">Sole Agent Electrical Intrument for Indonesian Territory</p>
       </div>
     </div>

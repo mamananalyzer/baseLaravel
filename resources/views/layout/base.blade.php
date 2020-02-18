@@ -35,7 +35,7 @@
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">News</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/ftp') }}">Product</a>
           {{-- <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a> --}}
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

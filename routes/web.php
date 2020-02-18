@@ -24,6 +24,9 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });
+Route::get('/ftp', function () {
+        return view('/ftp');
+    });
 Route::get('/acuvim', function () {
         return view('/listofproduct/acuvim');
     });

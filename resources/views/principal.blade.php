@@ -51,7 +51,7 @@
             <div class="row align-items-start">
                 <div class="col-sm-3 text-center thumbnail">
                     <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/accuenergy') }}">
                         <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
                         <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
                         <hr>
@@ -60,7 +60,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/alan') }}">
                       <img src="img/principal/alan.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p>LED Backlight Annunciators</p>
                       <hr>
@@ -69,7 +69,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/bauser') }}">
                       <img src="img/principal/bauser.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p></p>
                       <hr>
@@ -78,7 +78,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/bnr') }}">
                       <img src="img/principal/bnr.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p>Perfection in Automation Complete automation solution from Austria for over 30 years</p>
                       <hr>
@@ -90,7 +90,7 @@
           <div class="row align-items-start">
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/gsm') }}">
                       <img src="img/principal/cb.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p>Programmable Power Tranducers / Barriers/ Transmitters</p>
                       <hr>
@@ -99,7 +99,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/dold') }}">
                       <img src="img/principal/dold.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p>Monitoring & Control Relays</p>
                       <hr>
@@ -108,7 +108,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/emh') }}">
                       <img src="img/principal/emh.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p></p>
                       <hr>
@@ -117,7 +117,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/leipole') }}">
                       <img src="img/principal/leipole.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p></p>
                       <hr>
@@ -129,7 +129,7 @@
           <div class="row">
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/monarch') }}">
                       <img src="img/principal/monarch.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p>Stroboscope, Tachometer, Vibration Measurement, Process Chart Recorder</p>
                       <hr>
@@ -138,7 +138,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/rishabh') }}">
                       <img src="img/principal/rishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p></p>
                       <hr>
@@ -147,7 +147,7 @@
               </div>
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="">
+                    <a href="{{ url('/wharton') }}">
                       <img src="img/principal/wharton.png" width="100%" height="100%" class="card-img-top" alt="...">
                       <p></p>
                       <hr>

@@ -27,30 +27,46 @@ Route::get('/underconstruction', function () {
 Route::get('/ftp', function () {
         return view('/ftp');
     });
-Route::get('/acuvim', function () {
-        return view('/listofproduct/acuvim');
+
+Route::get('/accuenergy', function () {
+        return view('/principal/accuenergy/accuenergy');
     });
-Route::get('/acuvimL', function () {
-        return view('/listofproduct/acuvimL');
+    Route::get('/acuvim', function () {
+            return view('/principal/accuenergy/acuvim');
+        });
+    Route::get('/acuvimL', function () {
+            return view('/principal/accuenergy/acuvimL');
+        });
+    Route::get('/aculink810', function () {
+            return view('/principal/accuenergy/aculink810');
+        });
+
+Route::get('/rishabh', function () {
+        return view('/principal/rishabh/rishabh');
     });
-Route::get('/aculink810', function () {
-        return view('/listofproduct/aculink810');
+    Route::get('/AVmeter', function () {
+            return view('/principal/rishabh/AVmeter');
+        });
+    Route::get('/3430', function () {
+            return view('/principal/rishabh/3430');
+        });
+    Route::get('/risheineplus', function () {
+        return view('/principal/rishabh/risheineplus');
+        });
+
+Route::get('/gsm', function () {
+        return view('/principal/gsm/gsm');
     });
-Route::get('/AVmeter', function () {
-        return view('/listofproduct/AVmeter');
+    Route::get('/a2000', function () {
+            return view('/principal/gsm/a2000');
+        });
+
+Route::get('/monarch', function () {
+        return view('/principal/monarch/monarch');
     });
-Route::get('/a2000', function () {
-        return view('/listofproduct/a2000');
-    });
-Route::get('/3430', function () {
-        return view('/listofproduct/3430');
-    });
-Route::get('/risheineplus', function () {
-        return view('/listofproduct/risheineplus');
-    });
-Route::get('/stroboscopes', function () {
-        return view('/listofproduct/stroboscopes');
-    });
+    Route::get('/stroboscopes', function () {
+            return view('/principal/monarch/stroboscopes');
+        });
 
 
 

@@ -24,9 +24,14 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });
-Route::get('/ftp', function () {
-        return view('/ftp');
+Route::get('kirimemail', function () {
+    \Mail::raw('Hello world', function ($message) {
+        $message->to('dbasedown@gmail.com', 'Base');
+        $message->subject('Report');
     });
+});
+
+Route::post('/sendEmail', 'EmailController@sendEmail');
 
 Route::get('/accuenergy', function () {
         return view('/principal/accuenergy/accuenergy');

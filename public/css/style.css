@@ -4,6 +4,13 @@ head, body {
 #about, #contact {
     min-height: 500px;
 }
+[data-toggle="collapse"] .fa:before {   
+    content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+    content: "\f139";
+}
 #notyet {
     min-height: 25px;
 }

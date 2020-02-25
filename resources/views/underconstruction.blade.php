@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <img src="img/construction.png" style="width:700px" alt="">
+                <img src="img/construction.png" alt="">
             </div>
             <div class="col-5 mt-5 pt-5 text-center">
                 <h1>Website Under Construction</h1>

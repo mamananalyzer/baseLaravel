@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>Multifunctional Power Meter for 3-Phase Systems</h2>
+                            <h2><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> Multifunctional Power Meter for 3-Phase Systems</h2>
                         </div>
                     </button>
                     </h2>
@@ -41,7 +41,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3>New Feature Power Meter</h3>
+                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> New Feature Power Meter</h3>
                         </div>
                     </button>
                     </h2>

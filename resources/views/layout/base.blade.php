@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css ">
 
 
     <link rel="icon" href="img/aii.png">
@@ -26,16 +27,16 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0 offset-md-1">
+        {{-- <form class="form-inline my-2 my-lg-0 offset-md-1">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <ul class="navbar-nav navbar-right offset-md-2">
+        </form> --}}
+        <ul class="navbar-nav navbar-right offset-md-6">
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">News</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/ftp') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
           {{-- <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a> --}}
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -20,9 +20,9 @@
             <li class="nav-item pr-5">
             <a class="nav-link page-scroll" href="#brand"><h3>Our Brand</h3></a>
             </li>
-            <li class="nav-item pr-5">
+            {{-- <li class="nav-item pr-5">
             <a class="nav-link page-scroll" href="#about"><h3>Partner Kami</h3></a>
-            </li>
+            </li> --}}
         </ul>
         <span class="navbar-text">
 
@@ -32,7 +32,7 @@
     {{-- end sub-nav --}}
 
 
-    <div class="jumbotron jumbotron-fluid" id="home">
+    <div class="jumbotron jumbotron-fluid" id="home" style="height:500px; background-image: url('img/bg-3.jpg'); background-position: 0 0px;">
       <div class="container text-left">
         <img src="img/aii.png" class="rounded-circle offset-md-2">
         <h1 class="display-3 blue">Amptron Instrumindo</h1>
@@ -62,7 +62,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/alan') }}">
                       <img src="img/principal/alan.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>LED Backlight Annunciators</p>
+                      <p>LED <br> Backlight <br> Annunciators</p>
                       <hr>
                     </a>
                   </div>
@@ -71,7 +71,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/bauser') }}">
                       <img src="img/principal/bauser.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p></p>
+                      <p>Instrument displays <br> Hour counters <br> Pulse counters</p>
                       <hr>
                     </a>
                   </div>
@@ -90,9 +90,9 @@
           <div class="row align-items-start">
               <div class="col-sm-3 text-center thumbnail">
                   <div class="card border-light">
-                    <a href="{{ url('/gsm') }}">
-                      <img src="img/principal/cb.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Programmable Power Tranducers / Barriers/ Transmitters</p>
+                    <a href="{{ url('/gmc') }}">
+                      <img src="img/principal/gmc.png" width="100%" height="100%" class="card-img-top" alt="...">
+                      <p>Programmable <br> Power Tranducers <br> Barriers, Transmitters</p>
                       <hr>
                     </a>
                   </div>
@@ -101,7 +101,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/dold') }}">
                       <img src="img/principal/dold.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Monitoring & Control Relays</p>
+                      <p>Monitoring <br> & <br> Control Relays</p>
                       <hr>
                     </a>
                   </div>
@@ -110,7 +110,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/emh') }}">
                       <img src="img/principal/emh.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p></p>
+                      <p>Smart Meter Gateway <br> Special meters <br> Domestic meters & smart meters</p>
                       <hr>
                     </a>
                   </div>
@@ -119,7 +119,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/leipole') }}">
                       <img src="img/principal/leipole.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p></p>
+                      <p>Fan Filter <br> Enclosure Thermostat <br> Enclosure Hygrostat</p>
                       <hr>
                     </a>
                   </div>
@@ -131,7 +131,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/monarch') }}">
                       <img src="img/principal/monarch.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Stroboscope, Tachometer, Vibration Measurement, Process Chart Recorder</p>
+                      <p>Stroboscope, Tachometer <br> Vibration Measurement <br> Process Chart Recorder</p>
                       <hr>
                     </a>
                   </div>
@@ -140,7 +140,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/rishabh') }}">
                       <img src="img/principal/rishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p></p>
+                      <p>Multifunction <br> Smart Demand Controller <br> Power Quality Analyzer</p>
                       <hr>
                     </a>
                   </div>
@@ -149,7 +149,7 @@
                   <div class="card border-light">
                     <a href="{{ url('/wharton') }}">
                       <img src="img/principal/wharton.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p></p>
+                      <p>Digital Clocks <br> Time Information Displays <br> for Professional Applications</p>
                       <hr>
                     </a>
                   </div>

@@ -21,7 +21,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2>Moving Iron meter AC ammeters and voltmeters 90deg (EQ)</h2>
+                            <h2><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> Moving Iron meter AC ammeters and voltmeters 90deg (EQ)</h2>
                         </div>
                     </button>
                     </h2>
@@ -41,7 +41,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3>New Feature Moving Iron meter</h3>
+                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> New Feature Moving Iron meter</h3>
                         </div>
                     </button>
                     </h2>

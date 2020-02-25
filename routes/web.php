@@ -59,11 +59,11 @@ Route::get('/rishabh', function () {
         return view('/principal/rishabh/risheineplus');
         });
 
-Route::get('/gsm', function () {
-        return view('/principal/gsm/gsm');
+Route::get('/gmc', function () {
+        return view('/principal/gmc/gmc');
     });
     Route::get('/a2000', function () {
-            return view('/principal/gsm/a2000');
+            return view('/principal/gmc/a2000');
         });
 
 Route::get('/monarch', function () {

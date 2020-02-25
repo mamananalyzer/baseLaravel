@@ -13,7 +13,7 @@
 
 
     <link rel="icon" href="img/aii.png">
-    <title>@yield('title')</title>
+    <title>@yield('title')</title> 
   </head>
   <body>
     {{-- header --}}

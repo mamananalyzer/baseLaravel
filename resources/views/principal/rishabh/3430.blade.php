@@ -7,7 +7,7 @@
       <div class="row pt-4 offset-md-1 container" id="home">
         <div class="col-md-5 text-center">
           <div class="border-info">
-            <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/3430.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"></h5>
               <hr>
@@ -29,7 +29,7 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>Rish Master 3430</h2>
+                        <h2>Rish Master 3430</h2> 
                         <hr>
                         <br>
                         <p>On site programmable PT/CT ratios, True RMS measurement, User selectable 3 phase 3W or 4W</p>

@@ -15,7 +15,7 @@ class CreateAmptronTable extends Migration
     {
         Schema::create('amptron', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('brand');
+            $table->string('brand'); 
             $table->string('type');
             $table->string('code');
             $table->string('purchaseorder')->unique();

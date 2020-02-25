@@ -15,6 +15,7 @@
 
 
 
+
 Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
 Route::get('/principal', 'BaseController@principal');

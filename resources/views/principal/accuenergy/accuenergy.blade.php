@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/acuvimII.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/acuvimII.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim II Series</h5>
               <hr>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/acuvimL.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/acuvimL.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim L Series</h5>
               <hr>
@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/aculink810.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/aculink810.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Aculink 810</h5>
               <hr>

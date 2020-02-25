@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/acuvimII.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/acuvimII.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim II Series</h5>
               <hr>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/acuvimL.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/acuvimL.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Acuvim L Series</h5>
               <hr>
@@ -46,7 +46,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/aculink810.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/aculink810.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Aculink 810</h5>
               <hr>
@@ -71,7 +71,7 @@
       <div class="row">
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/a2000.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/a2000.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">A2000 Multifunctional Power Meter</h5>
               <hr>
@@ -82,7 +82,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/3430.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Master
                   <br> 3430</h5>
@@ -96,7 +96,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/risheineplus.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/risheineplus.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Eine+</h5>
               <hr>
@@ -107,7 +107,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/stroboscope.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/stroboscope.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nova-Pro™ 300 LED Stroboscopes / Tachometers</h5>
               <hr>

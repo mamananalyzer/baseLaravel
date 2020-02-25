@@ -18,7 +18,7 @@
           </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/3430.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/3430.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Master
                   <br> 3430</h5>
@@ -32,7 +32,7 @@
         </div>
         <div class="col-lg-3 text-center">
           <div class="card container border-info">
-            <img src="img/risheineplus.png" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="img/risheineplus.webp" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rish Eine+</h5>
               <hr>

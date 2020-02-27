@@ -18,10 +18,10 @@
             <a class="nav-link page-scroll" href="#home"><h3>Home</h3></a>
             </li>
             <li class="nav-item pr-5">
-            <a class="nav-link page-scroll" href="#about"><h3>Tentang Kami</h3></a>
+            <a class="nav-link page-scroll" href="#about"><h3>About Us</h3></a>
             </li>
             <li class="nav-item pr-5">
-            <a class="nav-link page-scroll" href="#partner"><h3>Partner Kami</h3></a>
+            <a class="nav-link page-scroll" href="#partner"><h3>Customer</h3></a>
             </li>
         </ul>
         <span class="navbar-text">
@@ -58,7 +58,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <div class="gold">
-                        <h6>TENTANG KAMI</h6>
+                        <h6><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> TENTANG KAMI</h6>
                     </div>
                   </button>
                 </h2>
@@ -75,7 +75,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <div class="gold">
-                        <h6>VISI DAN MISI</h6>
+                        <h6><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i> VISI DAN MISI</h6>
                     </div>
                   </button>
                 </h2>
@@ -93,7 +93,7 @@
     <div class="section container">
         <div class="row">
             <div class="col text-center">
-              <h2>Partner Kami</h2>
+              <h2>Our Customer</h2>
               <hr>
             </div>
         </div>

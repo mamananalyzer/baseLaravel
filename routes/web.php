@@ -15,6 +15,14 @@
 
 
 
+Route::get('kirimemail', function () {
+    \Mail::raw('Information Inquiry', function ($message) {
+        $message->to('dbasedown@gmail.com', 'Base');
+        $message->subject('Report');
+    });
+});
+
+Route::post('/sendEmail', 'EmailController@sendEmail');
 
 Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
@@ -22,17 +30,12 @@ Route::get('/principal', 'BaseController@principal');
 
 Route::get('/products', 'ProductsController@index');
 
+Route::get('/contact', function () {
+        return view('/contact');
+    });
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });
-Route::get('kirimemail', function () {
-    \Mail::raw('Hello world', function ($message) {
-        $message->to('dbasedown@gmail.com', 'Base');
-        $message->subject('Report');
-    });
-});
-
-Route::post('/sendEmail', 'EmailController@sendEmail');
 
 Route::get('/accuenergy', function () {
         return view('/principal/accuenergy/accuenergy');

@@ -28,7 +28,6 @@ class Email extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from Airman7.com')
-                    ->view('email');
+        
     }
 }

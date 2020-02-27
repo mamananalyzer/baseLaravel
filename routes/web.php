@@ -12,11 +12,9 @@
 */
 
 
-
-
-
 Route::get('kirimemail', function () {
     \Mail::raw('Information Inquiry', function ($message) {
+        $message->sender('baseanalyzer210@gmail.com', 'Maman');
         $message->to('dbasedown@gmail.com', 'Base');
         $message->subject('Report');
     });

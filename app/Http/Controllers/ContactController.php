@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Contact;
 
 class ContactController extends Controller
 {
@@ -14,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contact = DB::table('contact')->get();
+        // $contact = DB::table('contact')->get();
+        $contact = Contact::all();
         return view('contact.index', ['contact' => $contact]);
     }
 

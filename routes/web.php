@@ -27,11 +27,14 @@ Route::get('/about', 'BaseController@about');
 Route::get('/principal', 'BaseController@principal');
 
 Route::get('/products', 'ProductsController@index');
-Route::get('/contact', 'ContactController@index');
+// Route::get('/contact', 'ContactController@index');
 
-// Route::get('/contact', function () {
-//         return view('/contact');
-//     });
+Route::get('email','SendMailController@index');
+Route::post('email/send','SendMailController@send');
+
+Route::get('/contact', function () {
+        return view('/contact');
+    });
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });

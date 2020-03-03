@@ -12,7 +12,7 @@
         <hr>
     </div>
     <div class="container">
-        <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } 
+        <form action=" {{ url('email/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; } 
         else { 
             alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); 
             return false; 
@@ -20,10 +20,10 @@
             <label for="exampleInputName">Name *</label>
             <div class="form-row">
                 <div class="col">
-                <input type="text" class="form-control" placeholder="First name" name="name" required>
+                <input type="text" class="form-control" placeholder="First name" name="name1" required>
                 </div>
                 <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" name="name" required>
+                <input type="text" class="form-control" placeholder="Last name" name="name2" required>
                 </div>
             </div>
         <div class="form-group">
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-6 form-group">
                 <label for="Company">Company *</label>
-                <input type="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required> 
+                <input type="company" name="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required> 
             </div>
             <div class="col-6 form-group">
                 <label for="PhoneNumber">Phone *</label>

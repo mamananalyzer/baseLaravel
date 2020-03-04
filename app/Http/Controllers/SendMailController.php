@@ -10,11 +10,11 @@ class SendMailController extends Controller
         return view('contact');
     }
     public function send(Request $request){
-        
+
 
         try{
-            Mail::send('isiemail', 
-            array('pesan' => $request->pesan, 'name2' => $request->name2) , 
+            Mail::send('isiemail',
+            array('pesan' => $request->pesan, 'name2' => $request->name2) ,
             function($pesan) use($request){
                 $pesan->to('dbasedown@gmail.com', 'dbasedown@gmail.com')->subject('Request a Quote');
                 $pesan->from(env('MAIL_USERNAME','baseanalyzer210@gmail.com'),'Inquiry');

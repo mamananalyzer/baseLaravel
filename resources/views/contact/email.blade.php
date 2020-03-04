@@ -1,6 +1,6 @@
 @component('mail::message')
 # Introduction
-
+<p> {{ $pesan  }} </p>
 The body of your message.
 
 @component('mail::button', ['url' => ''])

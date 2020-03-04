@@ -26,18 +26,18 @@
                 </div>
                 <div class="modal-body">
                   <div class="container">
-                      <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } 
-                      else { 
-                          alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); 
-                          return false; 
+                      <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; }
+                      else {
+                          alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
+                          return false;
                       }">
                           <label for="exampleInputName">Name *</label>
                           <div class="form-row">
                               <div class="col">
-                              <input type="text" class="form-control" placeholder="First name" name="name" required>
+                              <input type="text" class="form-control" placeholder="First name" name="name1" required>
                               </div>
                               <div class="col">
-                              <input type="text" class="form-control" placeholder="Last name" name="name" required>
+                              <input type="text" class="form-control" placeholder="Last name" name="name2" required>
                               </div>
                           </div>
                       <div class="form-group">
@@ -48,7 +48,7 @@
                       <div class="row">
                           <div class="col-7 form-group">
                               <label for="Company">Company *</label>
-                              <input type="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required> 
+                              <input type="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required>
                           </div>
                           <div class="col-5 form-group">
                               <label for="PhoneNumber">Phone *</label>
@@ -58,7 +58,7 @@
                       <div class="row">
                           <div class="col form-group">
                               <label for="Street and Number">Street and Number *</label>
-                              <input type="Street and Number" name="Address1" class="form-control" id="Street and Number" placeholder="Address" required> 
+                              <input type="Street and Number" name="Address1" class="form-control" id="Street and Number" placeholder="Address" required>
                           </div>
                       </div>
                       <div class="row">
@@ -73,7 +73,7 @@
                       </div>
                       <div class="form-group">
                           <label for="exampleFormControlTextarea1">Your Message *</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+                          <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4" required></textarea>
                       </div>
                       <div class="row">
                         <div class="col-1">
@@ -92,7 +92,7 @@
                       </form>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
             </tbody>
           </table>
       </div>
-          
+
 
           {{-- <ul class="list-group">
               @foreach ($contact as $cont)
@@ -146,7 +146,7 @@
               </li>
               @endforeach
           </ul> --}}
-        
+
       </div>
     </div>
 @endsection

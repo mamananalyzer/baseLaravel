@@ -13,31 +13,17 @@
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 
-Route::get('kirimemail', function () {
-    \Mail::raw('Information Inquiry', function ($message) {
-        $message->sender('baseanalyzer210@gmail.com', 'Maman');
-        $message->to('dbasedown@gmail.com', 'Base');
-        $message->subject('Report');
-    });
-});
-
 Route::get('/email', function () {
     Mail::to('dbasedown@gmail.com')->send(new ContactMail);
 
     return new ContactMail();
 });
 
-Route::post('/sendEmail', 'EmailController@sendEmail');
-
 Route::get('/', 'BaseController@home');
 Route::get('/about', 'BaseController@about');
 Route::get('/principal', 'BaseController@principal');
 
 Route::get('/products', 'ProductsController@index');
-// Route::get('/contact', 'ContactController@index');
-
-// Route::get('email','SendMailController@index');
-// Route::post('email/send','SendMailController@send');
 
 Route::get('/contact', 'SendMailController@index');
 Route::get('email/send', 'SendMailController@send');

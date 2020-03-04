@@ -17,10 +17,11 @@
             alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); 
             return false; 
         }">
+        {{ csrf_field() }}
             <label for="exampleInputName">Name *</label>
             <div class="form-row">
                 <div class="col">
-                <input type="text" class="form-control" placeholder="First name" name="name1" required>
+                <input type="text" class="form-control" placeholder="First name" name="name" required>
                 </div>
                 <div class="col">
                 <input type="text" class="form-control" placeholder="Last name" name="name2" required>
@@ -57,13 +58,13 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Your Message *</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+            <textarea class="form-control" name="pesan" id="exampleFormControlTextarea1" rows="4" required></textarea>
         </div>   
         <input type="checkbox" name="checkbox" value="check" id="agree" />
         <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
         <br>
         <br>
-        <input class="btn btn-success" type="submit" name="submit" value="submit" />
+        <input class="btn btn-success" type="submit" name="submit" value="Kirim" />
         </form>
     </div>
 

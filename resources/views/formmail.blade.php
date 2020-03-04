@@ -12,12 +12,12 @@
                 <table class="table table-stripsed">
                     <form action=" {{ url('email/send') }}" method="POST">
                         {{ csrf_field() }}
-                    <tr>
+                    {{-- <tr>
                         <td width="190px">Kepada</td>
                         <td>
                             <input type="email" class="form-control" name="penerima" placeholder="Masukan email penerima">
                         </td>
-                    </tr>
+                    </tr> --}}
                     <tr>
                         <td>Pesan</td>
                         <td>

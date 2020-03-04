@@ -8,6 +8,10 @@
 </head>
 <body>
    <h3> Kepada Yth.  </h3>
-    <p> {{ $pesan  }}
+   <p> {{ $pesan  }} </p>
+   {{-- <p> {{ $name  }} </p> --}}
+   <p> {{ $name2  }} </p>
+   {{-- <p> {{ $emailAddress  }} </p> --}}
+
 </body>
 </html>

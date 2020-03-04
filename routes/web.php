@@ -32,9 +32,10 @@ Route::get('/products', 'ProductsController@index');
 Route::get('email','SendMailController@index');
 Route::post('email/send','SendMailController@send');
 
-Route::get('/contact', function () {
-        return view('/contact');
-    });
+Route::get('/contact', 'SendMailController@index');
+Route::get('email/send', 'SendMailController@send');
+
+
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });

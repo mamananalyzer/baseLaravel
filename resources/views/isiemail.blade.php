@@ -8,6 +8,6 @@
 </head>
 <body>
    <h3> Kepada Yth.  </h3>
-    <p> {{ $pesan,  }}
+    <p> {{ $pesan  }}
 </body>
 </html>

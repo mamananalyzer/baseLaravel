@@ -7,11 +7,39 @@
     <title>Isi Pesan</title>
 </head>
 <body>
-   <h3> Kepada Yth.  </h3>
-   <p> {{ $pesan  }} </p>
-   {{-- <p> {{ $name  }} </p> --}}
-   <p> {{ $name2  }} </p>
-   {{-- <p> {{ $emailAddress  }} </p> --}}
+    
+    <h3> Hai Amptron Sales,   </h3>
+    <h4>Seseorang mengirim pesan</h4>
+    <br>
+    <table class="table">
+        <tr>
+            <td scope="col-2">
+                <p>Name</p> 
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $name  }} {{ $name2  }} </p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Email</p> 
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $email  }}</p>
+            </td>
+        </tr>
+    </table>
 
+   <p>Company : {{ $company  }} </p>
+   <p>Phone : {{ $phone  }} </p>
+   <p>Address : {{ $Address1  }} </p>
+   <p>City : {{ $city  }} </p>
+   <p>Postcode : {{ $postcode  }} </p>
+   <p>Message : {{ $pesan  }} </p>
+
+   Thanks,<br>
+   {{ config('app.name') }}
 </body>
 </html>

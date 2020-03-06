@@ -27,8 +27,9 @@ class SendMailController extends Controller
             ) ,
             function($pesan) use($request){
                 $pesan->to('baseanalyzer@amptron.my.id', 'dbasedown@gmail.com')->subject('Request a Quote');
+                $pesan->cc('dbasedown@gmail.com', 'BaseAnaLyZer');
                 // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
-                $pesan->from(env('MAIL_USERNAME','baseanalyzer210@gmail.com'),'Inquiry');
+                $pesan->from(env('MAIL_USERNAME'),'Amptron.my.id');
                 $name = $request->input('name');
                 $name2 = $request->input('name2');
                 $email = $request->input('email');

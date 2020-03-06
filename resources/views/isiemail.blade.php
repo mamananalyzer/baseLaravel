@@ -30,16 +30,63 @@
                 <p>{{ $email  }}</p>
             </td>
         </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Company</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $company  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Phone</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $phone  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Address</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $Address1  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>City</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $city  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Post code</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $postcode  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Message</p>  
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $pesan  }}</p>
+            </td>
+        </tr>
     </table>
 
-   <p>Company : {{ $company  }} </p>
-   <p>Phone : {{ $phone  }} </p>
-   <p>Address : {{ $Address1  }} </p>
-   <p>City : {{ $city  }} </p>
-   <p>Postcode : {{ $postcode  }} </p>
-   <p>Message : {{ $pesan  }} </p>
-
-   Thanks,<br>
+   Thanks,<br><br><br>
    {{ config('app.name') }}
 </body>
 </html>

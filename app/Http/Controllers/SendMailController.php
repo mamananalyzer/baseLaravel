@@ -15,9 +15,9 @@ class SendMailController extends Controller
         try{
             Mail::send('isiemail',
             array(
-                'name' => $request->name, 
-                'name2' => $request->name2, 
-                'email' => $request->email, 
+                'name' => $request->name,
+                'name2' => $request->name2,
+                'email' => $request->email,
                 'company' => $request->company,
                 'phone' => $request->phone,
                 'Address1' => $request->Address1,
@@ -26,9 +26,9 @@ class SendMailController extends Controller
                 'pesan' => $request->pesan
             ) ,
             function($pesan) use($request){
-                $pesan->to('dbasedown@gmail.com', 'dbasedown@gmail.com')->subject('Request a Quote');
+                $pesan->to('baseanalyzer@amptron.my.id', 'dbasedown@gmail.com')->subject('Request a Quote');
+                // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
                 $pesan->from(env('MAIL_USERNAME','baseanalyzer210@gmail.com'),'Inquiry');
-                // $name = $request->input('name');
                 $name = $request->input('name');
                 $name2 = $request->input('name2');
                 $email = $request->input('email');

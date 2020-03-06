@@ -19,15 +19,14 @@ Route::get('/email', function () {
     return new ContactMail();
 });
 
-Route::get('/', 'BaseController@home');
-Route::get('/about', 'BaseController@about');
-Route::get('/principal', 'BaseController@principal');
-
-Route::get('/products', 'ProductsController@index');
+Route::get('/', 'BaseController@home');                 //home
+Route::get('/about', 'BaseController@about');           //about
+Route::get('/principal', 'BaseController@principal');   //principall
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');
 
+Route::get('/products', 'ProductsController@index');
 
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
@@ -72,13 +71,3 @@ Route::get('/monarch', function () {
     Route::get('/stroboscopes', function () {
             return view('/principal/monarch/stroboscopes');
         });
-
-
-
-
-// contoh menggunakan route sederhana
-
-// Route::get('/', function () {
-//     return view('index');
-// });
-

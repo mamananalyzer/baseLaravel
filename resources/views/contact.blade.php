@@ -12,10 +12,10 @@
         <hr>
     </div>
     <div class="container">
-        <form action=" {{ url('email/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; } 
-        else { 
-            alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); 
-            return false; 
+        <form action=" {{ url('email/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
+        else {
+            alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
+            return false;
         }">
         {{ csrf_field() }}
             <label for="exampleInputName">Name *</label>
@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-6 form-group">
                 <label for="Company">Company *</label>
-                <input type="company" name="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required> 
+                <input type="company" name="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required>
             </div>
             <div class="col-6 form-group">
                 <label for="PhoneNumber">Phone *</label>
@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-6 form-group">
                 <label for="Street and Number">Street and Number *</label>
-                <input type="Street and Number" name="Address1" class="form-control" id="Street and Number" placeholder="Address" required> 
+                <input type="Street and Number" name="Address1" class="form-control" id="Street and Number" placeholder="Address" required>
             </div>
             <div class="col-3 form-group">
                 <label for="City">City *</label>
@@ -59,7 +59,7 @@
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Your Message *</label>
             <textarea class="form-control" name="pesan" id="exampleFormControlTextarea1" rows="4" required></textarea>
-        </div>   
+        </div>
         <input type="checkbox" name="checkbox" value="check" id="agree" />
         <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
         <br>

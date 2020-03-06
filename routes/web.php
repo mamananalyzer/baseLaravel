@@ -26,7 +26,7 @@ Route::get('/principal', 'BaseController@principal');
 Route::get('/products', 'ProductsController@index');
 
 Route::get('/contact', 'SendMailController@index');
-Route::get('email/send', 'SendMailController@send');
+Route::post('email/send', 'SendMailController@send');
 
 
 Route::get('/underconstruction', function () {

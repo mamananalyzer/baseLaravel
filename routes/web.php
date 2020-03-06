@@ -21,7 +21,7 @@ Route::get('/email', function () {
 
 Route::get('/', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
-Route::get('/principal', 'BaseController@principal');   //principal
+Route::get('/principal', 'BaseController@principal');   //principall
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');

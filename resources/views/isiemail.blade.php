@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <td scope="col-2">
-                <p>Email</p> 
+                <p>Email</p>  
             </td>
             <td>:</td>
             <td>

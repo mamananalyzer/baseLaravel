@@ -32,6 +32,27 @@ Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });
 
+Route::get('/alan', function () {
+        return view('/underconstruction');
+    });
+Route::get('/bauser', function () {
+        return view('/underconstruction');
+    });
+Route::get('/bnr', function () {
+        return view('/underconstruction');
+    });
+Route::get('/dold', function () {
+        return view('/underconstruction');
+    });
+Route::get('/emh', function () {
+        return view('/underconstruction');
+    });
+Route::get('/leipole', function () {
+        return view('/underconstruction');
+    });
+Route::get('/wharton', function () {
+        return view('/underconstruction');
+    });
 Route::get('/accuenergy', function () {
         return view('/principal/accuenergy/accuenergy');
     });
@@ -59,14 +80,14 @@ Route::get('/rishabh', function () {
         });
 
 Route::get('/gmc', function () {
-        return view('/principal/gmc/gmc');
+        return view('/underconstruction');
     });
     Route::get('/a2000', function () {
             return view('/principal/gmc/a2000');
         });
 
 Route::get('/monarch', function () {
-        return view('/principal/monarch/monarch');
+        return view('/underconstruction');
     });
     Route::get('/stroboscopes', function () {
             return view('/principal/monarch/stroboscopes');

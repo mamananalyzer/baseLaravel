@@ -38,6 +38,7 @@ class SendMailController extends Controller
                 $city = $request->input('city');
                 $postcode = $request->input('postcode');
                 $pesan = $request->input('pesan');
+                
             });
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);

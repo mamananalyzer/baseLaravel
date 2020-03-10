@@ -1,10 +1,11 @@
 head, body {
     font-family: 'Lora', serif !important;
+    min-width: 500px !important;
 }
 #about, #contact {
     min-height: 500px;
 }
-[data-toggle="collapse"] .fa:before {   
+[data-toggle="collapse"] .fa:before {
     content: "\f139";
 }
 

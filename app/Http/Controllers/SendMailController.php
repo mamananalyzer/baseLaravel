@@ -15,9 +15,9 @@ class SendMailController extends Controller
         try{
             Mail::send('isiemail',
             array(
-                'name' => $request->name, 
-                'name2' => $request->name2, 
-                'email' => $request->email, 
+                'name' => $request->name,
+                'name2' => $request->name2,
+                'email' => $request->email,
                 'company' => $request->company,
                 'phone' => $request->phone,
                 'Address1' => $request->Address1,
@@ -26,9 +26,10 @@ class SendMailController extends Controller
                 'pesan' => $request->pesan
             ) ,
             function($pesan) use($request){
-                $pesan->to('dbasedown@gmail.com')->subject('Request a Quote');
-                $pesam->cc('baseanalyzer@amptron.my.id', 'Amptron.my.id');
-                $pesan->from(env('MAIL_USERNAME'),'Inquiry');
+                $pesan->to('baseanalyzer@amptron.my.id', 'dbasedown@gmail.com')->subject('Request a Quote');
+                $pesan->cc('dbasedown@gmail.com', 'BaseAnaLyZer');
+                // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
+                $pesan->from(env('MAIL_USERNAME'),'Amptron.my.id');
                 $name = $request->input('name');
                 $name2 = $request->input('name2');
                 $email = $request->input('email');
@@ -38,7 +39,7 @@ class SendMailController extends Controller
                 $city = $request->input('city');
                 $postcode = $request->input('postcode');
                 $pesan = $request->input('pesan');
-                
+
             });
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);

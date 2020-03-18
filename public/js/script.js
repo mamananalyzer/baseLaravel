@@ -1,3 +1,27 @@
+function produk(that) {
+    if (that.value == "AMR") {
+            document.getElementById("ifYes").style.display = "block";
+        }
+    else if (that.value == "Power Meter") {
+            document.getElementById("ifYes").style.display = "block";
+        }
+    else {
+            document.getElementById("ifYes").style.display = "none";
+        }
+}
+function ps(that) {
+    if (that.value == "P1") {
+            document.getElementById("ifYes").style.display = "block";
+        }
+    else if (that.value == "P2") {
+            document.getElementById("ifYes").style.display = "block";
+        }
+    else {
+            document.getElementById("ifYes").style.display = "none";
+        }
+}
+
+
 //event pada saat link di klik
 $('.page-scroll').on('click', function(){
 

@@ -10,8 +10,6 @@ class SendMailController extends Controller
         return view('contact');
     }
     public function send(Request $request){
-
-
         try{
             Mail::send('isiemail',
             array(
@@ -26,7 +24,8 @@ class SendMailController extends Controller
                 'pesan' => $request->pesan
             ) ,
             function($pesan) use($request){
-                $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
+                // $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
+                $pesan->to('dbasedown211@gmail.com')->subject('Request a Quote');
                 $pesan->cc('dbasedown@gmail.com', 'Maman@amptron.my.id');
                 $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');
                 // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
@@ -45,5 +44,8 @@ class SendMailController extends Controller
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
+        return redirect('/')->with('terkirim',
+        'Terima kasih sudah menghubungi kami, Pesan anda sudah terkirim.
+        Mohon tunggu untuk bagian admin kami menghubungi anda.');
     }
 }

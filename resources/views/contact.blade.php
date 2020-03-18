@@ -4,6 +4,7 @@
 
 @section('container')
 
+
     <div class="container mt-5">
         <h5>Contact Our Team</h5>
         <h3>Here you can send us an inquiry concerning general questions about Amptron.</h3>

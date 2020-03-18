@@ -17,7 +17,7 @@
   </head>
   <body>
     {{-- header --}}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbarbar navbar navbar-expand-lg navbar-dark bg-blue sticky-top">
       <a class="navbar-brand" href="{{ url('/') }}">
         <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
         Amptron Instrumindo
@@ -36,7 +36,15 @@
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
+          <div class="dropdown">
+            <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
           {{-- <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a> --}}
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,7 +56,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> --}}
-          </li>
+          {{-- </li> --}}          
         </ul>
       </div>
     </nav>

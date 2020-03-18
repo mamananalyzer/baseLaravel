@@ -31,6 +31,9 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/underconstruction', function () {
         return view('/underconstruction');
     });
+Route::get('/blade', function () {
+        return view('/layout/base2');
+    });
 
 Route::get('/alan', function () {
         return view('/underconstruction');

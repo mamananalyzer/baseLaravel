@@ -31,9 +31,19 @@
 
 
         <div class="form-group" id="ifYes" style="display: none;">
-            <label for="exampleInputEmail1">Power Supply *</label>
-            <select class="form-control col-3" id="Produk" onchange="ps(this);">
-                <option value="P1">110-230VDC / 110-230VAC (P1)</option>
+            <label for="PS">Power Supply *</label>
+            <select class="form-control col-4" id="Produk" onchange="ps(this);">
+                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
+                <option value="P2">24-48VDC (P2)</option>
+            </select>
+            <label for="CT">Current Transformer (CT) *</label>
+            <select class="form-control col-4" id="Produk" onchange="ps(this);">
+                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
+                <option value="P2">24-48VDC (P2)</option>
+            </select>
+            <label for="VT">Voltage Transformer (VT) *</label>
+            <select class="form-control col-4" id="Produk" onchange="ps(this);">
+                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
                 <option value="P2">24-48VDC (P2)</option>
             </select>
         </div>

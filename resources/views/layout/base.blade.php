@@ -13,7 +13,7 @@
 
 
     <link rel="icon" href="img/aii.png">
-    <title>@yield('title')</title> 
+    <title>@yield('title')</title>
   </head>
   <body>
     {{-- header --}}
@@ -56,7 +56,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> --}}
-          {{-- </li> --}}          
+          {{-- </li> --}}
         </ul>
       </div>
     </nav>

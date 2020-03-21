@@ -31,21 +31,64 @@
 
 
         <div class="form-group" id="ifYes" style="display: none;">
-            <label for="PS">Power Supply *</label>
-            <select class="form-control col-4" id="Produk" onchange="ps(this);">
-                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
-                <option value="P2">24-48VDC (P2)</option>
-            </select>
-            <label for="CT">Current Transformer (CT) *</label>
-            <select class="form-control col-4" id="Produk" onchange="ps(this);">
-                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
-                <option value="P2">24-48VDC (P2)</option>
-            </select>
-            <label for="VT">Voltage Transformer (VT) *</label>
-            <select class="form-control col-4" id="Produk" onchange="ps(this);">
-                <option value="P1">100-240VAC / 100-300VDC (P1)</option>
-                <option value="P2">24-48VDC (P2)</option>
-            </select>
+            <div class="row">
+                <div class="col-4">
+                    <label for="brand">Brand *</label>
+                    <select class="form-control" id="Produk" onchange="ps(this);">
+                        <option value="acuvim">Acuvim</option>
+                        <option value="GMC">GMC</option>
+                        <option value="Rishabh">Rishabh</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="Model">Model *</label>
+                    <select class="form-control" id="Produk" onchange="ps(this);">
+                        <option value="II">Acuvim II (Basic Model)</option>
+                        <option value="R">Acuvim IIR: II + datalogging</option>
+                        <option value="E">Acuvim IIE: IIR + Time of Use</option>
+                        <option value="W">Acuvim IIW: IIR + Waveform Capture and PQ Event Logging</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label for="Mounting">Mounting Option *</label>
+                    <select class="form-control" id="Produk" onchange="ps(this);">
+                        <option value="D">D: LCD Display (panel mount meter)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="PS">Power Supply *</label>
+                    <select class="form-control" id="Produk" onchange="ps(this);">
+                        <option value="P1">100-240VAC / 100-300VDC (P1)</option>
+                        <option value="P2">24-48VDC (P2)</option>
+                    </select>
+                </div>
+                <div class="col form-group">
+                    <label for="CT">Current Transformer (CT) *</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" name="CT primary" class="form-control" id="CT" placeholder="5/1 A (primary)" required>
+                        </div>
+                        /
+                        <div class="col">
+                            <input type="number" name="CT secondary" class="form-control" id="CT" placeholder="5/1 A (secondary)" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <label for="VT">Voltage Transformer (VT) *</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" name="VT primary" class="form-control" id="VT" placeholder="primary" required>
+                        </div>
+                        /
+                        <div class="col">
+                            <input type="number" name="VT secondary" class="form-control" id="VT" placeholder="secondary" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-6 form-group">

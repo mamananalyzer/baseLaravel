@@ -1,23 +1,26 @@
 function produk(that) {
-    if (that.value == "AMR") {
-            document.getElementById("ifYes").style.display = "block";
+    if (that.value == "Power Meter") {
+            document.getElementById("powermeter").style.display = "block";
+            document.getElementById("amr").style.display = "none";
         }
-    else if (that.value == "Power Meter") {
-            document.getElementById("ifYes").style.display = "block";
+    else if (that.value == "AMR") {
+            document.getElementById("amr").style.display = "block";
+            document.getElementById("powermeter").style.display = "none";
         }
     else {
-            document.getElementById("ifYes").style.display = "none";
+            document.getElementById("powermeter").style.display = "none";
+            document.getElementById("amr").style.display = "none";
         }
 }
-function ps(that) {
-    if (that.value == "P1") {
-            document.getElementById("ifYes").style.display = "block";
+function brand(that) {
+    if (that.value == "acuvim") {
+            document.getElementById("acuvim").style.display = "block";
         }
     else if (that.value == "P2") {
             document.getElementById("ifYes").style.display = "block";
         }
     else {
-            document.getElementById("ifYes").style.display = "none";
+            document.getElementById("acuvim").style.display = "none";
         }
 }
 

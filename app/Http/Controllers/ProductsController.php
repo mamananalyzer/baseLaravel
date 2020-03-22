@@ -68,7 +68,7 @@ class ProductsController extends Controller
 
         Product::create($request->all());
 
-        return redirect('/products')->with('dataadded',
+        return redirect('/products')->with('status',
         'Terima kasih sudah menginput data, data berhasil ditambahkan!');
     }
 
@@ -92,7 +92,7 @@ class ProductsController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit', compact('product'));
     }
 
     /**
@@ -104,7 +104,28 @@ class ProductsController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $request->validate([
+            'brand' => 'required',
+            'type' => 'required',
+            'code' => 'required',
+            'purchaseorder' => 'required',
+            'serialnumber' => 'required',
+            'spec' => 'required',
+            'customer' => 'required'
+        ]);
+
+        Product::where('id', $product->id)
+                ->update([
+                    'brand' => $request->brand,
+                    'type' => $request->type,
+                    'code' => $request->code,
+                    'purchaseorder' => $request->purchaseorder,
+                    'serialnumber' => $request->serialnumber,
+                    'spec' => $request->spec,
+                    'customer' => $request->customer
+                ]);
+            return redirect('/products')->with('status',
+            'Data berhasil diubah!');
     }
 
     /**
@@ -115,6 +136,8 @@ class ProductsController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        Product::destroy($product->id);
+        return redirect('/products')->with('status',
+        'Data berhasil dihapus!');
     }
 }

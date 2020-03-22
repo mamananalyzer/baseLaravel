@@ -4,9 +4,9 @@
 
 @section('container')
 
-@if(session('dataadded'))
+@if(session('status'))
 <div class="alert alert-success container text-center" role="alert">
-    {{session('dataadded')}}
+    {{session('status')}}
 </div>
 @endif
 

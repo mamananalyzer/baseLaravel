@@ -29,6 +29,11 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/products/create', 'ProductsController@create');
 Route::get('/products/{product}', 'ProductsController@show');
 Route::post('/products', 'ProductsController@store');
+Route::delete('/products/{product}', 'ProductsController@destroy');
+Route::get('/products/{product}/edit', 'ProductsController@edit');
+Route::patch('/products/{product}', 'ProductsController@update');
+
+// Route::resource('products', 'ProductsController');   //MAGIC
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');

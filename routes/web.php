@@ -23,8 +23,12 @@ Route::get('/', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
 Route::get('/principal', 'BaseController@principal');   //principall
 
-Route::get('/products', 'ProductsController@index');
 Route::get('/barang', 'BarangController@index');
+
+Route::get('/products', 'ProductsController@index');
+Route::get('/products/create', 'ProductsController@create');
+Route::get('/products/{product}', 'ProductsController@show');
+Route::post('/products', 'ProductsController@store');
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');

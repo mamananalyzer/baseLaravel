@@ -25,7 +25,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        return view('products/create');
     }
 
     /**
@@ -36,7 +36,40 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $product = new Product;
+        // $product->brand = $request->brand;
+        // $product->type = $request->type;
+        // $product->code = $request->code;
+        // $product->purchaseorder = $request->purchaseorder;
+        // $product->serialnumber = $request->serialnumber;
+        // $product->spec = $request->spec;
+        // $product->customer = $request->customer;
+        // $product->save();
+
+        // Product::create([
+        //     'brand'=> $request->brand,
+        //     'type'=> $request->type,
+        //     'code'=> $request->code,
+        //     'purchaseorder'=> $request->purchaseorder,
+        //     'serialnumber'=> $request->serialnumber,
+        //     'spec'=> $request->spec,
+        //     'customer'=> $request->customer,
+        // ]);
+
+        $request->validate([
+            'brand' => 'required',
+            'type' => 'required',
+            'code' => 'required',
+            'purchaseorder' => 'required|unique:products',
+            'serialnumber' => 'required|unique:products',
+            'spec' => 'required',
+            'customer' => 'required'
+        ]);
+
+        Product::create($request->all());
+
+        return redirect('/products')->with('dataadded',
+        'Terima kasih sudah menginput data, data berhasil ditambahkan!');
     }
 
     /**
@@ -47,7 +80,8 @@ class ProductsController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('products.show', compact('product'));
+        // return $product;
     }
 
     /**

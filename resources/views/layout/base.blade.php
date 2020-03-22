@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="{{url('css/style.css')}}">
+    <link rel="stylesheet" href="{{url('css/style2.css')}}">
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css ">
+    <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css')}}">
 
 
-    <link rel="icon" href="img/aii.png">
+    <link rel="icon" href="{{url('img/aii.png')}}">
     <title>@yield('title')</title>
   </head>
   <body>
@@ -73,8 +73,8 @@
             <hr class="bg-warning">
             <div class="row">
               <div class="col-1 mr-4">
-                <object data="img/work.svg" type="img/work.svg">
-                  <img src="img/work.svg"/>
+                <object data="{{url('img/work.svg')}}" type="{{url('img/work.svg')}}">
+                  <img src="{{url('img/work.svg')}}"/>
                 </object>
               </div>
               <div class="col-10">
@@ -97,8 +97,8 @@
             <hr class="bg-warning">
             <div class="row">
               <div class="col-1 mr-2">
-                <object data="img/loc.svg" type="img/loc.svg">
-                  <img src="img/loc.svg" />
+                <object data="{{url('img/loc.svg')}}" type="{{url('img/loc.svg')}}">
+                  <img src="{{url('img/loc.svg')}}" />
                 </object>
               </div>
               <div class="col-10">
@@ -109,8 +109,8 @@
             </div>
             <div class="row">
               <div class="col-1 mr-2">
-                <object data="img/email.svg" type="img/email.svg">
-                  <img src="img/email.svg"/>
+                <object data="{{url('img/email.svg')}}" type="{{url('img/email.svg')}}">
+                  <img src="{{url('img/email.svg')}}"/>
                 </object>
               </div>
               <div class="col-10">
@@ -119,8 +119,8 @@
             </div>
             <div class="row">
               <div class="col-1 mr-2">
-                <object data="img/phone.svg" type="img/phone.svg">
-                  <img src="img/phone.svg"/>
+                <object data="{{url('img/phone.svg')}}" type="{{url('img/phone.svg')}}">
+                  <img src="{{url('img/phone.svg')}}"/>
                 </object>
               </div>
               <div class="col-10">

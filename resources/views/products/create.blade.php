@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-8">
           <h1 class="mt-3">Form Add Product</h1>
-            <form action="{{ url('/products') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
+            <form enctype="multipart/form-data" action="{{ url('/products') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
             else {
                 alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
                 return false;
@@ -37,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label for="code">Code *</label>
-                <input type="text" class="form-control @error('code') is-invalid @enderror" id="code" placeholder="Code" name="code" value="{{ old('code')}}">
+                <input type="file" class="form-control @error('code') is-invalid @enderror" id="code" placeholder="Code" name="code" value="{{ old('code')}}">
                 @error('code')
                     <div class="invalid-feedback">
                         {{ $message }}

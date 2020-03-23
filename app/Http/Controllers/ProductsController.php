@@ -12,9 +12,14 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::all();
+        if  ($request->has('cari')){
+            $products = Product::where('brand', 'LIKE', '%'.$request->cari.'%')->get();
+        }
+        else    {
+            $products = Product::all();
+        }
         return view('products.index', compact('products'));
     }
 
@@ -55,6 +60,7 @@ class ProductsController extends Controller
         //     'spec'=> $request->spec,
         //     'customer'=> $request->customer,
         // ]);
+            // dd($request->all());
 
         $request->validate([
             'brand' => 'required',
@@ -102,7 +108,7 @@ class ProductsController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request,$id)
     {
         $request->validate([
             'brand' => 'required',
@@ -114,16 +120,26 @@ class ProductsController extends Controller
             'customer' => 'required'
         ]);
 
-        Product::where('id', $product->id)
-                ->update([
-                    'brand' => $request->brand,
-                    'type' => $request->type,
-                    'code' => $request->code,
-                    'purchaseorder' => $request->purchaseorder,
-                    'serialnumber' => $request->serialnumber,
-                    'spec' => $request->spec,
-                    'customer' => $request->customer
-                ]);
+        // $product = Product::find($request->id);
+
+        // Product::where('id', $product->id)
+        //         ->update([
+            //             'brand' => $request->brand,
+            //             'type' => $request->type,
+        //             'code' => $request->code,
+        //             'purchaseorder' => $request->purchaseorder,
+        //             'serialnumber' => $request->serialnumber,
+        //             'spec' => $request->spec,
+        //             'customer' => $request->customer
+        //         ]);
+        // dd($request->all());
+        $product = Product::find($id);
+        $product->update($request->all());
+        if($request->hasFile('code')){
+            $request->file('code')->move('images/',$request->file('code')->getClientOriginalName());
+            $product->code = $request->file('code')->getClientOriginalName();
+            $product->save();
+        }
             return redirect('/products')->with('status',
             'Data berhasil diubah!');
     }

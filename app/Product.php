@@ -3,11 +3,19 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+// use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
-    use SoftDeletes;
+    // use SoftDeletes;
 
     protected $fillable = ['brand', 'type', 'code', 'purchaseorder', 'serialnumber', 'spec', 'customer'];
+
+    public function getPic()
+    {
+        if(!$this->code){
+            return asset('images/default.jpg');
+        }
+        return asset('images/'.$this->code);
+    }
 }

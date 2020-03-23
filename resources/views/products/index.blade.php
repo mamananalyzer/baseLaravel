@@ -15,7 +15,11 @@
         <div class="col-6">
           <h1 class="mt-3">Product</h1>
 
-            <a href="{{url('/products/create')}}" class="btn btn-success my-2">Add Products</a>
+            <form method="GET" action="/products" class="form-inline">
+                {{-- <a href="{{url('/products/create')}}" class="btn btn-success my-2" style="display: none;">Add Products</a> --}}
+                <input name="cari" type="search" class="form-control ml-4 ml-auto">
+                <button class="btn btn-outline-primary" type="submit">Cari</button>
+            </form>
 
           <ul class="list-group">
               @foreach ($products as $product)

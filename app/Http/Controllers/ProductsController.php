@@ -15,7 +15,8 @@ class ProductsController extends Controller
     public function index(Request $request)
     {
         if  ($request->has('cari')){
-            $products = Product::where('brand', 'LIKE', '%'.$request->cari.'%')->get();
+            // $products = Product::where('brand', 'LIKE', '%'.$request->cari.'%')->get();
+            $products = Product::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
         else    {
             $products = Product::all();
@@ -60,6 +61,7 @@ class ProductsController extends Controller
         //     'spec'=> $request->spec,
         //     'customer'=> $request->customer,
         // ]);
+
             // dd($request->all());
 
         $request->validate([

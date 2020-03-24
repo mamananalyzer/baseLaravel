@@ -13,6 +13,10 @@
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 
+Route::get('/home', function () {
+    return view('/welcome');
+});
+
 Route::get('/email', function () {
     Mail::to('dbasedown@gmail.com')->send(new ContactMail);
 
@@ -34,6 +38,9 @@ Route::get('/products/{product}/edit', 'ProductsController@edit');
 Route::patch('/products/{product}', 'ProductsController@update');
 
 // Route::resource('products', 'ProductsController');   //MAGIC
+
+Route::get('/product', 'DisplaysController@index');
+Route::get('/product/{display}', 'DisplaysController@show');
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{url('css/style.css')}}">
-    <link rel="stylesheet" href="{{url('css/style2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css')}}">
 
@@ -27,11 +27,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        {{-- <form class="form-inline my-2 my-lg-0 offset-md-1">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form method="GET" action="/products" class="form-inline my-2 my-lg-0 offset-md-1 mr-5">
+          <input name="cari" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-        </form> --}}
-        <ul class="navbar-nav navbar-right offset-md-6">
+        </form>
+        <ul class="navbar-nav navbar-right offset-md-1">
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>

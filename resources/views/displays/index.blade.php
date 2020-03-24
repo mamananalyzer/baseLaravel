@@ -22,10 +22,10 @@
             </form> --}}
 
           <ul class="list-group">
-              @foreach ($products as $product)
+              @foreach ($display as $display)
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  {{ $product -> type }}
-              <a href="products/{{ $product->id }}" class="badge badge-info">Read more ...</a>
+                  {{ $display -> type }}
+              <a href="product/{{ $display->id }}" class="badge badge-info">Read more ...</a>
               </li>
               @endforeach
           </ul>

@@ -34,14 +34,14 @@
 
 @extends('layout/base')
 
-@section('title', "$product->brand")
+@section('title', "$display->brand")
 
 @section('container')
 
       <div class="row pt-4 offset-md-1 container" id="home">
         <div class="col-md-5 text-center">
           <div class="border-info">
-            <img src="{{$product->getPic()}}" width="100%" height="100%" class="card-img-top" alt="...">
+            <img src="{{$display->getPic()}}" width="100%" height="100%" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"></h5>
               <hr>
@@ -55,7 +55,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="black">
-                            <h2><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$product->brand}}</h2>
+                            <h2><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$display->brand}}</h2>
                         </div>
                     </button>
                     </h2>
@@ -63,10 +63,10 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body grey">
-                        <h2>{{$product->type}}</h2>
+                        <h2>{{$display->type}}</h2>
                         <hr>
                         <br>
-                        <p>{{$product->purchaseorder}}</p>
+                        <p>{{$display->purchaseorder}}</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$product->serialnumber}}</h3>
+                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$display->serialnumber}}</h3>
                         </div>
                     </button>
                     </h2>
@@ -84,7 +84,7 @@
                     <div class="card-body grey">
                         <div class="card-body grey">
                             <ul class="font-weight-bold">
-                                <li>{{$product->spec}}</li>
+                                <li>{{$display->spec}}</li>
                                 <li>MV90 Support</li>
                                 <li>8GB Datalogging and event storage</li>
                                 <li>COMtrade Waveform format</li>
@@ -105,20 +105,10 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Multifunction-Power-Energy-Meter-Brochure-Datasheet.pdf"><button type="button" class="btn btn-primary">{{$product->customer}}</button></a>
+                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Multifunction-Power-Energy-Meter-Brochure-Datasheet.pdf"><button type="button" class="btn btn-primary">{{$display->customer}}</button></a>
                     <a href="https://www.accuenergy.com/wp-content/uploads/Acuview-Free-Energy-Management-datalogging-Software.zip"><button type="button" class="btn btn-primary">Software</button></a>
                     <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Power-Meter-User-Manual-1040E1303.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
                     <a href="https://www.accuenergy.com/support/acuvim-ii-modbus-map/"><button type="button" class="btn btn-primary">Modbus Map</button></a>
-
-                    <br>
-                    <br>
-                    <a href="{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
-                    <form action="/products/{{ $product->id }}" method="post" class="d-inline">
-                        @method('delete')
-                        {{ csrf_field() }}
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                    <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
                 </div>
             </div>
           </div>

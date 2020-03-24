@@ -29,13 +29,19 @@ Route::get('/principal', 'BaseController@principal');   //principall
 
 Route::get('/barang', 'BarangController@index');
 
-Route::get('/products', 'ProductsController@index');
-Route::get('/products/create', 'ProductsController@create');
-Route::get('/products/{product}', 'ProductsController@show');
-Route::post('/products', 'ProductsController@store');
-Route::delete('/products/{product}', 'ProductsController@destroy');
-Route::get('/products/{product}/edit', 'ProductsController@edit');
-Route::patch('/products/{product}', 'ProductsController@update');
+Route::get('/login', 'AuthController@login')->name('login');
+Route::post('/postlogin', 'AuthController@postlogin');
+Route::get('/logout', 'AuthController@logout');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/products', 'ProductsController@index')->middleware('auth');
+    Route::get('/products/create', 'ProductsController@create');
+    Route::get('/products/{product}', 'ProductsController@show');
+    Route::post('/products', 'ProductsController@store');
+    Route::delete('/products/{product}', 'ProductsController@destroy');
+    Route::get('/products/{product}/edit', 'ProductsController@edit');
+    Route::patch('/products/{product}', 'ProductsController@update');
+});
 
 // Route::resource('products', 'ProductsController');   //MAGIC
 

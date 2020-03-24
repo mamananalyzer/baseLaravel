@@ -27,7 +27,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form method="GET" action="/products" class="form-inline my-2 my-lg-0 offset-md-1 mr-5">
+        <form method="GET" action="/products" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
           <input name="cari" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
@@ -39,11 +39,19 @@
           <div class="dropdown">
             <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="/product">List Product</a>
+              <a class="dropdown-item" href="/login">Admin</a>
             </div>
           </div>
+            {{-- <li class="dropdown">
+                <a href="#" class="nav-item nav-link pr-4" data-toggle="dropdown"><img width="30" src="{{asset('assets/img/user.png')}}" class="img-circle" alt="Avatar"> <span>{{auth()->user()->name}}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+                    <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+                    <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+                    <li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+                </ul>
+            </li> --}}
 
           {{-- <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a> --}}
           {{-- <li class="nav-item dropdown">

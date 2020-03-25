@@ -23,7 +23,8 @@ Route::get('/email', function () {
     return new ContactMail();
 });
 
-Route::get('/', 'BaseController@home');                 //home
+Route::get('/', 'BaseController@root');                 //home
+Route::get('/home', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
 Route::get('/principal', 'BaseController@principal');   //principall
 

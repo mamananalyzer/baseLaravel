@@ -9,13 +9,13 @@ class Product extends Model
 {
     // use SoftDeletes;
 
-    protected $fillable = ['brand', 'type', 'code', 'purchaseorder', 'serialnumber', 'spec', 'customer'];
+    protected $fillable = ['brand', 'type', 'picture', 'description', 'listdescription', 'datasheet', 'usermanual'];
 
     public function getPic()
     {
-        if(!$this->code){
+        if(!$this->picture){
             return asset('images/default.jpg');
         }
-        return asset('images/'.$this->code);
+        return asset('images/'.$this->picture);
     }
 }

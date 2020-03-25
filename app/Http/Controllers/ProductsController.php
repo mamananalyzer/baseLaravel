@@ -66,12 +66,12 @@ class ProductsController extends Controller
 
         $request->validate([
             'brand' => 'required',
-            'type' => 'required',
-            'code' => 'required',
-            'purchaseorder' => 'required|unique:products',
-            'serialnumber' => 'required|unique:products',
-            'spec' => 'required',
-            'customer' => 'required'
+            'type' => 'required|unique:products',
+            'picture' => 'required|unique:products',
+            'description' => 'required',
+            'listdescription' => 'required',
+            'datasheet' => 'required',
+            'usermanual' => 'required'
         ]);
 
         Product::create($request->all());
@@ -115,11 +115,11 @@ class ProductsController extends Controller
         $request->validate([
             'brand' => 'required',
             'type' => 'required',
-            'code' => 'required',
-            'purchaseorder' => 'required',
-            'serialnumber' => 'required',
-            'spec' => 'required',
-            'customer' => 'required'
+            'picture' => 'required|unique:products',
+            'description' => 'required',
+            'listdescription' => 'required',
+            'datasheet' => 'required',
+            'usermanual' => 'required'
         ]);
 
         // $product = Product::find($request->id);
@@ -137,9 +137,9 @@ class ProductsController extends Controller
         // dd($request->all());
         $product = Product::find($id);
         $product->update($request->all());
-        if($request->hasFile('code')){
-            $request->file('code')->move('images/',$request->file('code')->getClientOriginalName());
-            $product->code = $request->file('code')->getClientOriginalName();
+        if($request->hasFile('picture')){
+            $request->file('picture')->move('images/',$request->file('picture')->getClientOriginalName());
+            $product->picture = $request->file('picture')->getClientOriginalName();
             $product->save();
         }
             return redirect('/products')->with('status',

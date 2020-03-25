@@ -19,7 +19,7 @@
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="brand">Brand *</label>
-                <input type="text" class="form-control @error('brand') is-invalid @enderror" id="brand" placeholder="Brand" name="brand" value="{{ old('brand')}}">
+                <input type="text" class="form-control @error('brand') is-invalid @enderror" id="brand" placeholder="Rishabh, Accuenergy, Dold" name="brand" value="{{ old('brand')}}">
                 @error('brand')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label for="type">Type *</label>
-                <input type="text" class="form-control @error('type') is-invalid @enderror" id="type" placeholder="Type" name="type" value="{{ old('type')}}">
+                <input type="text" class="form-control @error('type') is-invalid @enderror" id="type" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="type" value="{{ old('type')}}">
                 @error('type')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -36,45 +36,45 @@
                 @enderror
             </div>
             <div class="form-group">
-                <label for="code">Code *</label>
-                <input type="file" class="form-control @error('code') is-invalid @enderror" id="code" placeholder="Code" name="code" value="{{ old('code')}}">
-                @error('code')
+                <label for="picture">Picture *</label>
+                <input type="file" class="form-control @error('picture') is-invalid @enderror" id="picture" placeholder="picture" name="picture" value="{{ old('picture')}}">
+                {{-- @error('picture')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror --}}
+            </div>
+            <div class="form-group">
+                <label for="description">Description *</label>
+                <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" placeholder="Description of Product" name="description" value="{{ old('description')}}">
+                @error('description')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="purchaseorder">Purchase Order *</label>
-                <input type="text" class="form-control @error('purchaseorder') is-invalid @enderror" id="purchaseorder" placeholder="Purchase Order" name="purchaseorder" value="{{ old('purchaseorder')}}">
-                @error('purchaseorder')
+                <label for="listdescription">List datasheetification of Product *</label>
+                <input type="text" class="form-control @error('listdescription') is-invalid @enderror" id="listdescription" placeholder="Specification divider by ' , '" name="listdescription" value="{{ old('listdescription')}}">
+                @error('listdescription')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="serialnumber">Serial Number *</label>
-                <input type="text" class="form-control @error('serialnumber') is-invalid @enderror" id="serialnumber" placeholder="Serial Number" name="serialnumber" value="{{ old('serialnumber')}}">
-                @error('serialnumber')
+                <label for="datasheet">Link datasheet *</label>
+                <input type="text" class="form-control @error('datasheet') is-invalid @enderror" id="datasheet" placeholder="Link datasheet" name="datasheet" value="{{ old('datasheet')}}">
+                @error('datasheet')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="spec">Spec *</label>
-                <input type="text" class="form-control @error('spec') is-invalid @enderror" id="spec" placeholder="Spec" name="spec" value="{{ old('spec')}}">
-                @error('spec')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <label for="customer">Customer *</label>
-                <input type="text" class="form-control @error('customer') is-invalid @enderror" id="customer" placeholder="Customer" name="customer" value="{{ old('customer')}}">
-                @error('customer')
+                <label for="usermanual">Link User's Manual *</label>
+                <input type="text" class="form-control @error('usermanual') is-invalid @enderror" id="usermanual" placeholder="Link User's Manual" name="usermanual" value="{{ old('usermanual')}}">
+                @error('usermanual')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

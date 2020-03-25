@@ -66,7 +66,7 @@
                         <h2>{{$display->type}}</h2>
                         <hr>
                         <br>
-                        <p>{{$display->purchaseorder}}</p>
+                        <p>{{$display->description}}</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="black">
-                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$display->serialnumber}}</h3>
+                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$display->listdescription}}</h3>
                         </div>
                     </button>
                     </h2>
@@ -105,10 +105,10 @@
                             <h6>Downloads :</h6>
                         </div>
                     </div>
-                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Multifunction-Power-Energy-Meter-Brochure-Datasheet.pdf"><button type="button" class="btn btn-primary">{{$display->customer}}</button></a>
-                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuview-Free-Energy-Management-datalogging-Software.zip"><button type="button" class="btn btn-primary">Software</button></a>
-                    <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Power-Meter-User-Manual-1040E1303.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
-                    <a href="https://www.accuenergy.com/support/acuvim-ii-modbus-map/"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                    <a href="{{$display->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                    <a href="{{$display->usermanual}}"><button type="button" class="btn btn-primary">Software</button></a>
+                    {{-- <a href="https://www.accuenergy.com/wp-content/uploads/Acuvim-II-Power-Meter-User-Manual-1040E1303.pdf"><button type="button" class="btn btn-primary">User's Manual</button></a>
+                    <a href="https://www.accuenergy.com/support/acuvim-ii-modbus-map/"><button type="button" class="btn btn-primary">Modbus Map</button></a> --}}
                 </div>
             </div>
           </div>

@@ -12,24 +12,24 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="{{asset('img/carousel/4.png')}}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
+            </div> --}}
             </div>
             <div class="carousel-item">
             <img src="{{asset('img/carousel/6.png')}}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            </div> --}}
             </div>
             <div class="carousel-item">
             <img src="{{asset('img/carousel/5.png')}}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+            </div> --}}
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -45,20 +45,20 @@
         <div class="row text-center mt-5">
             <div class="col-lg-4">
                 <img class="rounded-circle" src="{{asset('img/a2000.webp')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <h2>A2000 <br>Multifunctional Power Meter</h2>
+                <p>A single device for 1 A and 5 A current transformers, 2 pulse outputs for read-out of active and reactive energy.</p>
+                <p><a class="btn btn-secondary" href="/products/5" role="button">View details »</a></p>
             </div>
             <div class="col-lg-4">
                 <img class="rounded-circle" src="{{asset('img/stroboscope.webp')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <h2>Nova-Pro™ 300 LED Stroboscopes/ Tachometers</h2>
+                <p>Nova-Pro™ is a series of powerful portable visual inspection and speed measurement tools.</p>
+                <p><a class="btn btn-secondary" href="/products/5" role="button">View details »</a></p>
             </div>
             <div class="col-lg-4">
                 <img class="rounded-circle" src="{{asset('img/aculink810.webp')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <h2>Aculink 810 <br> Data Acquisition <br> server and gateway</h2>
+                <p>data acquisition server and gateway designed to collect energy data up to 32 Modbus meters and field sensors such as water and gas.</p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
             </div>
         </div>

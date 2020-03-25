@@ -11,9 +11,9 @@ class Display extends Model
     public function getPic()
     {
 
-        if(!$this->code){
+        if(!$this->picture){
             return asset('images/default.jpg');
         }
-        return asset('images/'.$this->code);
+        return asset('images/'.$this->picture);
     }
 }

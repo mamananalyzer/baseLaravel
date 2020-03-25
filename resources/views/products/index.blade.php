@@ -15,7 +15,7 @@
         <div class="col-9">
           <h1 class="mt-3">Product</h1>
 
-            <form method="GET" action="/products" class="form-inline">
+            <form method="GET" action="{{ url('/products') }}" class="form-inline">
                 <a href="{{url('/products/create')}}" class="btn btn-success my-2">Add Products</a>
                 <input name="cari" type="search" class="form-control ml-4 ml-auto">
                 <button class="btn btn-outline-primary" type="submit">Cari</button>
@@ -24,7 +24,7 @@
                     <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
                     <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
                     <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-                    <li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+                    <li><a href="{{ url('/logout') }}"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
                 </div>
             </form>
 

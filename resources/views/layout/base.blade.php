@@ -27,7 +27,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form method="GET" action="/products" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+        <form method="GET" action="{{ url('/products') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
           <input name="cari" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
@@ -39,8 +39,8 @@
           <div class="dropdown">
             <a class="nav-item nav-link pr-4" href="{{ url('/underconstruction') }}">Product</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/product">List Product</a>
-              <a class="dropdown-item" href="/login">Admin</a>
+              <a class="dropdown-item" href="{{ url('/product') }}">List Product</a>
+              <a class="dropdown-item" href="{{ url('/login') }}">Admin</a>
             </div>
           </div>
             {{-- <li class="dropdown">

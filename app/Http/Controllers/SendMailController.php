@@ -21,6 +21,8 @@ class SendMailController extends Controller
                 'Address1' => $request->Address1,
                 'city' => $request->city,
                 'postcode' => $request->postcode,
+                'product' => $request->product,
+                'description' => $request->description,
                 'pesan' => $request->pesan
             ) ,
             function($pesan) use($request){
@@ -38,14 +40,18 @@ class SendMailController extends Controller
                 $Address1 = $request->input('Address1');
                 $city = $request->input('city');
                 $postcode = $request->input('postcode');
+                $product = $request->input('product');
+                $description = $request->input('description');
                 $pesan = $request->input('pesan');
-
             });
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
-        return redirect('/')->with('terkirim',
+        return view('/receipt2', ['receipt' => $request])->with('terkirim',
         'Thank you for contacting us, your message has been sent.
                  Please wait for our admin to contact you.');
+        // return redirect('/')->with('terkirim',
+        // 'Thank you for contacting us, your message has been sent.
+        //          Please wait for our admin to contact you.');
     }
 }

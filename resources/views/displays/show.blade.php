@@ -80,6 +80,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="product">Product *</label>
+                                    <input type="product" name="product" class="form-control" id="product" aria-describedby="emailHelp" value="{{ $display->type }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description *</label>
+                                    <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Your Message *</label>
                                     <textarea class="form-control" name="pesan" id="exampleFormControlTextarea1" rows="4" required></textarea>
                                 </div>

@@ -50,72 +50,69 @@
         </div>
 
         <div class="accordion col-md-6" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                    <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <div class="black">
-                            <h2><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$product->brand}}</h2>
-                        </div>
-                    </button>
-                    </h2>
-                </div>
+            <h1 class="mt-4">{{$product->brand}}</h1>
+            <hr>
+            <h2><span class="text-muted mt-2 mb-5">{{$product->type}}</span></h2>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-light mt-4" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Request a Quote!
+                </button>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body grey">
-                        <h2>{{$product->type}}</h2>
-                        <hr>
-                        <br>
-                        <p>{{$product->description}}</p>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Request a Quote!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                    <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="black">
-                            <h3><i class="fas fa-chevron-circle-up fa-rotate-180" style="color:blue;"></i>{{$product->listdesciption}}</h3>
-                        </div>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body grey">
-                        <div class="card-body grey">
-                            <ul class="font-weight-bold">
-                                <li>MV90 Support</li>
-                                <li>8GB Datalogging and event storage</li>
-                                <li>COMtrade Waveform format</li>
-                            </ul>
+            <p class="mt-2">{{$product->description}}</p>
+            <?php
+                $listdescription_explode=explode(",", $product->listdescription);
+                // dd($listdescription_explode);
+                echo "
+                <ul>";
+                    foreach($listdescription_explode as $list) {
+                        echo "<li>";
+                        echo ucwords($list)."</li>";
+                    }
+                echo "</ul>";
+            ?>
 
-                            <hr>
-                        </div>
+            <div class="card-body grey">
+                <div class="row">
+                    <div class="col-1">
+                        <object data="{{asset('img/download.svg')}}" type="{{asset('img/download.svg')}}">
+                            <img src="{{asset('img/download.svg')}}"/>
+                        </object>
+                    </div>
+                    <div class="col-4">
+                        <h6>Downloads :</h6>
                     </div>
                 </div>
-                <div class="card-body grey">
-                    <div class="row">
-                        <div class="col-1">
-                            <object data="{{asset('img/download.svg')}}" type="{{asset('img/download.svg')}}">
-                                <img src="{{asset('img/download.svg')}}"/>
-                            </object>
-                        </div>
-                        <div class="col-4">
-                            <h6>Downloads :</h6>
-                        </div>
-                    </div>
-                    <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                    <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">User Manual</button></a>
-                    <br>
-                    <br>
-                    <a href="{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
-                    <form action="/products/{{ $product->id }}" method="post" class="d-inline">
-                        @method('delete')
-                        {{ csrf_field() }}
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                    <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
-                </div>
+                <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
+                <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">User Manual</button></a>
+                <br>
+                <br>
+                <a href="{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
+                <form action="/products/{{ $product->id }}" method="post" class="d-inline">
+                    @method('delete')
+                    {{ csrf_field() }}
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+                <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
             </div>
           </div>
         </div>

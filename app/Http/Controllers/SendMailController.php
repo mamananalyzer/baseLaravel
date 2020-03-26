@@ -45,7 +45,7 @@ class SendMailController extends Controller
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
         return redirect('/')->with('terkirim',
-        'Terima kasih sudah menghubungi kami, Pesan anda sudah terkirim.
-        Mohon tunggu untuk bagian admin kami menghubungi anda.');
+        'Thank you for contacting us, your message has been sent.
+                 Please wait for our admin to contact you.');
     }
 }

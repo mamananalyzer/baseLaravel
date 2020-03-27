@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    
+
     <title>Isi Pesan</title>
     <style>
         /* -------------------------------------
@@ -328,6 +328,25 @@
                 <p>{{ $Address1  }}, {{ $city  }}, {{ $postcode  }}</p>
             </td>
         </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Product Type</p>
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $product  }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td scope="col-2">
+                <p>Description</p>
+            </td>
+            <td>:</td>
+            <td>
+                <p>{{ $description  }}</p>
+            </td>
+        </tr>
+
         {{-- <tr>
             <td scope="col-2">
                 <p>City</p>

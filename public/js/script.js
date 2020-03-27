@@ -61,6 +61,15 @@ $(window).scroll(function(){
         'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
     })
 
+    $('.carousel-caption img').css({
+        'transform' : 'translate(0px, '+ wScroll/4 +'%)'
+    })
+    $('.carousel-caption h1').css({
+        'transform' : 'translate(0px, '+ wScroll/2.5 +'%)'
+    })
+    $('.carousel-caption p').css({
+        'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
+    })
     //contact
     if(wScroll > $('.portfolio').offset().top - 300) {
         $('portfolio .thumbnail')

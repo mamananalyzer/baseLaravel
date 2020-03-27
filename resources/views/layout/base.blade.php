@@ -75,7 +75,7 @@
 
 
     {{-- footer --}}
-    <div class="row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5 pb-1">
+    <div class="foot row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
         <div class="col-md-3">
             <h6>JAM KERJA</h6>
             <hr class="bg-warning">
@@ -151,6 +151,7 @@
             </blockquote>
         </div>
     </div>
+    <div></div>
 
 
     {{-- <div class="card text-dark bg-light">

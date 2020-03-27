@@ -8,7 +8,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<!--Author      : @arboshiki-->
 <div id="invoice">
     <div class="toolbar hidden-print">
         <div class="text-right">
@@ -51,8 +50,10 @@
                         <div class="email">{{$receipt->phone}}</div>
                     </div>
                     <div class="col invoice-details">
-                        <div class="date">Date: {{('date("Y-m-d");')}}</div>
-                        <div class="date">Time: {{('date("h:i:sa");')}}</div>
+                        {{date_default_timezone_set('Asia/Jakarta')}}
+                        <div class="date">{{'Date : ' . date('d-m-Y')}}</div>
+                        <div class="date">{{'Time : ' . date('H:i:s')}}</div>
+                        {{-- <button id="printInvoice" value="Print" onclick="window.print()" class="btn btn-info"><i class="fa fa-print"></i> Print</button> --}}
                     </div>
                 </div>
                 <table border="0" cellspacing="0" cellpadding="0">

@@ -44,6 +44,7 @@ class SendMailController extends Controller
                 $description = $request->input('description');
                 $pesan = $request->input('pesan');
             });
+            // dd($request->all());
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);
         }

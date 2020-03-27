@@ -11,11 +11,14 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="{{asset('img/carousel/4.png')}}" class="d-block w-100" alt="...">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div> --}}
+            <img src="{{asset('img/carousel/4.png')}}" class="d-block w-100 base" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                {{-- <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> --}}
+                <img src="img/aii.png" class="rounded-circle">
+                <h1 class="display-3 blue">Amptron Instrumindo</h1>
+                <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
+            </div>
             </div>
             <div class="carousel-item">
             <img src="{{asset('img/carousel/6.png')}}" class="d-block w-100" alt="...">

@@ -39,7 +39,7 @@ $('.page-scroll').on('click', function(){
         scrollTop: elemenTujuan.offset().top - 140
     }, 1250, 'easeInOutExpo');
 
-})
+});
 
 //about
 // $('window').on('load', function(){
@@ -84,7 +84,7 @@ $(window).scroll(function(){
         $('.pKanan').addClass('pShow');
     }
 
-})
+});
 
 
 // invoice

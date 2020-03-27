@@ -12,9 +12,14 @@ class DisplaysController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $displays = Display::all();
+        if  ($request->has('cari')){
+            $displays = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
+        }
+        else    {
+            $displays = Display::all();
+        }
         return view('displays.index', ['display' => $displays]);
     }
 

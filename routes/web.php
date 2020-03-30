@@ -51,8 +51,9 @@ Route::get('/product/{display}', 'DisplaysController@show');
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');
-Route::get('/receipt1', function () {
-    return view('/receipt');
+
+Route::get('/test', function () {
+    return view('/test');
 });
 Route::get('/receipt', function () {
     return view('/receipt2');

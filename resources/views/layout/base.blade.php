@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/test.css')}}">
+
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css')}}">
 

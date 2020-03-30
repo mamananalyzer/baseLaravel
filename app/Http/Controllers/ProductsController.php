@@ -15,7 +15,6 @@ class ProductsController extends Controller
     public function index(Request $request)
     {
         if  ($request->has('cari')){
-            // $products = Product::where('brand', 'LIKE', '%'.$request->cari.'%')->get();
             $products = Product::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
         else    {
@@ -42,26 +41,6 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        // $product = new Product;
-        // $product->brand = $request->brand;
-        // $product->type = $request->type;
-        // $product->code = $request->code;
-        // $product->purchaseorder = $request->purchaseorder;
-        // $product->serialnumber = $request->serialnumber;
-        // $product->spec = $request->spec;
-        // $product->customer = $request->customer;
-        // $product->save();
-
-        // Product::create([
-        //     'brand'=> $request->brand,
-        //     'type'=> $request->type,
-        //     'code'=> $request->code,
-        //     'purchaseorder'=> $request->purchaseorder,
-        //     'serialnumber'=> $request->serialnumber,
-        //     'spec'=> $request->spec,
-        //     'customer'=> $request->customer,
-        // ]);
-
             // dd($request->all());
 
         $request->validate([
@@ -121,19 +100,6 @@ class ProductsController extends Controller
             'datasheet' => 'required',
             'usermanual' => 'required'
         ]);
-
-        // $product = Product::find($request->id);
-
-        // Product::where('id', $product->id)
-        //         ->update([
-            //             'brand' => $request->brand,
-            //             'type' => $request->type,
-        //             'code' => $request->code,
-        //             'purchaseorder' => $request->purchaseorder,
-        //             'serialnumber' => $request->serialnumber,
-        //             'spec' => $request->spec,
-        //             'customer' => $request->customer
-        //         ]);
         // dd($request->all());
         $product = Product::find($id);
         $product->update($request->all());

@@ -76,6 +76,9 @@ head, body {
 .bg-blue {
     background-color: #00ACED !important;
 }
+.bg-gold {
+    background-color: #EDBB00 !important;
+}
 .bg-grey {
     background-color: #333333;
 }

@@ -4,7 +4,9 @@
 
 @section('container')
 
-<link rel="stylesheet" href="{{asset('css/styleyt.css')}}">
+    <link rel="stylesheet" href="{{asset('css/styleyt.css')}}">
+    <link rel="stylesheet" href="{{asset('css/test.css')}}">
+
 
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">

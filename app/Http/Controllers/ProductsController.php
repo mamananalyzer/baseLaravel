@@ -41,9 +41,20 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-            // dd($request->all());
+        $formInput=$request->except('picture');
 
-        $request->validate([
+        // dd($request->all());
+
+        // $request->validate([
+        //     'brand' => 'required',
+        //     'type' => 'required|unique:products',
+        //     'picture' => 'required|unique:products',
+        //     'description' => 'required',
+        //     'listdescription' => 'required',
+        //     'datasheet' => 'required',
+        //     'usermanual' => 'required'
+        // ]);
+        $this->validate($request,[
             'brand' => 'required',
             'type' => 'required|unique:products',
             'picture' => 'required|unique:products',
@@ -53,7 +64,15 @@ class ProductsController extends Controller
             'usermanual' => 'required'
         ]);
 
-        Product::create($request->all());
+        $image=$request->picture;
+        if($image){
+            $imageName=$image->getClientOriginalName();
+            $image->move('images/', $imageName);
+            $formInput['picture']=$imageName;
+        }
+
+
+        Product::create($formInput);
 
         return redirect('/products')->with('status',
         'Terima kasih sudah menginput data, data berhasil ditambahkan!');

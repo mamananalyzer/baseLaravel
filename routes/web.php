@@ -27,6 +27,8 @@ Route::get('/', 'BaseController@root');                 //home
 Route::get('/home', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
 Route::get('/principal', 'BaseController@principal');   //principall
+Route::resource('/cart', 'CartController');             //cart
+
 
 Route::get('/barang', 'BarangController@index');
 

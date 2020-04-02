@@ -13,6 +13,9 @@
               <hr>
             </div>
           </div>
+          <a href=" {{ route('cart.edit',$display -> id) }}" class="btn btn-primary expanded add-to-cart">
+              Add to Cart
+          </a>
         </div>
 
         <div class="accordion col-md-6" id="accordionExample">

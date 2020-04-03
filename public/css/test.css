@@ -8,10 +8,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #222;
+    background: rgb(0, 0, 0);
     min-height: 100vh;
 }
-.container  {
+.popup .container  {
     position: relative;
     width: 1000px;
     display: flex;
@@ -19,17 +19,17 @@ body {
     flex-wrap: wrap;
     margin: 20px;
 }
-.container .card    {
+.popup .container .card    {
     position: relative;
     width: 320px;
     height: 450px;
-    background: #232323;
+    background: #ffffff;
     border-radius: 20px;
     display: 20px;
     overflow: hidden;
     margin: 30px 0;
 }
-.container .card:before     {
+.popup .container .card:before     {
     content: ;
     position: absolute;
     top: 0;
@@ -40,20 +40,20 @@ body {
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
 }
-.container .card:hover:before    {
+.popup .container .card:hover:before    {
     clip-path: circle(300px at 80% -20%);
 }
-.container .card:after    {
-    content: 'Nike';
+.popup .container .card:after    {
+    content: 'Amptron';
     position: absolute;
-    top: 30%;
-    left: -20%;
-    font-size: 12em;
+    top: 55%;
+    left: -0%;
+    font-size: 5em;
     font-weight: 800;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 0, 0, 0.44);
 }
-.container .card .imgBx {
+.popup .container .card .imgBx {
      position: absolute;
      top: 50%;
      transform: translateY(-50%);
@@ -62,18 +62,18 @@ body {
      height: 220px;
      transition: 0.5s;
 }
-.container .card:hover .imgBx {
+.popup .container .card:hover .imgBx {
     top: 0%;
     transform: translateY(-50%);
 }
-.container .card .imgBx img {
+.popup .container .card .imgBx img {
     position: absolute;
     top: 98%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 270px;
 }
-.container .card .contentBx {
+.popup .container .card .contentBx {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -82,17 +82,17 @@ body {
     transition: 1s;
     z-index: 10;
 }
-.container .card:hover .contentBx {
+.popup .container .card:hover .contentBx {
     height: 210px;
 }
-.container .card .contentBx h2 {
+.popup .container .card .contentBx h2 {
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
-.container .card .contentBx .size,
-.container .card .contentBx .color {
+.popup .container .card .contentBx .size,
+.popup .container .card .contentBx .color {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,26 +101,26 @@ body {
     opacity: 0;
     visibility: hidden;
 }
-.container .card:hover .contentBx .size   {
+.popup .container .card:hover .contentBx .size   {
     opacity: 1;
     visibility: visible;
     transition-delay: 0.5s;
 }
-.container .card:hover .contentBx .color   {
+.popup .container .card:hover .contentBx .color   {
     opacity: 1;
     visibility: visible;
     transition-delay: 0.6s;
 }
-.container .card .contentBx .size h3,
-.container .card .contentBx .color h3 {
-    color: #fff;
+.popup .container .card .contentBx .size h3,
+.popup .container .card .contentBx .color h3 {
+    color: rgb(0, 0, 0);
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-right: 10px;
 }
-.container .card .contentBx .size span {
+.popup .container .card .contentBx .size span {
     width: 26px;
     height: 26px;
     text-align: center;
@@ -128,17 +128,17 @@ body {
     font-size: 14px;
     display: inline-block;
     color: #111;
-    background: #fff;
+    background: rgb(184, 70, 70);
     margin: 0 5px;
     transition: 0.5s;
     color: #111;
     border-radius: 4px;
     cursor: pointer;
 }
-.container .card .contentBx .size span:hover {
+.popup .container .card .contentBx .size span:hover {
     background: #9bdc28;
 }
-.container .card .contentBx .color span {
+.popup .container .card .contentBx .color span {
     width: 20px;
     height: 20px;
     background: #ff0;
@@ -146,19 +146,19 @@ body {
     margin: 0 5px;
     cursor: pointer;
 }
-.container .card .contentBx .color span:nth-child(2) {
+.popup .container .card .contentBx .color span:nth-child(2) {
     background: #9bdc28;
 }
-.container .card .contentBx .color span:nth-child(3) {
+.popup .container .card .contentBx .color span:nth-child(3) {
     background: #03a9f4;
 }
-.container .card .contentBx .color span:nth-child(4) {
+.popup .container .card .contentBx .color span:nth-child(4) {
     background: #e91e63;
 }
-.container .card .contentBx a {
+.popup .container .card .contentBx a {
     display: inline-block;
     padding: 10px 20px;
-    background: #fff;
+    background: rgb(134, 65, 65);
     border-radius: 4px;
     margin-top: 10px;
     text-decoration: none;
@@ -168,7 +168,7 @@ body {
     transform: translateY(50px);
     transition: 0.5s;
 }
-.container .card:hover .contentBx a {
+.popup .container .card:hover .contentBx a {
     opacity: 1;
     transform: translateY(0px);
     transition: 0.75s;

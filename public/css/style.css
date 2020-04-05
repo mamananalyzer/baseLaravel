@@ -281,3 +281,10 @@ a, a:hover {
         display: none;
     }
 }
+
+.batasdisplay   {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -14,13 +14,13 @@
         <h1 class="mt-3">Product List</h1>
         <div class="row mt-4">
             @foreach ($display as $display)
-            <div class="col-lg-3 text-center">
+            <div class="col-lg-3 text-center ">
               <div class="card container border-info">
                 <img src="{{$display->getPic()}}" width="100%" height="100%" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $display -> type }}</h5>
                   <hr>
-                  <p class="card-text text-info">{{ $display -> description }}</p>
+                  <p class="card-text text-info batasdisplay">{{ $display -> description }}</p>
                   <a href="{{ url('/product')}}/{{ $display -> id }}" class="btn btn-info">Read more ...</a>
                 </div>
               </div>

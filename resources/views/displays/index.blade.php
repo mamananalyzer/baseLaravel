@@ -11,7 +11,27 @@
 @endif
 
     <div class="container">
-        <h1 class="mt-3">Product List</h1>
+        <div class="row">
+            <div class="col-6">
+                <h1 class="mt-3">Product List</h1>
+            </div>
+            <div class="col-4">
+                <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                    <select class="custom-select custom-select-md mt-3" name="category" id="">
+                        <option value="transducer">Transducer</option>
+                        <option value="powermeter">Power Meter</option>
+                        <option value="digitalmeter">Digital Meter</option>
+                        <option value="stroboscope">Stroboscope</option>
+                    </select>
+                    <button class="btn btn-outline-dark mt-3 ml-2" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-2">
+                <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-3">
+                    <button class="btn btn-outline-dark mt-3 ml-2" type="submit" value="">Show all</button>
+                </form>
+            </div>
+        </div>
         <div class="row mt-4">
             @foreach ($display as $display)
             <div class="col-lg-3 text-center ">

@@ -27,6 +27,27 @@
                 @enderror
             </div>
             <div class="form-group">
+                <label for="category">Category *</label>
+                <select class="custom-select custom-select-md form-control @error('category') is-invalid @enderror" name="category" id="category">
+                    <option value="{{ old('category')}}">{{ old('category')}}</option>
+                    <option value="transducer">Transducer</option>
+                    <option value="powermeter">Power Meter</option>
+                    <option value="digitalmeter">Digital Meter</option>
+                    <option value="stroboscope">Stroboscope</option>
+                </select>
+                @error('category')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+                {{-- <input type="text" class="form-control @error('category') is-invalid @enderror" id="category" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="category" value="{{ old('category')}}">
+                @error('category')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror --}}
+            </div>
+            <div class="form-group">
                 <label for="type">Type *</label>
                 <input type="text" class="form-control @error('type') is-invalid @enderror" id="type" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="type" value="{{ old('type')}}">
                 @error('type')

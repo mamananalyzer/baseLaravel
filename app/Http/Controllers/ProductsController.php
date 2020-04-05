@@ -56,6 +56,7 @@ class ProductsController extends Controller
         // ]);
         $this->validate($request,[
             'brand' => 'required',
+            'category' => 'required',
             'type' => 'required|unique:products',
             'picture' => 'required|unique:products',
             'description' => 'required',
@@ -112,6 +113,7 @@ class ProductsController extends Controller
     {
         $request->validate([
             'brand' => 'required',
+            'category' => 'required',
             'type' => 'required',
             'picture' => 'required|unique:products',
             'description' => 'required',

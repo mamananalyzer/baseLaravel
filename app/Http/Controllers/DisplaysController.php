@@ -17,6 +17,9 @@ class DisplaysController extends Controller
         if  ($request->has('cari')){
             $displays = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
+        if  ($request->has('category')){
+            $displays = Display::where('category', 'LIKE', '%'.$request->category.'%')->get();
+        }
         else    {
             $displays = Display::all();
         }

@@ -40,7 +40,7 @@
           <a class="nav-item nav-link pr-3" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-3" href="{{ url('/contact') }}">Contact Us</a>
           <div class="dropdown">
-              <a class="nav-item nav-link pr-3" href="{{ url('/home') }}">Product</a>
+              <a class="nav-item nav-link pr-3" href="#">Product</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="{{ url('/product') }}">List Product</a>
                   <a class="dropdown-item" href="{{ url('/login') }}">Admin</a>

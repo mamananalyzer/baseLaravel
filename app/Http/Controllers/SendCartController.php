@@ -24,19 +24,6 @@ class SendCartController extends Controller
                 'Address1' => $request->Address1,
                 'city' => $request->city,
                 'postcode' => $request->postcode,
-
-                // @foreach ($cart as $data) {
-                //     $total_harga = $data['harga'] * $data['qty'];
-                //     $qty = $data['qty'];
-                // }
-                // $quantity = $qty + 0;
-                // // foreach ($request->cartItems as $cartItem){
-                // //     echo $p->sku;
-                // // }
-
-                // // foreach ($request->$cartItems as $cartItem)
-                // 'brand' => $request->brand,
-                // 'quantity' => $request->quantity,
                 'pesan' => $request->pesan,
                 // dd($request->all());
             ) ,

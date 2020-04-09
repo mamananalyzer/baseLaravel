@@ -120,6 +120,10 @@
                                             <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
                                         </div>
                                         <div class="form-group">
+                                            <label for="quantity">Quantity *</label>
+                                            <input type="quantity" name="quantity" class="form-control" id="quantity" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Your Message *</label>
                                             <textarea class="form-control" name="pesan" id="exampleFormControlTextarea1" rows="4" required></textarea>
                                         </div>

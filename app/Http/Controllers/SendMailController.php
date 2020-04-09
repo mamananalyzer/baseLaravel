@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Mail;
+use App\Cart;
 use Illuminate\Http\Request;
 
 class SendMailController extends Controller
@@ -10,6 +11,21 @@ class SendMailController extends Controller
         return view('contact');
     }
     public function send(Request $request){
+        $formInput=$request->except('picture');
+
+        // dd($request->all());
+        $this->validate($request,[
+            'email' => 'required',
+            'name' => 'required',
+            'company' => 'required',
+            'phone' => 'required',
+            'product' => 'required',
+            'description' => 'required',
+            'quantity' => 'required',
+        ]);
+
+        Cart::create($formInput);
+
         try{
             Mail::send('isiemail',
             array(
@@ -23,6 +39,7 @@ class SendMailController extends Controller
                 'postcode' => $request->postcode,
                 'product' => $request->product,
                 'description' => $request->description,
+                'quantity' => $request->quantity,
                 'pesan' => $request->pesan
             ) ,
             function($pesan) use($request){
@@ -42,12 +59,17 @@ class SendMailController extends Controller
                 $postcode = $request->input('postcode');
                 $product = $request->input('product');
                 $description = $request->input('description');
+                $quantity = $request->input('quantity');
                 $pesan = $request->input('pesan');
             });
             // dd($request->all());
         }catch (Exception $e){
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
+
+
+
+
         return view('/receipt2', ['receipt' => $request])->with('terkirim',
         'Thank you for contacting us, your message has been sent.
                  Please wait for our admin to contact you.');

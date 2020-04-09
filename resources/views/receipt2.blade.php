@@ -1,12 +1,17 @@
 @extends('layout/base')
 
-@section('title', 'About')
+@section('title', 'Receipt Page')
 
 @section('container')
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 
 <div id="invoice">
     <div class="toolbar hidden-print">
@@ -62,7 +67,7 @@
                             <th>#</th>
                             <th class="text-left">DESCRIPTION</th>
                             <th class="text-right"></th>
-                            <th class="text-right"></th>
+                            <th class="text-right">Quantity</th>
                             <th class="text-right"></th>
                         </tr>
                     </thead>
@@ -73,7 +78,7 @@
                                {{$receipt->description}}
                             </td>
                             <td class="unit"></td>
-                            <td class="qty"></td>
+                            <td class="qty">{{$receipt->quantity}}</td>
                             <td class="total"></td>
                         </tr>
                     </tbody>

@@ -6,7 +6,7 @@ use App\Display;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
-class CartController extends Controller
+class CartsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -38,7 +38,38 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+
+        for ($i = 1; $i < count($request->id); $i++) {
+            $answers[] = [
+                'user_id' => Sentinel::getUser()->id,
+                'en_answer' => $request->en_answer[$i],
+                'question_id' => $request->question_id[$i]
+            ];
+        }
+        EnAnswer::insert($answers);
+        return redirect('submitted')->with('status', 'Your answers successfully submitted');
+
+        $formInput=$request->except('picture');
+
+        $this->validate($request,[
+            'rowId' => 'required',
+            'name' => 'required',
+            'qty' => 'required|unique:products',
+        ]);
+
+        $image=$request->picture;
+        if($image){
+            $imageName=$image->getClientOriginalName();
+            $image->move('images/', $imageName);
+            $formInput['picture']=$imageName;
+        }
+
+
+        Product::create($formInput);
+
+        return redirect('/products')->with('status',
+        'Terima kasih sudah menginput data, data berhasil ditambahkan!');
     }
 
     /**

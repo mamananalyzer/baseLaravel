@@ -328,35 +328,8 @@
                 <p>{{ $Address1  }}, {{ $city  }}, {{ $postcode  }}</p>
             </td>
         </tr>
-        <tr>
-            <td scope="col-2">
-                <p>Product Type</p>
-            </td>
-            <td>:</td>
-            <td>
-                <p>{{ $product  }}</p>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col-2">
-                <p>Description</p>
-            </td>
-            <td>:</td>
-            <td>
-                <p>{{ $description  }}</p>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col-2">
-                <p>Description</p>
-            </td>
-            <td>:</td>
-            <td>
-                <p>{{ $quantity  }}</p>
-            </td>
-        </tr>
 
-        {{-- <tr>
+        <tr>
             <td scope="col-2">
                 <p>City</p>
             </td>
@@ -373,7 +346,7 @@
             <td>
                 <p>{{ $postcode  }}</p>
             </td>
-        </tr> --}}
+        </tr>
         <tr>
             <td scope="col-2">
                 <p>Message</p>

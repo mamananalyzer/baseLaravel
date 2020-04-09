@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    {{-- <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"> --}}
     {{-- <link rel="stylesheet" href="{{asset('css/test.css')}}"> --}}
 
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
@@ -34,24 +33,24 @@
           <input name="cari" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav navbar-right offset-md">
-          <a class="nav-item nav-link pr-3" href="{{ url('/') }}">Home</a>
-          <a class="nav-item nav-link pr-3" href="{{ url('/about') }}">About</a>
-          <a class="nav-item nav-link pr-3" href="{{ url('/principal') }}">Principal</a>
-          <a class="nav-item nav-link pr-3" href="{{ url('/contact') }}">Contact Us</a>
+        <ul class="navbar-nav navbar-right offset-md ml-5">
+          <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a>
           <div class="dropdown">
-              <a class="nav-item nav-link pr-3" href="#">Product</a>
+              <a class="nav-item nav-link pr-4" href="#">Product</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="{{ url('/product') }}">List Product</a>
                   <a class="dropdown-item" href="{{ url('/login') }}">Admin</a>
                 </div>
             </div>
-          <object class="mt-1" data="{{url('img/phone.svg')}}" type="{{url('img/phone.svg')}}">
+          {{-- <object class="mt-1" data="{{url('img/phone.svg')}}" type="{{url('img/phone.svg')}}">
               <img src="{{url('img/phone.svg')}}"/>
           </object>
           <a class="nav-item nav-link pr-3" href="{{ url('/cart') }}">Cart
             <span class="text-danger">({{ Cart::count()}})</span>
-          </a>
+          </a> --}}
             {{-- <li class="dropdown">
                 <a href="#" class="nav-item nav-link pr-4" data-toggle="dropdown"><img width="30" src="{{asset('assets/img/user.png')}}" class="img-circle" alt="Avatar"> <span>{{auth()->user()->name}}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
                 <ul class="dropdown-menu">

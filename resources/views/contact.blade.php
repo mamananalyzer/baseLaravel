@@ -13,7 +13,7 @@
         <hr>
     </div>
     <div class="container">
-        <form action=" {{ url('email/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
+        <form action=" {{ url('contact/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
         else {
             alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
             return false;

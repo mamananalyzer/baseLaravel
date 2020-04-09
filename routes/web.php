@@ -27,7 +27,7 @@ Route::get('/', 'BaseController@root');                 //home
 // Route::get('/home', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
 Route::get('/principal', 'BaseController@principal');   //principall
-Route::resource('/cart', 'CartController');             //cart
+Route::resource('/cart', 'CartsController');             //cart
 
 
 Route::get('/barang', 'BarangController@index');
@@ -53,9 +53,11 @@ Route::get('/product/{display}', 'DisplaysController@show');
 
 Route::get('/contact', 'SendMailController@index');
 Route::post('email/send', 'SendMailController@send');
+Route::post('contact/send', 'ContactController@send');
 
 // Route::get('/contact', 'SendMailController@index');
-Route::post('cart/send', 'SendCartController@send');
+// Route::post('cart/send', 'SendCartController@send');
+Route::post('cart/send', 'CartsController@store');
 
 Route::post('/test', function () {
     return view('/test');

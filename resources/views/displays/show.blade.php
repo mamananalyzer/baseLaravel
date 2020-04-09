@@ -8,7 +8,7 @@
 
     <div class="popup">
         <div class="row pt-4 container">
-            <div class="col-md-2 offset-md-1">
+            <div class="col-md-3 offset-md-1">
                 <div class="card" data-text="{{$display->type}}">
                     <div class="imgBx">
                         <img src="{{$display->getPic()}}" width="100%" height="100%" alt="">
@@ -28,14 +28,22 @@
                             <span></span>
                             <span></span>
                         </div> --}}
-                        <a href=" {{ route('cart.edit',$display -> id) }}" class="btn">
+                        {{-- <a href=" {{ route('cart.edit',$display -> id) }}" class="btn">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             Add to Cart
-                        </a>
+                        </a> --}}
                     </div>
+                </div>
+                <div class="row card-body grey">
+                    <div class="col-7">
+                        <a href=" {{ url('/product') }} " class="btn btn-primary mt-2 mr-auto">Back to Product list</a>
+                    </div>
+                    {{-- <div class="col">
+                        <a href=" {{ url('/cart') }} " class="btn btn-primary mt-2 mr-auto offset-md-5">Cart</a>
+                    </div> --}}
                 </div>
             </div>
 
@@ -153,7 +161,7 @@
                                 </div>
                             </div>
                             <a href="{{$display->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                            <a href="{{$display->usermanual}}"><button type="button" class="btn btn-primary">Software</button></a>
+                            <a href="{{$display->usermanual}}"><button type="button" class="btn btn-primary">User's Manual</button></a>
                         </div>
                 </div>
         </div>

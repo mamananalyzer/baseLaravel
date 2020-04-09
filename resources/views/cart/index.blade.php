@@ -68,7 +68,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action=" {{ url('email/send') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
+                    <form action=" {{ url('test') }}" method="POST" onsubmit="if(document.getElementById('agree').checked) { return true; }
                         else {
                             alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
                             return false;

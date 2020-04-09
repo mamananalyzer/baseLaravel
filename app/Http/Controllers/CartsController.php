@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Display;
-use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Cart;
+// use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
 class CartsController extends Controller
@@ -13,11 +13,11 @@ class CartsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $cartItems=Cart::content();
-        // dd($cartItems->all());
-        return view('cart.index', compact('cartItems'));
+        // dd($request->all());
+        $carts = Cart::all();
+        return view('carts.index', ["carts" => $carts]);
     }
 
     /**
@@ -38,38 +38,7 @@ class CartsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-
-        for ($i = 1; $i < count($request->id); $i++) {
-            $answers[] = [
-                'user_id' => Sentinel::getUser()->id,
-                'en_answer' => $request->en_answer[$i],
-                'question_id' => $request->question_id[$i]
-            ];
-        }
-        EnAnswer::insert($answers);
-        return redirect('submitted')->with('status', 'Your answers successfully submitted');
-
-        $formInput=$request->except('picture');
-
-        $this->validate($request,[
-            'rowId' => 'required',
-            'name' => 'required',
-            'qty' => 'required|unique:products',
-        ]);
-
-        $image=$request->picture;
-        if($image){
-            $imageName=$image->getClientOriginalName();
-            $image->move('images/', $imageName);
-            $formInput['picture']=$imageName;
-        }
-
-
-        Product::create($formInput);
-
-        return redirect('/products')->with('status',
-        'Terima kasih sudah menginput data, data berhasil ditambahkan!');
+        //
     }
 
     /**
@@ -80,7 +49,9 @@ class CartsController extends Controller
      */
     public function show($id)
     {
-        //
+        // dd($carts->all());
+        $carts = Cart::find($id);
+        return view('carts.show', ['carts' => $carts]);
     }
 
     /**
@@ -91,10 +62,7 @@ class CartsController extends Controller
      */
     public function edit(Display $display, $id)
     {
-        $display=Display::find($id);
-        // dd($display->all());
-        Cart::add($id, $display->type, 1, 9.99);
-        return back();
+        //
     }
 
     /**
@@ -106,18 +74,7 @@ class CartsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // Cart::update($request->id,
-        //     array(
-        //         'quantity' => array(
-        //             'relative' => false,
-        //             'value' => $request->quantity
-        //         ),
-        // ));
-        // return back();
-        // dd($request->all());
-
-        Cart::update($id, $request->qty); // Will update the quantity
-        return back();
+        //
     }
 
     /**
@@ -126,8 +83,10 @@ class CartsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Cart $cart)
     {
-        //
+        Cart::destroy($cart->id);
+        return redirect('/carts')->with('status',
+        'Data berhasil dihapus!');
     }
 }

@@ -48,16 +48,16 @@
                 <div class="row contacts">
                     <div class="col invoice-to">
                         <div class="text-gray-light">INQUIRY FROM:</div>
-                        <h2 class="to">{{$receipt->name}} {{$receipt->name2}}</h2>
-                        <div class="address">{{$receipt->Address1}}</div>
-                        <div class="address">{{$receipt->city}} {{$receipt->postcode}}</div>
-                        <div class="email">{{$receipt->email}}, {{$receipt->company}}</div>
-                        <div class="email">{{$receipt->phone}}</div>
+                        <h2 class="to">{{$carts->name}} {{$carts->name2}}</h2>
+                        <div class="address">{{$carts->Address1}}</div>
+                        <div class="address">{{$carts->city}} {{$carts->postcode}}</div>
+                        <div class="email">{{$carts->email}}, {{$carts->company}}</div>
+                        <div class="email">{{$carts->phone}}</div>
                     </div>
                     <div class="col invoice-details">
                         {{date_default_timezone_set('Asia/Jakarta')}}
-                        <div class="date">{{$receipt->date}}</div>
-                        <div class="date">{{$receipt->time}}</div>
+                        <div class="date">{{$carts->date}}</div>
+                        <div class="date">{{$carts->time}}</div>
                         {{-- <button id="printInvoice" value="Print" onclick="window.print()" class="btn btn-info"><i class="fa fa-print"></i> Print</button> --}}
                     </div>
                 </div>
@@ -74,11 +74,11 @@
                     <tbody>
                         <tr>
                             <td class="no">01</td>
-                            <td class="text-left"><h3>{{$receipt->product}}</h3>
-                               {{$receipt->description}}
+                            <td class="text-left"><h3>{{$carts->product}}</h3>
+                               {{$carts->description}}
                             </td>
                             <td class="unit"></td>
-                            <td class="qty">{{$receipt->quantity}}</td>
+                            <td class="qty">{{$carts->quantity}}</td>
                             <td class="total"></td>
                         </tr>
                     </tbody>
@@ -90,7 +90,7 @@
                         </tr>
                     </tfoot>
                 </table>
-                <div class="address">{{$receipt->pesan}}</div>
+                <div class="address">{{$carts->pesan}}</div>
 
                 <div class="thanks mt-4">Thank you!</div>
                 <div class="notices">

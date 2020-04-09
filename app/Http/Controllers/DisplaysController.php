@@ -17,7 +17,7 @@ class DisplaysController extends Controller
         if  ($request->has('cari')){
             $displays = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
-        if  ($request->has('category')){
+        elseif  ($request->has('category')){
             $displays = Display::where('category', 'LIKE', '%'.$request->category.'%')->get();
         }
         else    {
@@ -56,12 +56,7 @@ class DisplaysController extends Controller
     public function show(Display $display)
     {
         // dd($display->all());
-
-        // return view('products.show', compact('product'));
-
-        // $display = Display::all();
         return view('displays.show', ['display' => $display]);
-        // return $product;
     }
 
     /**

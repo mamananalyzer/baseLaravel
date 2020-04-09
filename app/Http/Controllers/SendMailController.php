@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SendMailController extends Controller
 {
     public function index(){
-        return view('contact');
+        return view('navbar/contact');
     }
     public function send(Request $request){
         $formInput=$request->except('picture');
@@ -40,7 +40,9 @@ class SendMailController extends Controller
                 'product' => $request->product,
                 'description' => $request->description,
                 'quantity' => $request->quantity,
-                'pesan' => $request->pesan
+                'pesan' => $request->pesan,
+                'time' => $request->time,
+                'date' => $request->date
             ) ,
             function($pesan) use($request){
                 // $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
@@ -67,14 +69,14 @@ class SendMailController extends Controller
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
 
-
-
-
         return view('/receipt2', ['receipt' => $request])->with('terkirim',
         'Thank you for contacting us, your message has been sent.
                  Please wait for our admin to contact you.');
         // return redirect('/')->with('terkirim',
         // 'Thank you for contacting us, your message has been sent.
         //          Please wait for our admin to contact you.');
+    }
+    public function reload(){
+        return view('navbar/home');
     }
 }

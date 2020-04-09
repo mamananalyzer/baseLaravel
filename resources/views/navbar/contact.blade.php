@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'About')
+@section('title', 'Contact')
 
 @section('container')
 
@@ -65,7 +65,7 @@
         <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
         <br>
         <br>
-        <input class="btn btn-success" type="submit" name="submit" value="Kirim" />
+        <input class="btn btn-success" type="submit" name="submit" value="Send" />
         </form>
     </div>
 

@@ -21,8 +21,10 @@ class CreateProductsTable extends Migration
             $table->string('picture')->unique();
             $table->text('description');
             $table->text('listdescription');
-            $table->string('datasheet');
-            $table->string('usermanual');
+            $table->string('datasheet')->nullable();
+            $table->string('usermanual')->nullable();
+            $table->string('modbus')->nullable();
+            $table->string('software')->nullable();
             $table->timestamps();
         });
     }

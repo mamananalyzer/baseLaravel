@@ -14,6 +14,8 @@ class ProductsController extends Controller
      */
     public function index(Request $request)
     {
+        // dd($request->all());
+
         if  ($request->has('cari')){
             $products = Product::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
@@ -43,17 +45,6 @@ class ProductsController extends Controller
     {
         $formInput=$request->except('picture');
 
-        // dd($request->all());
-
-        // $request->validate([
-        //     'brand' => 'required',
-        //     'type' => 'required|unique:products',
-        //     'picture' => 'required|unique:products',
-        //     'description' => 'required',
-        //     'listdescription' => 'required',
-        //     'datasheet' => 'required',
-        //     'usermanual' => 'required'
-        // ]);
         $this->validate($request,[
             'brand' => 'required',
             'category' => 'required',

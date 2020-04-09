@@ -45,34 +45,6 @@
                   <a class="dropdown-item" href="{{ url('/login') }}">Admin</a>
                 </div>
             </div>
-          {{-- <object class="mt-1" data="{{url('img/phone.svg')}}" type="{{url('img/phone.svg')}}">
-              <img src="{{url('img/phone.svg')}}"/>
-          </object>
-          <a class="nav-item nav-link pr-3" href="{{ url('/cart') }}">Cart
-            <span class="text-danger">({{ Cart::count()}})</span>
-          </a> --}}
-            {{-- <li class="dropdown">
-                <a href="#" class="nav-item nav-link pr-4" data-toggle="dropdown"><img width="30" src="{{asset('assets/img/user.png')}}" class="img-circle" alt="Avatar"> <span>{{auth()->user()->name}}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
-                    <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-                    <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-                    <li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
-                </ul>
-            </li> --}}
-
-          {{-- <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Product</a> --}}
-          {{-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> --}}
-          {{-- </li> --}}
         </ul>
       </div>
     </nav>
@@ -85,7 +57,7 @@
     {{-- footer --}}
     <div class="foot row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
         <div class="col-md-3">
-            <h6>JAM KERJA</h6>
+            <h6>WORKING HOURS</h6>
             <hr class="bg-warning">
             <div class="row">
               <div class="col-1 mr-4">
@@ -94,14 +66,14 @@
                 </object>
               </div>
               <div class="col-10">
-                <p>Senin - Jum'at : 08.15 - 17.15</p>
-                <p>Sabtu - Minggu : Tutup</p>
+                <p>Monday - Friday : 08.15 - 17.15</p>
+                <p>Saturday - Sunday : Closed</p>
               </div>
             </div>
 
         </div>
         <div class="col-md-3">
-            <h6>BERITA TERKINI</h6>
+            <h6>LATEST NEWS</h6>
             <hr class="bg-warning">
         </div>
         <div class="col-md-3">
@@ -109,7 +81,7 @@
             <hr class="bg-warning">
         </div>
         <div class="col-md-3">
-            <h6>KONTAK KAMI</h6>
+            <h6>CONTACT US</h6>
             <hr class="bg-warning">
             <div class="row">
               <div class="col-1 mr-2">

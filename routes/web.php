@@ -26,17 +26,23 @@ Route::get('/email', function () {
 Route::get('/', 'BaseController@root');                 //home
 // Route::get('/home', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
-Route::get('/principal', 'BaseController@principal');   //principall
-Route::resource('/cart', 'CartsController');             //cart
+Route::get('/principal', 'BaseController@principal');   //principal
+Route::resource('/cart', 'CartsController');            //cart
 
+Route::get('/contact', 'ContactController@index');     //contact
+Route::post('contact/send', 'ContactController@send');  //contact send email
+Route::post('email/send', 'SendMailController@send');   //contact send request quote email, insert database
+Route::get('email/send', 'SendMailController@reload');   //contact send request quote email, insert database
 
-Route::get('/barang', 'BarangController@index');
+Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
 
 Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/logout', 'AuthController@logout');
 
 Route::group(['middleware' => 'auth'], function () {
+    //products
     Route::get('/products', 'ProductsController@index')->middleware('auth');
     Route::get('/products/create', 'ProductsController@create');
     Route::get('/products/{product}', 'ProductsController@show');
@@ -44,20 +50,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/products/{product}', 'ProductsController@destroy');
     Route::get('/products/{product}/edit', 'ProductsController@edit');
     Route::patch('/products/{product}', 'ProductsController@update');
+
+    //carts
+    Route::get('carts', 'CartsController@index');
+    Route::get('/carts/{cart}', 'CartsController@show');
+    Route::post('cart/send', 'CartsController@store');
+    Route::delete('/carts/{cart}', 'CartsController@destroy');
 });
 
 // Route::resource('products', 'ProductsController');   //MAGIC
 
-Route::get('/product', 'DisplaysController@index');
-Route::get('/product/{display}', 'DisplaysController@show');
 
-Route::get('/contact', 'SendMailController@index');
-Route::post('email/send', 'SendMailController@send');
-Route::post('contact/send', 'ContactController@send');
+
+// Route::get('/barang', 'BarangController@index');
 
 // Route::get('/contact', 'SendMailController@index');
 // Route::post('cart/send', 'SendCartController@send');
-Route::post('cart/send', 'CartsController@store');
+
 
 Route::post('/test', function () {
     return view('/test');

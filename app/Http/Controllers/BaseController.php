@@ -8,18 +8,18 @@ class BaseController extends Controller
 {
     public function root()
     {
-        return view ('home');
+        return view ('navbar/home');
     }
     public function home()
     {
-        return view ('index');
+        return view ('navbar/index');
     }
     public function about()
     {
-        return view ('about');
+        return view ('navbar/about');
     }
     public function principal()
     {
-        return view ('principal');
+        return view ('navbar/principal');
     }
 }

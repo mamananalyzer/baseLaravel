@@ -1,37 +1,3 @@
-{{-- @extends('layout/base')
-
-@section('title', 'List Product')
-
-@section('container')
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h1 class="mt-3">Edit Product</h1>
-
-            <div class="card">
-                <div class="card-body">
-                <h5 class="card-title">{{$product->brand}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{$product->type}}</h6>
-                <img src="{{$product->getPic()}}" class="img-circle" width="300">
-                <p class="card-text">{{$product->purchaseorder}}</p>
-                <p class="card-text">{{$product->serialnumber}}</p>
-                <p class="card-text">{{$product->spec}}</p>
-                <p class="card-text">{{$product->customer}}</p>
-
-                <a href="{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
-                <form action="/products/{{ $product->id }}" method="post" class="d-inline">
-                    @method('delete')
-                    {{ csrf_field() }}
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-                <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-@endsection --}}
-
 @extends('layout/base')
 
 @section('title', "$product->brand")
@@ -103,14 +69,16 @@
                     </div>
                 </div>
                 <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                <a href="{{$product->datasheet}}"><button type="button" class="btn btn-primary">User Manual</button></a>
+                <a href="{{$product->usermanual}}"><button type="button" class="btn btn-primary">User Manual</button></a>
+                <a href="{{$product->modbus}}"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                <a href="{{$product->software}}"><button type="button" class="btn btn-primary">Software</button></a>
                 <br>
                 <br>
                 <a href="{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
                 <form action="/products/{{ $product->id }}" method="post" class="d-inline">
                     @method('delete')
                     {{ csrf_field() }}
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
                 </form>
                 <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
             </div>

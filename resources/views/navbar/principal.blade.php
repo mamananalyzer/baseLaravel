@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'About')
+@section('title', 'Principal')
 
 @section('container')
 

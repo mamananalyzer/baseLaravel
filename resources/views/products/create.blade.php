@@ -4,9 +4,6 @@
 
 @section('container')
 
-    {{-- date_default_timezone_set('Asia/Jakarta');
-    echo 'Indonesian Timezone: ' . date('d-m-Y H:i:s'); --}}
-
     <div class="container">
       <div class="row">
         <div class="col-8">
@@ -40,12 +37,6 @@
                         {{ $message }}
                     </div>
                 @enderror
-                {{-- <input type="text" class="form-control @error('category') is-invalid @enderror" id="category" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="category" value="{{ old('category')}}">
-                @error('category')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror --}}
             </div>
             <div class="form-group">
                 <label for="type">Type *</label>
@@ -59,11 +50,6 @@
             <div class="form-group">
                 <label for="picture">Picture *</label>
                 <input type="file" class="form-control @error('picture') is-invalid @enderror" id="picture" placeholder="picture" name="picture" value="{{ old('picture')}}">
-                {{-- @error('picture')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror --}}
             </div>
             <div class="form-group">
                 <label for="description">Description *</label>
@@ -101,12 +87,30 @@
                     </div>
                 @enderror
             </div>
+            <div class="form-group">
+                <label for="modbus">Link Modbus Map *</label>
+                <input type="text" class="form-control @error('modbus') is-invalid @enderror" id="modbus" placeholder="Link Modbus Map" name="modbus" value="{{ old('modbus')}}">
+                @error('modbus')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="software">Link Software *</label>
+                <input type="text" class="form-control @error('software') is-invalid @enderror" id="software" placeholder="Link Software" name="software" value="{{ old('software')}}">
+                @error('software')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
 
             <input type="checkbox" name="checkbox" value="check" id="agree" />
             <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
             <br>
             <br>
-            <input class="btn btn-success" type="submit" name="submit" value="Kirim" />
+            <input class="btn btn-success" type="submit" name="submit" value="Add Product" />
             </form>
         </div>
       </div>

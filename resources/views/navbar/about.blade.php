@@ -49,14 +49,14 @@
               <hr>
               <p class="card-text grey">
                 In 1997, PT. Amptron Instrumindo was established as a specialist Metering and Electrical
-                Instrumentation company. We are belong to the Amptron Group which is already extablished since 
+                Instrumentation company. We are belong to the Amptron Group which is already extablished since
                 1982 with offices in Singapore, Malaysia, Thailand, and Indonesia, operate Internationally to serve
                 our customers locally.
               </p>
             </div>
           </div>
         </div>
-              
+
 
         <div class="accordion col-md-6 pKanan" id="accordionExample">
             <div class="card">
@@ -97,8 +97,8 @@
 
       <div class="container">
         <p>
-          As a group, we have built a solid foundation of knowledge, experience and reference of providing 
-          advanced instrumentation, automation and control solution to wide spectrum od industries in 
+          As a group, we have built a solid foundation of knowledge, experience and reference of providing
+          advanced instrumentation, automation and control solution to wide spectrum od industries in
           South East Asia region.
         </p>
         <p>
@@ -135,24 +135,24 @@
             </ul>
           </div>
         </div>
-  
-  
-          Design and Build mission Critical Control Room and operation command center 
+
+
+          Design and Build mission Critical Control Room and operation command center
           a total Control Room Technology solution encompasses large screen video display, mosaic/mimic
-          display, alarm monitoring panel, time & clock system, ergonomic complaints, audio 
+          display, alarm monitoring panel, time & clock system, ergonomic complaints, audio
           and video controls, security access, Electrical, Fire, Lighting, and other services infrastructure.
-  
+
           Control System
-          Design, Develop and Install Ethernet / fieldbus / wireless control application and solution 
+          Design, Develop and Install Ethernet / fieldbus / wireless control application and solution
           synchronized time and clock system (GPS. NTP, DCF, MSF or HBG), floodlight control / facilities monitoring /
           electrical power control systems.
-  
-          To backup our sales team, we are also available for demo units, technical assistance and advice to help 
-          our customers in purchasing the right material for their application and give latest informations for 
+
+          To backup our sales team, we are also available for demo units, technical assistance and advice to help
+          our customers in purchasing the right material for their application and give latest informations for
           some new development products
-  
+
           To aim is to continue to anchor on our timeless core values to serve our specific customers, in each market
-          with same quantity, standards and service level expected by our customes and make us as a perfect partnet. 
+          with same quantity, standards and service level expected by our customes and make us as a perfect partnet.
       </div>
 
       <br>

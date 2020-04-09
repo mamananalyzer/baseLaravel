@@ -4,9 +4,6 @@
 
 @section('container')
 
-    {{-- date_default_timezone_set('Asia/Jakarta');
-    echo 'Indonesian Timezone: ' . date('d-m-Y H:i:s'); --}}
-
     <div class="container">
       <div class="row">
         <div class="col-8">
@@ -41,12 +38,6 @@
                         {{ $message }}
                     </div>
                 @enderror
-                {{-- <input type="text" class="form-control @error('category') is-invalid @enderror" id="category" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="category" value="{{ old('category')}}">
-                @error('category')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror --}}
             </div>
             <div class="form-group">
                 <label for="type">Type *</label>
@@ -97,6 +88,24 @@
                 <label for="usermanual">Link User's Manual *</label>
                 <input type="text" class="form-control @error('usermanual') is-invalid @enderror" id="usermanual" placeholder="Link User's Manual" name="usermanual" value="{{ $product->usermanual }}">
                 @error('usermanual')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="modbus">Link Modbus Map *</label>
+                <input type="text" class="form-control @error('modbus') is-invalid @enderror" id="modbus" placeholder="Link Modbus Map" name="modbus" value="{{ $product->modbus }}">
+                @error('modbus')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="software">Link Software *</label>
+                <input type="text" class="form-control @error('software') is-invalid @enderror" id="software" placeholder="Link Software" name="software" value="{{ $product->software }}">
+                @error('software')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

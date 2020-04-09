@@ -17,11 +17,17 @@ class CreateCartsTable extends Migration
             $table->bigIncrements('id');
             $table->string('email');
             $table->string('name');
+            $table->string('name2');
             $table->string('company');
             $table->string('phone');
+            $table->text('Address1');
+            $table->string('city');
+            $table->string('postcode');
             $table->string('product');
             $table->text('description');
             $table->string('quantity');
+            $table->string('date');
+            $table->string('time');
             $table->timestamps();
         });
     }

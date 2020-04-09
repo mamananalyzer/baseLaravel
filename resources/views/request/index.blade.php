@@ -22,7 +22,7 @@
                 <input name="cari" type="search" class="form-control ml-4 ml-auto mr-2">
                 <button class="btn btn-outline-primary" type="submit">Cari</button>
             </form>
-            <a href="{{url('/carts')}}" class="btn btn-success my-2">Show Request Customer</a>
+            <a href="{{url('/products/create')}}" class="btn btn-success my-2">Show Request Customer</a>
 
 
 

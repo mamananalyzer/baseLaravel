@@ -121,7 +121,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="quantity">Quantity *</label>
-                                            <input type="quantity" name="quantity" class="form-control" id="quantity" aria-describedby="emailHelp" required>
+                                            <input type="number" name="quantity" class="form-control" id="quantity" aria-describedby="emailHelp" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Your Message *</label>
@@ -131,9 +131,12 @@
                                         <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
                                         <br>
                                         <br>
+                                        <input type="hidden" name="" value="{{date_default_timezone_set('Asia/Jakarta')}}">
+                                        <input type="hidden" name="date" value="{{'Date : ' . date('d-m-Y')}}">
+                                        <input type="hidden" name="time" value="{{'Time : ' . date('H:i:s')}}">
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <input class="btn btn-success" type="submit" name="submit" value="Kirim" />
+                                            <input class="btn btn-success" type="submit" name="submit" value="Send" />
                                         </div>
                                     </form>
                                 </div>
@@ -165,7 +168,9 @@
                                 </div>
                             </div>
                             <a href="{{$display->datasheet}}"><button type="button" class="btn btn-primary">Datasheet</button></a>
-                            <a href="{{$display->usermanual}}"><button type="button" class="btn btn-primary">User's Manual</button></a>
+                            <a href="{{$display->usermanual}}"><button type="button" class="btn btn-primary">User Manual</button></a>
+                            <a href="{{$display->modbus}}"><button type="button" class="btn btn-primary">Modbus Map</button></a>
+                            <a href="{{$display->software}}"><button type="button" class="btn btn-primary">Software</button></a>
                         </div>
                 </div>
         </div>

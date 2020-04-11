@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    {{-- <link rel="stylesheet" href="{{asset('css/test.css')}}"> --}}
+    <link rel="stylesheet" href="{{asset('css/test.css')}}">
 
     <link href="{{asset('https://fonts.googleapis.com/css?family=Lora&display=swap')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css')}}">
@@ -55,7 +55,7 @@
 
 
     {{-- footer --}}
-    <div class="foot row mr-auto text-left text-light bg-grey pl-5 pr-5 mt-2 pt-5">
+    <div class="foot row mr-auto text-left text-light bg-grey pl-5 pr-5 pt-5">
         <div class="col-md-3">
             <h6>WORKING HOURS</h6>
             <hr class="bg-warning">

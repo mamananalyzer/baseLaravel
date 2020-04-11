@@ -68,7 +68,7 @@ Route::group(['middleware' => 'auth'], function () {
 // Route::post('cart/send', 'SendCartController@send');
 
 
-Route::post('/test', function () {
+Route::get('/test', function () {
     return view('/test');
 });
 Route::get('/receipt', function () {

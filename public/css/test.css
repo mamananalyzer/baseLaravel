@@ -1,4 +1,54 @@
-*   {
+body {
+    /* margin: 0px; */
+    /* width: 1345px;
+    height: 1000px; */
+    background-color: #ffffff;
+}
+body .atas {
+    background-color: #e4dcdc;
+}
+    body .atas h1 {
+        color: #0091FC;
+    }
+    body .atas span {
+        color: rgb(0, 64, 110);
+    }
+    body .atas p {
+        color: #FF3479;
+    }
+body .tengah {
+    background-color: yellow;
+}
+    body .tengah h1 {
+        color: black;
+    }
+    body .tengah span {
+        color: rgb(46, 40, 40);
+    }
+    body .tengah p {
+        color: rgb(51, 50, 50);
+    }
+body .bawah {
+    background-color: rgb(189, 83, 83);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -172,4 +222,4 @@ body {
     opacity: 1;
     transform: translateY(0px);
     transition: 0.75s;
-}
+} */

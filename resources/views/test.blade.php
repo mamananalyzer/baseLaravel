@@ -4,21 +4,31 @@
 
 @section('container')
 
-{{--  --}}
-<?php
-dd($cartItem->all());
-?>
-@foreach ($cartItem as $cart)
-    <div class="row">
-        <div class="col-6 form-group">
-            <label for="brand">Brand *</label>
-            <input type="brand" name="brand" class="form-control" id="brand" aria-describedby="emailHelp" value="{{ $cart->name }}" required>
-        </div>
-        <div class="col-6 form-group">
-            <label for="quantity">Quantity *</label>
-            <input type="quantity" name="quantity" class="form-control" id="quantity" aria-describedby="emailHelp" value="{{ $cart->qty }}" required>
-        </div>
+<link rel="stylesheet" href="{{asset('css/test.css')}}">
+
+
+<div class="cntainer">
+    <div class="section1">
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
     </div>
-@endforeach
+    <div class="section2">
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+        <h1>hai</h1>
+    </div>
+    <h1>hai</h1>
+    <h1>hai</h1>
+    <h1>hai</h1>
+    <h1>hai</h1>
+    <h1>hai</h1>
+
+</div>
 
 @endsection

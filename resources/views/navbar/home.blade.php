@@ -50,12 +50,12 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="cardhovereffect">
-        <div class="container">
-            <div class="row text-center mt-2 neon">
+    <div class="cardhovereffect home">
+        <div class="content">
+            <div class="row text-center neon offset-md-1">
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/a2000.webp')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/a2000.webp')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -84,10 +84,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center mt-2 neon">
+            <div class="row text-center mt-2 neon offset-md-1">
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/a2000.webp')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/a2000.webp')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -118,33 +118,33 @@
             </div>
 
             <hr>
-            <div class="row featurette my-5">
-                <div class="col-md-7">
-                    <h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
+            <div class="row featurette atas">
+                <div class="col-md-7 ml-4">
+                    <h1 class="featurette-heading">First featurette heading. <span class="">It'll blow your mind.</span></h1>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimII.webp')}}" data-holder-rendered="true">
+                <div class="col-md-4">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimII.png')}}" data-holder-rendered="true">
                 </div>
             </div>
-                <hr class="featurette-divider">
-            <div class="row featurette my-5">
-                <div class="col-md-7 order-md-2">
-                    <h1 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h1>
+                {{-- <hr class="featurette-divider"> --}}
+            <div class="row featurette tengah">
+                <div class="col-md-7 order-md-2 ml-4">
+                    <h1 class="featurette-heading">Oh yeah, it's that good. <span class="">See for yourself.</span></h1>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-md-5 order-md-1">
+                <div class="col-md-4 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="{{ asset('img/aculink810.webp')}}" data-holder-rendered="true" style="width: 500px; height: 500px;">
                 </div>
             </div>
-                <hr class="featurette-divider">
-            <div class="row featurette my-5">
-                <div class="col-md-7">
-                    <h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
+                {{-- <hr class="featurette-divider"> --}}
+            <div class="row featurette bawah">
+                <div class="col-md-7 ml-4">
+                    <h1 class="featurette-heading">First featurette heading. <span class="">It'll blow your mind.</span></h1>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimL.webp')}}" data-holder-rendered="true">
+                <div class="col-md-4">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimL.png')}}" data-holder-rendered="true">
                 </div>
             </div>
         </div>

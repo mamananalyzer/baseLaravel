@@ -68,16 +68,80 @@
     transition-delay: 1.125s;
   }
 
+/* prodlist */
+.prodlist {
+    /* background-color: tomato; */
+    background-image: url("https://mdbootstrap.com/img/Photos/Others/images/91.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prodlist .card {
+    border-radius: 44px;
+    width: 270px;
+    color: #333;
+    position: relative;
+    background: #424242;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+        0 0 1rem rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.prodlist .card-body {
+    padding: 0px;
+}
+.prodlist .card img {
+    /* width: 270px; */
+}
 
 
-/* cardhovereffect */
+/* color content */
 .content {
     max-width:1334px;
 }
 body .home{
     background-color: #45378E;
-
 }
+body .atas {
+    background-color: #ffde22;
+}
+    body .atas h1 {
+        color: #ffffff;
+    }
+    body .atas span {
+        color: #ffffff;
+    }
+    body .atas p {
+        color: #ffffff;
+    }
+body .tengah {
+    background-color: #e1b382;
+}
+    body .tengah h1 {
+        color: black;
+    }
+    body .tengah span {
+        color: rgb(46, 40, 40);
+    }
+    body .tengah p {
+        color: rgb(51, 50, 50);
+    }
+body .bawah {
+    background-color: #2d545e;
+}
+    body .bawah h1 {
+        color: white;
+    }
+    body .bawah span {
+        color: white;
+    }
+    body .bawah p {
+        color: white;
+    }
+
+
+/* cardhovereffect */
 .cardhovereffect    {
     /* background-color: sandybrown; */
 }

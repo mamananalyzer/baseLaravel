@@ -2,34 +2,35 @@ body {
     /* margin: 0px; */
     /* width: 1345px;
     height: 1000px; */
-    background-color: #ffffff;
+    /* background-color: #111; */
 }
-body .atas {
-    background-color: #e4dcdc;
+.secvideo section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-    body .atas h1 {
-        color: #0091FC;
-    }
-    body .atas span {
-        color: rgb(0, 64, 110);
-    }
-    body .atas p {
-        color: #FF3479;
-    }
-body .tengah {
-    background-color: yellow;
+.secvideo section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
-    body .tengah h1 {
-        color: black;
-    }
-    body .tengah span {
-        color: rgb(46, 40, 40);
-    }
-    body .tengah p {
-        color: rgb(51, 50, 50);
-    }
-body .bawah {
-    background-color: rgb(189, 83, 83);
+.secvideo section h2 {
+    position: relative;
+    color: white;
+    font-size: 3em;
+}
+.secvideo section p {
+    position: relative;
+    color: white;
+    font-size: 1.2em;
 }
 
 

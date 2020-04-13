@@ -28,17 +28,23 @@
                 </div>
                 <div class="carousel-item">
                 <img src="{{asset('img/carousel/6.png')}}" class="d-block w-100" alt="...">
-                {{-- <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div> --}}
+                <div class="carousel-caption d-none d-md-block">
+                    {{-- <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+                    <img src="img/aii.png" class="rounded-circle">
+                    <h1 class="display-3 blue">Amptron Instrumindo</h1>
+                    <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
+                </div>
                 </div>
                 <div class="carousel-item">
                 <img src="{{asset('img/carousel/5.png')}}" class="d-block w-100" alt="...">
-                {{-- <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div> --}}
+                <div class="carousel-caption d-none d-md-block">
+                    {{-- <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> --}}
+                    <img src="img/aii.png" class="rounded-circle">
+                    <h1 class="display-3 blue">Amptron Instrumindo</h1>
+                    <p class="lead">Sole Agent Electrical Intrument for Indonesian Territory</p>
+                </div>
                 </div>
             </div>
 

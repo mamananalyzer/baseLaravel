@@ -110,7 +110,7 @@
             <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
             <br>
             <br>
-            <input class="btn btn-success" type="submit" name="submit" value="Add Product" />
+            <input class="btn btn-success mb-4" type="submit" name="submit" value="Add Product" />
             </form>
         </div>
       </div>

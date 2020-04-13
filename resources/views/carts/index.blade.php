@@ -13,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-9">
-          <h1 class="mt-3">Product</h1>
+          <h1 class="mt-3">Request Customer</h1>
 
             <form method="GET" action="{{ url('/carts') }}" class="form-inline">
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
@@ -31,7 +31,7 @@
                     <form action="/carts/{{ $cart->id }}" method="post" class="d-inline">
                         @method('delete')
                         {{ csrf_field() }}
-                        <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                        <button type="submit" onclick="return confirm('Are you sure delete this request ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
                     </form>
                 </li>
                 @endforeach

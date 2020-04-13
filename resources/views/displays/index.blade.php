@@ -27,16 +27,16 @@
                             <option value="digitalmeter">Digital Meter</option>
                             <option value="stroboscope">Stroboscope</option>
                         </select>
-                        <button class="btn btn-outline-dark mt-3 ml-2" type="submit">Search</button>
+                        <button class="btn btn-success mt-3 ml-2" type="submit">Search</button>
                     </form>
                 </div>
                 <div class="col-2">
                     <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-3">
-                        <button class="btn btn-outline-dark mt-3 ml-2" type="submit" value="">Show all</button>
+                        <button class="btn btn-success mt-3 ml-2" type="submit" value="">Show all</button>
                     </form>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4 pb-4">
                 @foreach ($display as $display)
                 <div class="col-lg-3 text-center ">
                   <div class="card container border-info">
@@ -51,26 +51,6 @@
                 </div>
                 @endforeach
             </div>
-          {{-- <div class="row">
-            <div class="col-6">
-              <h1 class="mt-3">Product</h1>
-
-                <form method="GET" action="/products" class="form-inline">
-                    <a href="{{url('/products/create')}}" class="btn btn-success my-2" style="display: none;">Add Products</a>
-                    <input name="cari" type="search" class="form-control ml-4 ml-auto">
-                    <button class="btn btn-outline-primary" type="submit">Cari</button>
-                </form>
-
-              <ul class="list-group">
-                  @foreach ($display as $display)
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                      {{ $display -> type }}
-                  <a href="{{ url('/product')}}/{{ $display->id }}" class="badge badge-info">Read more ...</a>
-                  </li>
-                  @endforeach
-              </ul>
-            </div>
-          </div> --}}
         </div>
     </div>
 @endsection

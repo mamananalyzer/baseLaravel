@@ -116,8 +116,11 @@
             <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
             <br>
             <br>
-            <input class="btn btn-success" type="submit" name="submit" value="Edit Data" />
-            <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
+            <button class="btn btn-success" type="submit" name="submit"><i class="fa fa-edit"></i> Edit Data</button>
+
+            {{-- <input class="btn btn-success mb-4" type="submit" name="submit" value="Edit Data"/><i class="fa fa-edit"></i> --}}
+            <a href="{{url('/products')}}" class="btn btn-secondary">Back</a>
+            <hr>
             </form>
         </div>
       </div>

@@ -27,7 +27,7 @@
 
 
 
-          <ul class="list-group">
+          <ul class="list-group mb-4">
               @foreach ($products as $product)
               <li class="list-group-item d-flex justify-content-between align-items-center">
                   {{ $product -> type }}

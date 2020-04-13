@@ -78,7 +78,7 @@
                 <form action="/products/{{ $product->id }}" method="post" class="d-inline">
                     @method('delete')
                     {{ csrf_field() }}
-                    <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                    <button type="submit" onclick="return confirm('Are you sure delete this product ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
                 </form>
                 <a href="{{url('/products')}}" class="card-link ml-2">Back</a>
             </div>

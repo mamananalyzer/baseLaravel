@@ -65,7 +65,7 @@
             <div class="row text-center neon offset-md-1">
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/products/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/products/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -97,7 +97,7 @@
             <div class="row text-center mt-2 neon offset-md-1">
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/products/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="card col">
                     <div class="imgBx"  data-text="A2000">
-                        <img class="" src="{{asset('img/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
+                        <img class="" src="{{asset('img/products/acuvimII.png')}}" alt="Generic placeholder image" width="140" height="140">
                     </div>
                     <div class="content">
                         <h2>A2000 <br>Multifunctional Power Meter</h2>
@@ -153,7 +153,7 @@
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-4">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimII.png')}}" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/products/acuvimII.png')}}" data-holder-rendered="true">
                 </div>
             </div>
                 {{-- <hr class="featurette-divider"> --}}
@@ -163,7 +163,7 @@
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-4 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="{{ asset('img/aculink810.png')}}" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="{{ asset('img/products/aculink810.png')}}" data-holder-rendered="true" style="width: 500px; height: 500px;">
                 </div>
             </div>
                 {{-- <hr class="featurette-divider"> --}}
@@ -173,7 +173,7 @@
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <div class="col-md-4">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/acuvimL.png')}}" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/products/acuvimL.png')}}" data-holder-rendered="true">
                 </div>
             </div>
         </div>

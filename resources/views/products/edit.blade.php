@@ -31,7 +31,9 @@
                     <option value="transducer">Transducer</option>
                     <option value="powermeter">Power Meter</option>
                     <option value="digitalmeter">Digital Meter</option>
+                    <option value="analogmeter">Analog Meter</option>
                     <option value="stroboscope">Stroboscope</option>
+                    <option value="amr">Automatic Meter Reading</option>
                 </select>
                 @error('category')
                     <div class="invalid-feedback">

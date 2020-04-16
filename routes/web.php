@@ -51,6 +51,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/{product}/edit', 'ProductsController@edit');
     Route::patch('/products/{product}', 'ProductsController@update');
 
+    //categorie
+    Route::get('/procategorie', 'CategoriesController@index')->middleware('auth');
+    Route::get('/procategorie/create', 'CategoriesController@create');
+    Route::get('/procategorie/{categorie}', 'CategoriesController@show');
+    Route::post('/procategorie', 'CategoriesController@store');
+    Route::delete('/procategorie/{categorie}', 'CategoriesController@destroy');
+    Route::get('/procategorie/{categorie}/edit', 'CategoriesController@edit');
+    Route::patch('/procategorie/{categorie}', 'CategoriesController@update');
+
     //carts
     Route::get('carts', 'CartsController@index');
     Route::get('/carts/{cart}', 'CartsController@show');

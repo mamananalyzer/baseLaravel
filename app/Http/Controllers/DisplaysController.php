@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Display;
+use App\Categorie;
 use Illuminate\Http\Request;
 
 class DisplaysController extends Controller
@@ -16,14 +17,18 @@ class DisplaysController extends Controller
     {
         if  ($request->has('cari')){
             $displays = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
+            $categories = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
-        elseif  ($request->has('category')){
-            $displays = Display::where('category', 'LIKE', '%'.$request->category.'%')->get();
+        elseif  ($request->has('categorie')){
+            $displays = Display::where('categorie', 'LIKE', '%'.$request->categorie.'%')->get();
+            $categories = Display::where('categorie', 'LIKE', '%'.$request->categorie.'%')->get();
+            $categories = Categorie::all();
         }
         else    {
             $displays = Display::all();
+            $categories = Categorie::all();
         }
-        return view('displays.index', ['display' => $displays]);
+        return view('displays.index', ['display' => $displays], ['categorie' => $categories]);
     }
 
     /**
@@ -55,7 +60,7 @@ class DisplaysController extends Controller
      */
     public function show(Display $display)
     {
-        // dd($display->all());
+        // dd($display, $product->all());
         return view('displays.show', ['display' => $display]);
     }
 

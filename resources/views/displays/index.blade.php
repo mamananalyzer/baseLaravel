@@ -21,6 +21,16 @@
                 </div>
                 <div class="col-5">
                     <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                        <select class="custom-select custom-select-md mt-3" name="categorie" id="">
+                            @foreach ($categorie as $categorie)
+                                <option value="{{ $categorie -> kategori }}">{{ $categorie -> display_kategori }}</option>
+                            @endforeach
+                        </select>
+                        <button class="btn btn-success mt-3 ml-2" type="submit">Search</button>
+                    </form>
+                </div>
+                {{-- <div class="col-5">
+                    <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
                         <select class="custom-select custom-select-md mt-3" name="category" id="">
                             <option value="transducer">Transducer</option>
                             <option value="powermeter">Power Meter</option>
@@ -31,7 +41,7 @@
                         </select>
                         <button class="btn btn-success mt-3 ml-2" type="submit">Search</button>
                     </form>
-                </div>
+                </div> --}}
                 <div class="col-2">
                     <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-3">
                         <button class="btn btn-success mt-3 ml-2" type="submit" value="">Show all</button>

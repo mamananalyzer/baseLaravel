@@ -142,12 +142,26 @@ body .bawah {
 
 
 /* cardhovereffect */
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    min-height: 100vh;
+} */
 .cardhovereffect    {
+    position: relative;
+    min-height: 100vh;
+    /* width: 1700px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 20px; */
     /* background-color: sandybrown; */
 }
 .cardhovereffect .content .card    {
     position: relative;
-    max-width: 800px;
+    /* max-width: 800px; */
     height: 250px;
     background: #FF7B3C;
     display: flex;
@@ -167,7 +181,7 @@ body .bawah {
      justify-content: center;
      align-items: center;
      overflow: hidden;
-     transform: 0.5s easy-in-out;
+     transition: 0.5s easy-in-out;
 }
 .cardhovereffect .content .card:hover .imgBx {
     width: 150px;
@@ -191,11 +205,13 @@ body .bawah {
 .cardhovereffect .content .card .imgBx img {
     width: 234px;
     height: 234px;
+    /* max-width: 100px; */
     transition: 0.5s ease-in-out;
 }
 .cardhovereffect .content .card:hover .imgBx img {
     width: 150px ;
     height: 150px ;
+    /* max-width: 75px;; */
 }
 .cardhovereffect .content .card .content {
     position: absolute;
@@ -227,9 +243,9 @@ body .bawah {
         width: 400px;
     }
 }
-@media (max-width:768px)    {
+/* @media (max-width:768px)    {
     .cardhovereffect .content .card    {
-        max-width: 300px;
+        max-width: 432px;
         flex-direction: column;
         height: auto;
     }
@@ -244,13 +260,13 @@ body .bawah {
     }
     .cardhovereffect .content .card .imgBx img,
     .cardhovereffect .content .card:hover .imgBx img    {
-        max-width: 100px;
+        max-width: 234px;
     }
     .cardhovereffect .content .card .content   {
         position: relative;
         width: 100%;
     }
-}
+} */
 
 /* popup */
 

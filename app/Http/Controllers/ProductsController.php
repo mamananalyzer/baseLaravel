@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Categorie;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -32,7 +33,8 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('products/create');
+        $categories = Categorie::all();
+        return view('products/create', compact('categories'));
     }
 
     /**
@@ -47,7 +49,7 @@ class ProductsController extends Controller
 
         $this->validate($request,[
             'brand' => 'required',
-            'category' => 'required',
+            'categorie' => 'required',
             'type' => 'required|unique:products',
             'picture' => 'required|unique:products',
             'description' => 'required',
@@ -100,7 +102,7 @@ class ProductsController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'brand' => 'required',

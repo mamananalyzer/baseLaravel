@@ -51,110 +51,143 @@
             <div class="row align-items-start">
                 <div class="col-sm-3 text-center thumbnail">
                     <div class="card border-light">
-                    <a href="{{ url('/accuenergy') }}">
-                        <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
-                        <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
-                        <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/alan') }}">
-                      <img src="img/principal/alan.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>LED <br> Backlight <br> Annunciators</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/bauser') }}">
-                      <img src="img/principal/bauser.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Instrument displays <br> Hour counters <br> Pulse counters</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/bnr') }}">
-                      <img src="img/principal/bnr.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Perfection in Automation Complete automation solution from Austria for over 30 years</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-          </div>
-          <div class="w-100"></div>
-          <div class="row align-items-start">
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/gmc') }}">
-                      <img src="img/principal/gmc.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Programmable <br> Power Tranducers <br> Barriers, Transmitters</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/dold') }}">
-                      <img src="img/principal/dold.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Monitoring <br> & <br> Control Relays</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/emh') }}">
-                      <img src="img/principal/emh.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Smart Meter Gateway <br> Special meters <br> Domestic meters & smart meters</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/leipole') }}">
-                      <img src="img/principal/leipole.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Fan Filter <br> Enclosure Thermostat <br> Enclosure Hygrostat</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-          </div>
-          <div class="w-100"></div>
-          <div class="row">
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/monarch') }}">
-                      <img src="img/principal/monarch.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Stroboscope, Tachometer <br> Vibration Measurement <br> Process Chart Recorder</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/rishabh') }}">
-                      <img src="img/principal/rishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Multifunction <br> Smart Demand Controller <br> Power Quality Analyzer</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm-3 text-center thumbnail">
-                  <div class="card border-light">
-                    <a href="{{ url('/wharton') }}">
-                      <img src="img/principal/wharton.png" width="100%" height="100%" class="card-img-top" alt="...">
-                      <p>Digital Clocks <br> Time Information Displays <br> for Professional Applications</p>
-                      <hr>
-                    </a>
-                  </div>
-              </div>
-          </div>
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="accuenergy" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/accunergy.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Digital Power AC & DC Power Meter, Mult-Circuit Energy Monitoring and AcuCT </p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="alan" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/alan.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>LED <br> Backlight <br> Annunciators</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="bauser" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/bauser.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Instrument displays <br> Hour counters <br> Pulse counters</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="bnr" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/bnr.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Perfection in Automation Complete automation solution from Austria for over 30 years</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="row align-items-start">
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="GMC Instruments" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/gmc.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Programmable <br> Power Tranducers <br> Barriers, Transmitters</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="dold" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/dold.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Monitoring <br> & <br> Control Relays</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="emh" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/emh.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Smart Meter Gateway <br> Special meters <br> Domestic meters & smart meters</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="leipole" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/leipole.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Fan Filter <br> Enclosure Thermostat <br> Enclosure Hygrostat</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="row">
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="monarch" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/monarch.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Stroboscope, Tachometer <br> Vibration Measurement <br> Process Chart Recorder</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="Rishabh" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/rishabh.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Multifunction <br> Smart Demand Controller <br> Power Quality Analyzer</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center thumbnail">
+                    <div class="card border-light">
+                        <form method="GET" action="{{ url('/product') }}" class="form-inline my-2 my-lg-0 offset-md-2 mr-2">
+                            <input name="brand" class="form-control mr-sm-2" value="wharton" placeholder="Search" aria-label="Search" hidden>
+                            <button class="btn btn-outline-info border-0 my-2 my-sm-0" type="submit">
+                                <img src="img/principal/wharton.png" width="100%" height="100%" class="card-img-top" alt="...">
+                                <p>Digital Clocks <br> Time Information Displays <br> for Professional Applications</p>
+                                <hr>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

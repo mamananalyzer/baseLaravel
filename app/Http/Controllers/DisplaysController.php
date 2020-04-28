@@ -19,6 +19,10 @@ class DisplaysController extends Controller
             $displays = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
             $categories = Display::where('type', 'LIKE', '%'.$request->cari.'%')->get();
         }
+        elseif ($request->has('brand')) {
+            $displays = Display::where('brand', 'LIKE', '%'.$request->brand.'%')->get();
+            $categories = Display::where('brand', 'LIKE', '%'.$request->brand.'%')->get();
+        }
         elseif  ($request->has('categorie')){
             $displays = Display::where('categorie', 'LIKE', '%'.$request->categorie.'%')->get();
             $categories = Display::where('categorie', 'LIKE', '%'.$request->categorie.'%')->get();

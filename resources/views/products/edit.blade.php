@@ -26,14 +26,10 @@
             </div>
             <div class="form-group">
                 <label for="category">Category *</label>
-                <select class="custom-select custom-select-md form-control @error('category') is-invalid @enderror" name="category" id="category">
-                    <option value="{{ $product->category }}">{{ $product->category }}</option>
-                    <option value="transducer">Transducer</option>
-                    <option value="powermeter">Power Meter</option>
-                    <option value="digitalmeter">Digital Meter</option>
-                    <option value="analogmeter">Analog Meter</option>
-                    <option value="stroboscope">Stroboscope</option>
-                    <option value="amr">Automatic Meter Reading</option>
+                <select class="custom-select custom-select-md form-control @error('category') is-invalid @enderror" name="categorie" id="categorie">
+                    @foreach ($categories as $categorie)
+                        <option value="{{ $categorie -> kategori }}">{{ $categorie -> display_kategori }}</option>
+                    @endforeach
                 </select>
                 @error('category')
                     <div class="invalid-feedback">

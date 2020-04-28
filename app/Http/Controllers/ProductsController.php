@@ -92,7 +92,8 @@ class ProductsController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('products.edit', compact('product'));
+        $categories = Categorie::all();
+        return view('products.edit', compact('product'), compact('categories'));
     }
 
     /**
@@ -106,7 +107,7 @@ class ProductsController extends Controller
     {
         $request->validate([
             'brand' => 'required',
-            'category' => 'required',
+            'categorie' => 'required',
             'type' => 'required',
             'picture' => 'required|unique:products',
             'description' => 'required',

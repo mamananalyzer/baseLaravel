@@ -74,7 +74,7 @@
                 <a href="{{$product->software}}"><button type="button" class="btn btn-primary">Software</button></a>
                 <br>
                 <br>
-                <a href="{{ $product->id }}/edit" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
+                <a href="{{ $product->id }}/edit" class="btn btn-success"><i class="fa fa-edit"></i> Edit</a>
                 <form action="/products/{{ $product->id }}" method="post" class="d-inline">
                     @method('delete')
                     {{ csrf_field() }}

@@ -40,7 +40,7 @@
                                 </td>
                                 <td>
                                     <a href="/procategorie/{{ $categorie->id }}/edit"><i class="fa fa-edit"></i> Edit | </a>
-                                    <form action="/procategorie/{{ $categorie->id }}" method="post" class="d-inline">
+                                    <form action="{{url('/procategorie')}}/{{ $categorie->id }}" method="post" class="d-inline">
                                         @method('delete')
                                         {{ csrf_field() }}
                                         <button type="submit" onclick="return confirm('Are you sure delete this category ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>

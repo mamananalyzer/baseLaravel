@@ -75,7 +75,7 @@
                 <br>
                 <br>
                 <a href="{{ $product->id }}/edit" class="btn btn-success"><i class="fa fa-edit"></i> Edit</a>
-                <form action="/products/{{ $product->id }}" method="post" class="d-inline">
+                <form action="{{url('/products')}}/{{ $product->id }}" method="post" class="d-inline">
                     @method('delete')
                     {{ csrf_field() }}
                     <button type="submit" onclick="return confirm('Are you sure delete this product ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>

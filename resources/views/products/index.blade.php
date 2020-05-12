@@ -17,6 +17,7 @@
 
             <form method="GET" action="{{ url('/products') }}" class="form-inline">
                 <a href="{{url('/products/create')}}" class="btn btn-success my-2">Add Products</a>
+                <a href="{{url('/brand')}}" class="btn btn-success my-2 ml-2">Brand</a>
                 <a href="{{url('/procategorie')}}" class="btn btn-success my-2 ml-2">Categories</a>
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
                 <a href="{{ ('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>

@@ -51,6 +51,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/{product}/edit', 'ProductsController@edit');
     Route::patch('/products/{product}', 'ProductsController@update');
 
+    //brand
+    Route::get('/brand', 'BrandsController@index')->middleware('auth');
+    Route::get('/brand/create', 'BrandsController@create');
+    Route::get('/brand/{categorie}', 'BrandsController@show');
+    Route::post('/brand', 'BrandsController@store');
+    Route::delete('/brand/{categorie}', 'BrandsController@destroy');
+    Route::get('/brand/{categorie}/edit', 'BrandsController@edit');
+    Route::patch('/brand/{categorie}', 'BrandsController@update');
+
     //categorie
     Route::get('/procategorie', 'CategoriesController@index')->middleware('auth');
     Route::get('/procategorie/create', 'CategoriesController@create');
@@ -66,16 +75,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('cart/send', 'CartsController@store');
     Route::delete('/carts/{cart}', 'CartsController@destroy');
 });
-
-// Route::resource('products', 'ProductsController');   //MAGIC
-
-
-
-// Route::get('/barang', 'BarangController@index');
-
-// Route::get('/contact', 'SendMailController@index');
-// Route::post('cart/send', 'SendCartController@send');
-
 
 Route::get('/test', function () {
     return view('/test');

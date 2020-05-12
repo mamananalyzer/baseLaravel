@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Categorie;
+use App\Brand;
 use Illuminate\Http\Request;
 
-class CategoriesController extends Controller
+class BrandsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $categories = Categorie::all();
-        return view('procategorie.index', compact('categories'));
+        $brands = Brand::all();
+        return view('brand.index', compact('brands'));
     }
 
     /**
@@ -25,7 +25,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        return view('procategorie/create');
+        return view('brand/create');
     }
 
     /**
@@ -37,22 +37,22 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'display_kategori' => 'required',
-            'kategori' => 'required'
+            'display_brand' => 'required',
+            'brand' => 'required'
         ]);
 
-        Categorie::create($request->all());
-        return redirect('/procategorie')->with('status',
+        Brand::create($request->all());
+        return redirect('/brand')->with('status',
         'Terima kasih sudah menginput data, data berhasil ditambahkan!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function show(Categorie $categorie)
+    public function show(Brand $brand)
     {
         //
     }
@@ -60,44 +60,44 @@ class CategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categorie $categorie)
+    public function edit(Brand $brand)
     {
-        return view('procategorie.edit', compact('categorie'));
+        return view('brand.edit', compact('brand'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Brand $brand)
     {
         $request->validate([
-            'display_kategori' => 'required',
-            'kategori' => 'required'
+            'display_brand' => 'required',
+            'brand' => 'required'
         ]);
         // dd($request->all());
-        $categorie = Categorie::find($id);
-        $categorie->update($request->all());
-        return redirect('/procategorie')->with('status',
+        $brand = Brand::find($id);
+        $brand->update($request->all());
+        return redirect('/brand')->with('status',
             'Data berhasil diubah!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categorie $categorie)
+    public function destroy(Brand $brand)
     {
-        Categorie::destroy($categorie->id);
-        return redirect('/procategorie')->with('status',
+        Brand::destroy($brand->id);
+        return redirect('/brand')->with('status',
         'Data berhasil dihapus!');
     }
 }

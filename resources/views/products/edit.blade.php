@@ -17,7 +17,11 @@
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="brand">Brand *</label>
-                <input type="text" class="form-control @error('brand') is-invalid @enderror" id="brand" placeholder="Rishabh, Accuenergy, Dold" name="brand" value="{{ $product->brand }}">
+                <select class="custom-select custom-select-md form-control @error('brand') is-invalid @enderror" name="brand" id="brand">
+                    @foreach ($brands as $brand)
+                        <option value="{{ $brand -> brand }}">{{ $brand -> display_brand }}</option>
+                    @endforeach
+                </select>
                 @error('brand')
                     <div class="invalid-feedback">
                         {{ $message }}

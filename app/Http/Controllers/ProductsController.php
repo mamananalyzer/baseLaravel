@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\Categorie;
+use App\Brand;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -34,7 +35,8 @@ class ProductsController extends Controller
     public function create()
     {
         $categories = Categorie::all();
-        return view('products/create', compact('categories'));
+        $brands = Brand::all();
+        return view('products/create', compact('categories'), compact('brands'));
     }
 
     /**

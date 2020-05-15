@@ -16,7 +16,11 @@
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="brand">Brand *</label>
-                <input type="text" class="form-control @error('brand') is-invalid @enderror" id="brand" placeholder="Rishabh, Accuenergy, Dold" name="brand" value="{{ old('brand')}}">
+                <select class="custom-select custom-select-md form-control @error('brand') is-invalid @enderror" name="brand" id="brand">
+                    @foreach ($brands as $brand)
+                        <option value="{{ $brand -> display_brand }}">{{ $brand -> display_brand }}</option>
+                    @endforeach
+                </select>
                 @error('brand')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -108,6 +112,7 @@
             <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
             <br>
             <br>
+            <a href="{{ url('/products') }}" class="btn btn-secondary mb-4 mr-2">Back</a>
             <input class="btn btn-success mb-4" type="submit" name="submit" value="Add Product" />
             </form>
         </div>

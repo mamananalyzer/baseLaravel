@@ -54,11 +54,11 @@ Route::group(['middleware' => 'auth'], function () {
     //brand
     Route::get('/brand', 'BrandsController@index')->middleware('auth');
     Route::get('/brand/create', 'BrandsController@create');
-    Route::get('/brand/{categorie}', 'BrandsController@show');
+    Route::get('/brand/{brand}', 'BrandsController@show');
     Route::post('/brand', 'BrandsController@store');
-    Route::delete('/brand/{categorie}', 'BrandsController@destroy');
-    Route::get('/brand/{categorie}/edit', 'BrandsController@edit');
-    Route::patch('/brand/{categorie}', 'BrandsController@update');
+    Route::delete('/brand/{brand}', 'BrandsController@destroy');
+    Route::get('/brand/{brand}/edit', 'BrandsController@edit');
+    Route::patch('/brand/{brand}', 'BrandsController@update');
 
     //categorie
     Route::get('/procategorie', 'CategoriesController@index')->middleware('auth');

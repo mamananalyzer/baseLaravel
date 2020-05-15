@@ -11,16 +11,16 @@
 @endif
 
     <div class="container">
-      <div class="row">
-        <div class="col-10">
-            <div class="row">
-                <div class="col-10">
-                    <h1 class="mt-3">Categories</h1>
+        <div class="row">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-10">
+                        <h1 class="mt-3">Categories</h1>
+                    </div>
+                    <div class="col">
+                        <a href="{{url('/procategorie/create')}}" class="btn btn-success mt-4">Add Category</a>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href="{{url('/procategorie/create')}}" class="btn btn-success mt-4">Add Category</a>
-                </div>
-            </div>
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
@@ -51,7 +51,10 @@
 
                     </tbody>
                 </table>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <a href="{{ url('/products') }}" class="btn btn-secondary ml-4 mb-4">Back</a>
+        </div>
     </div>
 @endsection

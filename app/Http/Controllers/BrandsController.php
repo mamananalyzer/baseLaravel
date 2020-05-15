@@ -65,6 +65,8 @@ class BrandsController extends Controller
      */
     public function edit(Brand $brand)
     {
+        // $brand = Brand::all();
+        // dd($brand->all());
         return view('brand.edit', compact('brand'));
     }
 
@@ -75,7 +77,7 @@ class BrandsController extends Controller
      * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Brand $brand)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'display_brand' => 'required',

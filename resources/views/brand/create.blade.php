@@ -42,6 +42,7 @@
             <label for="agree">I have read and agree to the Terms and Conditions and Privacy Policy</label>
             <br>
             <br>
+            <a href="{{ url('/brand') }}" class="btn btn-secondary mb-4">Back</a>
             <input class="btn btn-success mb-4" type="submit" name="submit" value="Add Brand" />
             </form>
         </div>

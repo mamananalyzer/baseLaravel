@@ -11,16 +11,16 @@
 @endif
 
     <div class="container">
-      <div class="row">
-        <div class="col-10">
-            <div class="row">
-                <div class="col-10">
-                    <h1 class="mt-3">Brands</h1>
+        <div class="row">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-10">
+                        <h1 class="mt-3">Brands</h1>
+                    </div>
+                    <div class="col">
+                        <a href="{{url('/brand/create')}}" class="btn btn-success mt-4">Add Brand</a>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href="{{url('/brand/create')}}" class="btn btn-success mt-4">Add Brand</a>
-                </div>
-            </div>
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
@@ -33,10 +33,10 @@
                         @foreach ($brands as $brand)
                             <tr>
                                 <td>
-                                    {{ $brand -> display_kategori }}
+                                    {{ $brand -> display_brand }}
                                 </td>
                                 <td>
-                                    {{ $brand -> kategori }}
+                                    {{ $brand -> brand }}
                                 </td>
                                 <td>
                                     <a href="/brand/{{ $brand->id }}/edit"><i class="fa fa-edit"></i> Edit | </a>
@@ -48,10 +48,12 @@
                                 </td>
                             </tr>
                         @endforeach
-
                     </tbody>
                 </table>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <a href="{{ url('/products') }}" class="btn btn-secondary ml-4 mb-4">Back</a>
+        </div>
     </div>
 @endsection

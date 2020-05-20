@@ -50,6 +50,22 @@
                 @enderror
             </div>
             <div class="form-group">
+                <label for="price">Price *</label>
+                <div class="row">
+                    <div class="col-1 pt-1 text-right">
+                        Rp.
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="3.000.000, 4.000.000, 100.000.000" name="price" value="{{ old('price')}}">
+                    </div>
+                </div>
+                @error('price')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="form-group">
                 <label for="picture">Picture *</label>
                 <input type="file" class="form-control @error('picture') is-invalid @enderror" id="picture" placeholder="picture" name="picture" value="{{ old('picture')}}">
             </div>

@@ -25,6 +25,7 @@ class CreateCartsTable extends Migration
             $table->string('postcode');
             $table->string('product');
             $table->text('description');
+            $table->string('price');
             $table->string('quantity');
             $table->string('date');
             $table->string('time');

@@ -68,7 +68,7 @@
                             <th class="text-left">DESCRIPTION</th>
                             <th class="text-right"></th>
                             <th class="text-right">Quantity</th>
-                            <th class="text-right"></th>
+                            <th class="text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -79,7 +79,7 @@
                             </td>
                             <td class="unit"></td>
                             <td class="qty">{{$carts->quantity}}</td>
-                            <td class="total"></td>
+                            <td class="total">{{$carts->price}}</td>
                         </tr>
                     </tbody>
                     <tfoot>

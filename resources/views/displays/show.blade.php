@@ -56,6 +56,8 @@
                             Request a Quote!
                         </button>
 
+                        <h3 class="pt-2 pb-2">Rp. {{ $display->price }},-</h3>
+
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -118,6 +120,10 @@
                                         <div class="form-group">
                                             <label for="description">Description *</label>
                                             <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
+                                        </div>
+                                        <div class="form-group sr-only">
+                                            <label for="price">Price *</label>
+                                            <input type="price" name="price" class="form-control" id="price" aria-describedby="emailHelp" value="{{ $display->price }}" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="quantity">Quantity *</label>

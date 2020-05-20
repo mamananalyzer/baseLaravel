@@ -9,7 +9,7 @@ class Product extends Model
 {
     // use SoftDeletes;
 
-    protected $fillable = ['brand', 'categorie', 'type', 'picture', 'description', 'listdescription', 'datasheet', 'usermanual', 'modbus', 'software'];
+    protected $fillable = ['brand', 'categorie', 'type', 'price', 'picture', 'description', 'listdescription', 'datasheet', 'usermanual', 'modbus', 'software'];
 
     public function getPic()
     {

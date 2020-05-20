@@ -21,6 +21,7 @@ class SendMailController extends Controller
             'phone' => 'required',
             'product' => 'required',
             'description' => 'required',
+            'price' => 'required',
             'quantity' => 'required',
         ]);
 
@@ -39,6 +40,7 @@ class SendMailController extends Controller
                 'postcode' => $request->postcode,
                 'product' => $request->product,
                 'description' => $request->description,
+                'price' => $request->price,
                 'quantity' => $request->quantity,
                 'pesan' => $request->pesan,
                 'time' => $request->time,
@@ -61,6 +63,7 @@ class SendMailController extends Controller
                 $postcode = $request->input('postcode');
                 $product = $request->input('product');
                 $description = $request->input('description');
+                $price = $request->input('price');
                 $quantity = $request->input('quantity');
                 $pesan = $request->input('pesan');
             });

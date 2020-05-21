@@ -348,7 +348,7 @@
         </tr>
         <tr>
             <td scope="col-2">
-                <p>Description</p>
+                <p>Quantity</p>
             </td>
             <td>:</td>
             <td>

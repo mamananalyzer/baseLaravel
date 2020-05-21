@@ -52,7 +52,7 @@
             </div>
             <div class="form-group">
                 <label for="price">Price *</label>
-                <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="price" value="{{ $product->price }}">
+                <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="price" value="{{ $product->price }}">
                 @error('price')
                     <div class="invalid-feedback">
                         {{ $message }}

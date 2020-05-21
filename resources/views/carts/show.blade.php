@@ -71,6 +71,11 @@
                             <th class="text-right">Price</th>
                         </tr>
                     </thead>
+                    <div class="sr-only">
+                        {{$total=$carts->quantity*$carts->price}}
+                        {{$pajak=$carts->quantity*$carts->price*10/100}}
+                        {{$subtotal=$total+$pajak}}
+                    </div>
                     <tbody>
                         <tr>
                             <td class="no">01</td>
@@ -79,7 +84,28 @@
                             </td>
                             <td class="unit"></td>
                             <td class="qty">{{$carts->quantity}}</td>
-                            <td class="total">{{$carts->price}}</td>
+                            <td class="total">Rp.{{$carts->price}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Total</td>
+                            <td class="unit"></td>
+                            <td class="qty"></td>
+                            <td class="total">Rp.{{$total}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Pajak (10%)</td>
+                            <td class="unit"></td>
+                            <td class="qty"></td>
+                            <td class="total">Rp.{{$pajak}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Sub Total</td>
+                            <td class="unit"></td>
+                            <td class="qty"></td>
+                            <td class="total">Rp.{{$subtotal}}</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -96,6 +122,8 @@
                 <div class="notices">
                     <div>NOTICE:</div>
                     <div class="notice">Save this page with click button PRINT on top and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a></div>
+                    <div class="notice">After Transfer to Bank</div>
+                    <div class="notice">0000 1111 2222 3333</div>
                 </div>
             </main>
             <footer>

@@ -56,7 +56,7 @@
                         Rp.
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="3.000.000, 4.000.000, 100.000.000" name="price" value="{{ old('price')}}">
+                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="3.000.000, 4.000.000, 100.000.000" name="price" value="{{ old('price')}}">
                     </div>
                 </div>
                 @error('price')

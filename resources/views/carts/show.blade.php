@@ -84,28 +84,28 @@
                             </td>
                             <td class="unit"></td>
                             <td class="qty">{{$carts->quantity}}</td>
-                            <td class="total">Rp.{{$carts->price}}</td>
+                            <td class="total">Rp.{{ $fixprice = number_format($carts->price, 0, ',', '.') }}</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>Total</td>
                             <td class="unit"></td>
                             <td class="qty"></td>
-                            <td class="total">Rp.{{$total}}</td>
+                            <td class="total">Rp.{{ $fixtotal = number_format($total, 0, ',', '.') }}</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>Pajak (10%)</td>
                             <td class="unit"></td>
                             <td class="qty"></td>
-                            <td class="total">Rp.{{$pajak}}</td>
+                            <td class="total">Rp.{{ $fixpajak = number_format($pajak, 0, ',', '.') }}</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>Sub Total</td>
                             <td class="unit"></td>
                             <td class="qty"></td>
-                            <td class="total">Rp.{{$subtotal}}</td>
+                            <td class="total">Rp.{{ $fixsubtotal = number_format($subtotal, 0, ',', '.') }}</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -119,11 +119,24 @@
                 <div class="address">{{$carts->pesan}}</div>
 
                 <div class="thanks mt-4">Thank you!</div>
-                <div class="notices">
-                    <div>NOTICE:</div>
-                    <div class="notice">Save this page with click button PRINT on top and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a></div>
-                    <div class="notice">After Transfer to Bank</div>
-                    <div class="notice">0000 1111 2222 3333</div>
+                <div class="notices row">
+                    <div class="col">
+                        <div>NOTICE:</div>
+                        <div class="notice">Save this page with click button PRINT on top
+                            {{-- and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a> --}}
+                        </div>
+                        <br>
+                        <div class="notice">Please Transfer to Our Account</div>
+                        <div class="notice">Mandiri, Cab. Puri Kencana</div>
+                        <div class="notice">PT. Amptron Instrumindo</div>
+                        <div class="notice">ACC. No : 118.0053121.959 (IDR)</div>
+                        <div class="notice">Payment Full Amount</div>
+                    </div>
+                    <div class="col">
+                        <br>
+                        <br>
+                        <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                    </div>
                 </div>
             </main>
             <footer>

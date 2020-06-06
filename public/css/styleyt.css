@@ -318,7 +318,7 @@ body .bawah {
      transform: translateY(-50%);
      z-index: 11;
      width: 100%;
-     height: 220px;
+     height: 250px;
      transition: 0.5s;
 }
 .popup .container .card:hover .imgBx {

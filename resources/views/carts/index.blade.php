@@ -33,6 +33,21 @@
                         {{ csrf_field() }}
                         <button type="submit" onclick="return confirm('Are you sure delete this request ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
                     </form>
+                    <div class="form-group">
+                        <label for="picture">Picture *</label>
+                        <input type="file" class="form-control @error('picture') is-invalid @enderror" id="picture" placeholder="picture" name="picture" value="{{ old('picture')}}">
+                    </div>
+                    @if( $cart->status =='waiting')
+                        <form action="/carts/{{ $cart->id }}" method="post" class="d-inline">
+                            @method('patch')
+                            {{ csrf_field() }}
+                            <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn btn-warning ml-2" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>
+                        </form>
+                    @elseif( $cart->status =='confirm')
+                        <button type="submit" class="btn btn-success ml-2"><i class="fa fa-approve"></i>Confirmed</button>
+                    @else
+                        <button class="btn btn-danger ml-2">Mencurigakan</button>
+                    @endif
                 </li>
                 @endforeach
             </ul>

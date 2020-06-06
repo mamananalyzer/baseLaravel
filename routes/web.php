@@ -74,6 +74,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/carts/{cart}', 'CartsController@show');
     Route::post('cart/send', 'CartsController@store');
     Route::delete('/carts/{cart}', 'CartsController@destroy');
+    Route::patch('/carts/{cart}', 'CartsController@update');
 });
 
 Route::get('/test', function () {

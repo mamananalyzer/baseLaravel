@@ -26,6 +26,7 @@ class CreateCartsTable extends Migration
             $table->string('product');
             $table->text('description');
             $table->integer('price');
+            $table->string('status');
             $table->integer('quantity');
             $table->string('date');
             $table->string('time');

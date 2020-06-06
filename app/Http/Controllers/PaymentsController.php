@@ -2,22 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Cart;
-// use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Payment;
 use Illuminate\Http\Request;
 
-class CartsController extends Controller
+class PaymentsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        // dd($request->all());
-        $carts = Cart::all();
-        return view('carts.index', ["carts" => $carts]);
+        //
     }
 
     /**
@@ -27,7 +24,7 @@ class CartsController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -44,23 +41,21 @@ class CartsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Payment $payment)
     {
-        // dd($carts->all());
-        $carts = Cart::find($id);
-        return view('carts.show', ['carts' => $carts]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Display $display, $id)
+    public function edit(Payment $payment)
     {
         //
     }
@@ -69,31 +64,22 @@ class CartsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Payment $payment)
     {
-        $request->validate([
-            'status' => 'required',
-        ]);
-        // dd($request->all());
-        $categorie = Cart::find($id);
-        $categorie->update($request->all());
-        return redirect('/procategorie')->with('status',
-            'Data berhasil diubah!');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cart $cart)
+    public function destroy(Payment $payment)
     {
-        Cart::destroy($cart->id);
-        return redirect('/carts')->with('status',
-        'Data berhasil dihapus!');
+        //
     }
 }

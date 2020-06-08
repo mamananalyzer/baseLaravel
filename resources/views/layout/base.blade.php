@@ -38,13 +38,15 @@
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a>
-          <div class="dropdown">
+          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Login</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
+            {{-- <div class="dropdown">
               <a class="nav-item nav-link pr-4" href="#">Product</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="{{ url('/product') }}">List Product</a>
                   <a class="dropdown-item" href="{{ url('/login') }}">Admin</a>
                 </div>
-            </div>
+            </div> --}}
         </ul>
       </div>
     </nav>

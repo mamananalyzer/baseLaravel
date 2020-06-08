@@ -283,7 +283,7 @@
     <h4>Seseorang mengirim pesan</h4>
     <br>
     <table class="table">
-        <tr>
+        {{-- <tr>
             <td scope="col-2">
                 <p>Name</p>
             </td>
@@ -318,7 +318,7 @@
             <td>
                 <p>{{ $phone  }}</p>
             </td>
-        </tr>
+        </tr> --}}
         <tr>
             <td scope="col-2">
                 <p>Address</p>

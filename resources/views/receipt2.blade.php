@@ -48,11 +48,11 @@
                 <div class="row contacts">
                     <div class="col invoice-to">
                         <div class="text-gray-light">INQUIRY FROM:</div>
-                        <h2 class="to">{{$receipt->name}} {{$receipt->name2}}</h2>
+                        <h2 class="to">{{ auth()->user()->name }}</h2>
                         <div class="address">{{$receipt->Address1}}</div>
                         <div class="address">{{$receipt->city}} {{$receipt->postcode}}</div>
-                        <div class="email">{{$receipt->email}}, {{$receipt->company}}</div>
-                        <div class="email">{{$receipt->phone}}</div>
+                        <div class="email">{{ auth()->user()->email }}, {{ auth()->user()->company }}</div>
+                        <div class="email">{{ auth()->user()->phone }}</div>
                     </div>
                     <div class="col invoice-details">
                         {{date_default_timezone_set('Asia/Jakarta')}}

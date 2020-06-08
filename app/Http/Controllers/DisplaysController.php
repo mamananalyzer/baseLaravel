@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Display;
 use App\Categorie;
+use App\User;
+
 use Illuminate\Http\Request;
 
 class DisplaysController extends Controller
@@ -65,7 +67,9 @@ class DisplaysController extends Controller
     public function show(Display $display)
     {
         // dd($display, $product->all());
-        return view('displays.show', ['display' => $display]);
+        $user = User::all();
+        return view('displays.show', ['display' => $display], ['user' => $user]);
+        // dd($display->all());
     }
 
     /**

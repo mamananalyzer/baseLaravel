@@ -15,10 +15,10 @@ class SendMailController extends Controller
 
         // dd($request->all());
         $this->validate($request,[
-            'email' => 'required',
-            'name' => 'required',
-            'company' => 'required',
-            'phone' => 'required',
+            // 'email' => 'required',
+            // 'name' => 'required',
+            // 'company' => 'required',
+            // 'phone' => 'required',
             'product' => 'required',
             'description' => 'required',
             'price' => 'required',
@@ -30,11 +30,11 @@ class SendMailController extends Controller
         try{
             Mail::send('isiemail',
             array(
-                'name' => $request->name,
-                'name2' => $request->name2,
-                'email' => $request->email,
-                'company' => $request->company,
-                'phone' => $request->phone,
+                // 'name' => $request->name,
+                // 'name2' => $request->name2,
+                // 'email' => $request->email,
+                // 'company' => $request->company,
+                // 'phone' => $request->phone,
                 'Address1' => $request->Address1,
                 'city' => $request->city,
                 'postcode' => $request->postcode,
@@ -53,11 +53,11 @@ class SendMailController extends Controller
                 $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');
                 // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
                 $pesan->from(env('MAIL_USERNAME', 'baseanalyzer210@gmail.com'),'Amptron.my.id');
-                $name = $request->input('name');
-                $name2 = $request->input('name2');
-                $email = $request->input('email');
-                $company = $request->input('company');
-                $phone = $request->input('phone');
+                // $name = $request->input('name');
+                // $name2 = $request->input('name2');
+                // $email = $request->input('email');
+                // $company = $request->input('company');
+                // $phone = $request->input('phone');
                 $Address1 = $request->input('Address1');
                 $city = $request->input('city');
                 $postcode = $request->input('postcode');

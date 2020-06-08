@@ -24,6 +24,7 @@
 
 
             <ul class="list-group">
+                @if(auth()->user()->email == 'amptron@cbn.net.id')
                 @foreach ($carts as $cart)
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ $cart -> name }}, {{ $cart -> email }}, {{ $cart -> company }}
@@ -50,6 +51,7 @@
                     @endif
                 </li>
                 @endforeach
+                @endif
             </ul>
             <a href="{{url('/products')}}" class="btn btn-light my-2">Back</a>
         </div>

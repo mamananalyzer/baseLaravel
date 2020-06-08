@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use App\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -22,5 +23,20 @@ class AuthController extends Controller
     {
         Auth::logout();
         return redirect('/');
+    }
+    public function create(Request $request)
+    {
+        // dd($request->all());
+        // $box = $request->all();
+        $user = new \App\User;
+        $user->role = 'user';
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->phone = $request->phone;
+        $user->company = $request->company;
+        // $user->remember_token = str_random(60);
+        $user->save();
+        return view('/login');
     }
 }

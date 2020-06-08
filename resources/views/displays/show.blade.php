@@ -15,26 +15,6 @@
                     </div>
                     <div class="contentBx neon">
                         <h3>{{$display->type}}</h3>
-                        {{-- <div class="size">
-                            <h3>Size :</h3>
-                            <span>7</span>
-                            <span>8</span>
-                            <span>9</span>
-                            <span>10</span>
-                        </div>
-                        <div class="color">
-                            <h3>Color :</h3>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div> --}}
-                        {{-- <a href=" {{ route('cart.edit',$display -> id) }}" class="btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Add to Cart
-                        </a> --}}
                     </div>
                 </div>
                 <div class="row card-body grey">
@@ -76,7 +56,7 @@
                                             return false;
                                         }">
                                         {{ csrf_field() }}
-                                            <label for="exampleInputName">Name *</label>
+                                            {{-- <label for="exampleInputName">Name *</label>
                                             <div class="form-row">
                                                 <div class="col">
                                                 <input type="text" class="form-control" placeholder="First name" name="name" required>
@@ -99,7 +79,7 @@
                                                 <label for="PhoneNumber">Phone *</label>
                                                 <input type="tel" name="phone" class="form-control" id="PhoneNumber" placeholder="+62 000" required>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="row">
                                             <div class="col-6 form-group">
                                                 <label for="Street and Number">Street and Number *</label>
@@ -121,6 +101,10 @@
                                         <div class="form-group">
                                             <label for="description">Description *</label>
                                             <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
+                                        </div>
+                                        <div class="form-group sr-only">
+                                            <label for="userid">User ID *</label>
+                                            <input type="userid" name="userid" class="form-control" id="userid" aria-describedby="emailHelp" value="{{ auth()->user()->id }}" required>
                                         </div>
                                         <div class="form-group sr-only">
                                             <label for="price">Price *</label>

@@ -34,14 +34,22 @@ Route::post('contact/send', 'ContactController@send');  //contact send email
 Route::post('email/send', 'SendMailController@send');   //contact send request quote email, insert database
 Route::get('email/send', 'SendMailController@reload');   //contact send request quote email, insert database
 
-Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
-Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
+
 
 Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/logout', 'AuthController@logout');
+Route::get('/register', function () {
+    return view('/register');
+});
+Route::post('/regis', 'AuthController@create');
 
-Route::group(['middleware' => 'auth'], function () {
+
+Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
+    //display product
+    Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+    Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
+
     //products
     Route::get('/products', 'ProductsController@index')->middleware('auth');
     Route::get('/products/create', 'ProductsController@create');
@@ -76,10 +84,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/carts/{cart}', 'CartsController@destroy');
     Route::patch('/carts/{cart}', 'CartsController@update');
 });
+Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
+    //display product
+    Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+    Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
 
-Route::get('/test', function () {
-    return view('/test');
+    //products
+    Route::get('/products', 'ProductsController@index')->middleware('auth');
+
+    //carts
+    Route::get('carts', 'CartsController@index');
+    Route::get('/carts/{cart}', 'CartsController@show');
+    Route::post('cart/send', 'CartsController@store');
+    Route::delete('/carts/{cart}', 'CartsController@destroy');
+    Route::patch('/carts/{cart}', 'CartsController@update');
 });
+
+
 Route::get('/receipt', function () {
     return view('/receipt2');
 });

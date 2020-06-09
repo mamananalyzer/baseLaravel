@@ -37,6 +37,6 @@ class AuthController extends Controller
         $user->company = $request->company;
         // $user->remember_token = str_random(60);
         $user->save();
-        return view('/login');
+        return redirect('/login');
     }
 }

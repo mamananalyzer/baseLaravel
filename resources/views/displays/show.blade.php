@@ -64,22 +64,22 @@
                                                 <div class="col">
                                                 <input type="text" class="form-control" placeholder="Last name" name="name2" required>
                                                 </div>
-                                            </div>
-                                        <div class="form-group">
+                                            </div> --}}
+                                        <div class="form-group sr-only">
                                             <label for="exampleInputEmail1">Email *</label>
-                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="{{ auth()->user()->email }}" aria-describedby="emailHelp" required>
                                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                         </div>
-                                        <div class="row">
+                                        <div class="row sr-only">
                                             <div class="col-6 form-group">
                                                 <label for="Company">Company *</label>
-                                                <input type="company" name="company" class="form-control" id="Company" placeholder="PT. Amptron Instrumindo" required>
+                                                <input type="company" name="company" class="form-control" id="Company" value="{{ auth()->user()->company }}" placeholder="PT. Amptron Instrumindo" required>
                                             </div>
                                             <div class="col-6 form-group">
                                                 <label for="PhoneNumber">Phone *</label>
-                                                <input type="tel" name="phone" class="form-control" id="PhoneNumber" placeholder="+62 000" required>
+                                                <input type="tel" name="phone" class="form-control" id="PhoneNumber" value="{{ auth()->user()->phone }}" placeholder="+62 000" required>
                                             </div>
-                                        </div> --}}
+                                        </div>
                                         <div class="row">
                                             <div class="col-6 form-group">
                                                 <label for="Street and Number">Street and Number *</label>
@@ -101,6 +101,10 @@
                                         <div class="form-group">
                                             <label for="description">Description *</label>
                                             <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
+                                        </div>
+                                        <div class="form-group sr-only">
+                                            <label for="name">Name *</label>
+                                            <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" value="{{ auth()->user()->name }}" required>
                                         </div>
                                         <div class="form-group sr-only">
                                             <label for="userid">User ID *</label>

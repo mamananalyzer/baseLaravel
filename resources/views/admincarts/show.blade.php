@@ -48,16 +48,16 @@
                 <div class="row contacts">
                     <div class="col invoice-to">
                         <div class="text-gray-light">INQUIRY FROM:</div>
-                        <h2 class="to">{{ auth()->user()->name }}</h2>
-                        <div class="address">{{$receipt->Address1}}</div>
-                        <div class="address">{{$receipt->city}} {{$receipt->postcode}}</div>
-                        <div class="email">{{$receipt->email}}, {{$receipt->company}}</div>
-                        <div class="email">{{$receipt->phone}}</div>
+                        <h2 class="to">{{$admincart->name}}</h2>
+                        <div class="address">{{$admincart->Address1}}</div>
+                        <div class="address">{{$admincart->city}} {{$admincart->postcode}}</div>
+                        <div class="email">{{$admincart->email}}, {{$admincart->company}}</div>
+                        <div class="email">{{$admincart->phone}}</div>
                     </div>
                     <div class="col invoice-details">
                         {{date_default_timezone_set('Asia/Jakarta')}}
-                        <div class="date">{{$receipt->date}}</div>
-                        <div class="date">{{$receipt->time}}</div>
+                        <div class="date">{{$admincart->date}}</div>
+                        <div class="date">{{$admincart->time}}</div>
                         {{-- <button id="printInvoice" value="Print" onclick="window.print()" class="btn btn-info"><i class="fa fa-print"></i> Print</button> --}}
                     </div>
                 </div>
@@ -72,20 +72,19 @@
                         </tr>
                     </thead>
                     <div class="sr-only">
-                        {{-- {{ $fixprice = number_format($display->price, 0, ',', '.') }} --}}
-                        {{$total=$receipt->quantity*$receipt->price}}
-                        {{$pajak=$receipt->quantity*$receipt->price*10/100}}
+                        {{$total=$admincart->quantity*$admincart->price}}
+                        {{$pajak=$admincart->quantity*$admincart->price*10/100}}
                         {{$subtotal=$total+$pajak}}
                     </div>
                     <tbody>
                         <tr>
                             <td class="no">01</td>
-                            <td class="text-left"><h3>{{$receipt->product}}</h3>
-                               {{$receipt->description}}
+                            <td class="text-left"><h3>{{$admincart->product}}</h3>
+                               {{$admincart->description}}
                             </td>
                             <td class="unit"></td>
-                            <td class="qty">{{$receipt->quantity}}</td>
-                            <td class="total">{{ $fixprice = number_format($receipt->price, 0, ',', '.') }}</td>
+                            <td class="qty">{{$admincart->quantity}}</td>
+                            <td class="total">Rp.{{ $fixprice = number_format($admincart->price, 0, ',', '.') }}</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -117,20 +116,33 @@
                         </tr>
                     </tfoot>
                 </table>
-                <div class="address">{{$receipt->pesan}}</div>
+                <div class="address">{{$admincart->pesan}}</div>
 
                 <div class="thanks mt-4">Thank you!</div>
-                <div class="notices">
-                    <div>NOTICE:</div>
-                    <div class="notice">Save this page with click button PRINT on top
-                        {{-- and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a> --}}
+                <div class="notices row">
+                    <div class="col">
+                        <div>NOTICE:</div>
+                        <div class="notice">Save this page with click button PRINT on top
+                            {{-- and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a> --}}
+                        </div>
+                        <br>
+                        <div class="notice">Please Transfer to Our Account</div>
+                        <div class="notice">Mandiri, Cab. Puri Kencana</div>
+                        <div class="notice">PT. Amptron Instrumindo</div>
+                        <div class="notice">ACC. No : 118.0053121.959 (IDR)</div>
+                        <div class="notice">Payment Full Amount</div>
                     </div>
-                    <br>
-                    <div class="notice">Please Transfer to Our Account</div>
-                    <div class="notice">Mandiri, Cab. Puri Kencana</div>
-                    <div class="notice">PT. Amptron Instrumindo</div>
-                    <div class="notice">ACC. No : 118.0053121.959 (IDR)</div>
-                    <div class="notice">Payment Full Amount</div>
+                    <div class="col">
+                        <br>
+                            <img src="{{$admincart->getPic()}}" width="650px"/>
+                        <br>
+                        <form action="/admincart/{{ $admincart->id }}" method="post" class="d-inline">
+                            @method('patch')
+                            {{ csrf_field() }}
+                            <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn btn-warning ml-2" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>
+                        </form>
+                        <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                    </div>
                 </div>
             </main>
             <footer>

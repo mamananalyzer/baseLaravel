@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section('title', 'List Product')
+@section('title', 'Dashboard')
 
 @section('container')
 
@@ -26,8 +26,12 @@
                 <input name="cari" type="search" class="form-control ml-4 ml-auto mr-2">
                 <button class="btn btn-outline-primary" type="submit">Cari</button>
             </form>
+            @if(auth()->user()->role == 'admin')
+            <a href="{{url('/admincarts')}}" class="btn btn-success my-2">Show Request Product</a>
+            @endif
+            @if(auth()->user()->role == 'user')
             <a href="{{url('/carts')}}" class="btn btn-success my-2">Show Request Product</a>
-
+            @endif
 
 
             @if(auth()->user()->role == 'admin')

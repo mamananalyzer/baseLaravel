@@ -78,11 +78,11 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
     Route::patch('/procategorie/{categorie}', 'CategoriesController@update');
 
     //carts
-    Route::get('carts', 'CartsController@index');
-    Route::get('/carts/{cart}', 'CartsController@show');
-    Route::post('cart/send', 'CartsController@store');
-    Route::delete('/carts/{cart}', 'CartsController@destroy');
-    Route::patch('/carts/{cart}', 'CartsController@update');
+    Route::get('admincarts', 'AdmincartsController@index');
+    Route::get('/admincarts/{cart}', 'AdmincartsController@show');
+    Route::post('cart/send', 'AdmincartsController@store');
+    Route::delete('/admincarts/{cart}', 'AdmincartsController@destroy');
+    Route::patch('/admincarts/{cart}', 'AdmincartsController@update');
 });
 Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
     //display product

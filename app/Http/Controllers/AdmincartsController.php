@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Admincart;
 use App\Cart;
-// use Gloudemans\Shoppingcart\Facades\Cart;
+use App\User;
 use Illuminate\Http\Request;
 
-class CartsController extends Controller
+class AdmincartsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,7 @@ class CartsController extends Controller
     {
         // dd($request->all());
         $carts = Cart::all();
-        return view('carts.index', ["carts" => $carts]);
+        return view('admincarts.index', ["carts" => $carts]);
     }
 
     /**
@@ -47,11 +48,11 @@ class CartsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Admincart $admincart, $id)
     {
         // dd($request->all());
-        $carts = Cart::find($id);
-        return view('carts.show', ['carts' => $carts]);
+        $admincart = Cart::find($id);
+        return view('admincarts.show', ['admincart' => $admincart]);
     }
 
     /**
@@ -76,19 +77,11 @@ class CartsController extends Controller
     {
         $request->validate([
             'status' => 'required',
-            'picture' => 'required|unique:carts',
         ]);
         // dd($request->all());
-        $bukti = Cart::find($id);
-        $bukti->update($request->all());
-        if($request->hasFile('picture')){
-            $request->file('picture')->move('images/buktibayar/',$request->file('picture')->getClientOriginalName());
-            $bukti->picture = $request->file('picture')->getClientOriginalName();
-            $bukti->save();
-        }
-        // $categorie = Cart::find($id);
-        // $categorie->update($request->all());
-        return redirect('/carts')->with('status',
+        $categorie = Cart::find($id);
+        $categorie->update($request->all());
+        return redirect('/admincarts')->with('status',
             'Data berhasil diubah!');
     }
 

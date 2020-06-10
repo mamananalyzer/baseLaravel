@@ -37,6 +37,7 @@ class AuthController extends Controller
         $user->company = $request->company;
         // $user->remember_token = str_random(60);
         $user->save();
-        return redirect('/login');
+        return redirect('/login')->with('status',
+            'Selamat, Akun anda berhasil di buat!');
     }
 }

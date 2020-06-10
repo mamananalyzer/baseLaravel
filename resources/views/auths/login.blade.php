@@ -23,6 +23,11 @@
 </head>
 
 <body>
+@if(session('status'))
+    <div class="alert alert-success container text-center" role="alert">
+        {{session('status')}}
+    </div>
+@endif
 	<!-- WRAPPER -->
 	<div id="wrapper">
 		<div class="vertical-align-wrap">

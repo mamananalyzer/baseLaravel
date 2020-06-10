@@ -135,7 +135,7 @@
                                         <input type="hidden" name="time" value="{{'Time : ' . date('H:i:s')}}">
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <input class="btn btn-success" type="submit" name="submit" value="Send" />
+                                            <input class="btn btn-success" type="submit" name="submit" value="Order !" />
                                         </div>
                                     </form>
                                 </div>

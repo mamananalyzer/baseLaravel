@@ -40,7 +40,7 @@ Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/logout', 'AuthController@logout');
 Route::get('/register', function () {
-    return view('/register');
+    return view('/auths.register');
 });
 Route::post('/regis', 'AuthController@create');
 
@@ -82,7 +82,7 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
     Route::get('/admincarts/{cart}', 'AdmincartsController@show');
     Route::post('cart/send', 'AdmincartsController@store');
     Route::delete('/admincarts/{cart}', 'AdmincartsController@destroy');
-    Route::patch('/admincarts/{cart}', 'AdmincartsController@update');
+    Route::patch('/admincarts/{admincart}', 'AdmincartsController@update');
 });
 Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
     //display product

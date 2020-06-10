@@ -41,7 +41,7 @@
                             <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn btn-warning ml-2" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>
                         </form>
                     @elseif( $cart->status =='uploaded')
-                        <button type="submit" class="btn btn-success ml-2"><i class="fa fa-approve"></i>Uploaded</button>
+                        <button type="submit" class="btn btn-primary ml-2"><i class="fa fa-approve"></i>Uploaded</button>
                     @elseif( $cart->status =='confirm')
                         <button type="submit" class="btn btn-success ml-2"><i class="fa fa-approve"></i>Confirmed</button>
                     @else

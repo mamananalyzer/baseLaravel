@@ -134,8 +134,19 @@
                     </div>
                     <div class="col">
                         <br>
+                            <img src="{{asset('/images/buktibayar/'.$carts->picture)}}" width="650px"/>
                         <br>
-                        <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                        <div class="text-center my-2">
+                            @if( $carts->status =='waiting')
+                                <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                            @elseif( $carts->status =='uploaded')
+                                <button type="submit" class="btn-lg btn-primary"><i class="fa fa-approve"></i>Bukti Pembayaran Telah Berhasil di Upload</button>
+                            @elseif( $carts->status =='confirm')
+                                <button type="submit" class="btn-lg btn-success"><i class="fa fa-approve"></i>Pembayaran Sudah Terkonfirmasi</button>
+                            @else
+                                <button class="btn-lg btn-danger">Mencurigakan</button>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </main>

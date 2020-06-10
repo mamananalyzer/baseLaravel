@@ -134,14 +134,24 @@
                     </div>
                     <div class="col">
                         <br>
-                            <img src="{{$admincart->getPic()}}" width="650px"/>
+                            <img src="{{asset('/images/buktibayar/'.$admincart->picture)}}" width="650px"/>
                         <br>
-                        <form action="/admincart/{{ $admincart->id }}" method="post" class="d-inline">
+                        <form action="/admincarts/{{ $admincart->id }}" method="post" class="text-center my-4">
                             @method('patch')
                             {{ csrf_field() }}
-                            <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn btn-warning ml-2" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>
+                            <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn-lg btn-warning" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>
                         </form>
-                        <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                        <div class="text-center">
+                            @if( $admincart->status =='waiting')
+                                <h3 class="btn-lg btn-warning text-center font-weight-bold">PEMBAYARAN BELUM TERVERIFIKASI</h3>
+                            @elseif( $admincart->status =='uploaded')
+                                <button type="submit" class="btn-lg btn-primary"><i class="fa fa-approve"></i>Bukti Pembayaran Telah Berhasil di Upload</button>
+                            @elseif( $admincart->status =='confirm')
+                                <button type="submit" class="btn-lg btn-success"><i class="fa fa-approve"></i>Pembayaran Sudah Terkonfirmasi</button>
+                            @else
+                                <button class="btn-lg btn-danger">Mencurigakan</button>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </main>

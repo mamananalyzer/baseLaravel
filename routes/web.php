@@ -11,11 +11,12 @@
 |
 */
 use App\Mail\ContactMail;
+use App\PDF;
 use Illuminate\Support\Facades\Mail;
 
-Route::get('/home', function () {
-    return view('/welcome');
-});
+Route::get('/home', 'Cart@root');
+
+Route::get('/test', 'CartsController@pdf');
 
 Route::get('/email', function () {
     Mail::to('dbasedown@gmail.com')->send(new ContactMail);
@@ -132,6 +133,7 @@ Route::get('/leipole', function () {
 Route::get('/wharton', function () {
         return view('/underconstruction');
     });
+
 Route::get('/accuenergy', function () {
         return view('/principal/accuenergy/accuenergy');
     });

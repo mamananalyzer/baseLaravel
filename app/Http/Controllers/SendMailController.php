@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 use Mail;
 use App\Cart;
 use Illuminate\Http\Request;
+// use Barryvdh\DomPDF\Facade as PDF;
+use Barryvdh\Snappy\Facades\SnappyPdf as PDF;
+
 
 class SendMailController extends Controller
 {
@@ -72,13 +75,29 @@ class SendMailController extends Controller
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
 
-        return view('/receipt2', ['receipt' => $request])->with('terkirim',
-        'Thank you for contacting us, your message has been sent.
-                 Please wait for our admin to contact you.');
+        // $data =
+        // $pdf = App::make('dompdf.wrapper');
+        // $pdf->loadHTML($data);
+        // return $pdf->download('test.pdf');
+
+        $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('f4', 'landscape');
+        return $pdf->download('receipt.pdf');
+
+        // return view('/receipt2', ['receipt' => $request])->with('terkirim',
+        // 'Thank you for contacting us, your message has been sent.
+        //          Please wait for our admin to contact you.');
+
         // return redirect('/')->with('terkirim',
         // 'Thank you for contacting us, your message has been sent.
         //          Please wait for our admin to contact you.');
     }
+
+    public function pdf($test = 'test')
+    {
+        $pdf = PDF::loadView('test');
+        return $pdf->download('test.pdf');
+    }
+
     public function reload(){
         return view('navbar/home');
     }

@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use App\Cart;
+use Barryvdh\DomPDF\PDF as DomPDF;
+use Barryvdh\DomPDF\Facade as PDF;
+use Dompdf\Adapter\PDFLib;
 // use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App as FacadesApp;
 
 class CartsController extends Controller
 {
@@ -103,5 +108,12 @@ class CartsController extends Controller
         Cart::destroy($cart->id);
         return redirect('/carts')->with('status',
         'Data berhasil dihapus!');
+    }
+    public function pdf($test = 'test')
+    {
+        $pdf = PDF::loadView('test');
+        return $pdf->download('test.pdf');
+
+
     }
 }

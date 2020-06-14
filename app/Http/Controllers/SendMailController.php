@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 use Mail;
 use App\Cart;
+// use Barryvdh\Snappy\Facades\SnappyPdf;
 use Illuminate\Http\Request;
-// use Barryvdh\DomPDF\Facade as PDF;
-use Barryvdh\Snappy\Facades\SnappyPdf as PDF;
+// use Knp\Snappy\Pdf as KnpPDF;
+use Barryvdh\DomPDF\Facade as PDF;
 
 
 class SendMailController extends Controller
@@ -75,12 +76,12 @@ class SendMailController extends Controller
             return response (['status' => false,'errors' => $e->getMessage()]);
         }
 
-        // $data =
-        // $pdf = App::make('dompdf.wrapper');
-        // $pdf->loadHTML($data);
-        // return $pdf->download('test.pdf');
 
-        $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('f4', 'landscape');
+        $pdf = PDF::loadView('receipt2', ['receipt' => $request]);
+        // $pdf->setOption('enable-javascript', true);
+        // $pdf->setOption('javascript-delay', 5000);
+        // $pdf->setOption('enable-smart-shrinking', true);
+        // $pdf->setOption('no-stop-slow-scripts', true);
         return $pdf->download('receipt.pdf');
 
         // return view('/receipt2', ['receipt' => $request])->with('terkirim',

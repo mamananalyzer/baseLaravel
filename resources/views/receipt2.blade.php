@@ -27,7 +27,19 @@
 body {
     font-family: 'Lucida Sans';
     }
+footer {
+    position: fixed;
+    bottom: -60px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
 
+    /** Extra personal styles **/
+    /* background-color: #03a9f4; */
+    color: black;
+    text-align: center;
+    line-height: 35px;
+}
 .invoice {
     position: relative;
     background-color: #FFF;
@@ -266,21 +278,21 @@ body {
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Total</td>
+                                <td>Sub Total</td>
                                 <td class="unit"></td>
                                 <td class="qty"></td>
                                 <td class="total">Rp.{{ $fixtotal = number_format($total=$receipt->quantity*$receipt->price, 0, ',', '.') }}</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Pajak (10%)</td>
+                                <td>PPn (10%)</td>
                                 <td class="unit"></td>
                                 <td class="qty"></td>
                                 <td class="total">Rp.{{ $fixpajak = number_format($pajak=$receipt->quantity*$receipt->price*10/100, 0, ',', '.') }}</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Sub Total</td>
+                                <td>Total</td>
                                 <td class="unit"></td>
                                 <td class="qty"></td>
                                 <td class="total">Rp.{{ $fixsubtotal = number_format($subtotal=$total+$pajak, 0, ',', '.') }}</td>
@@ -310,9 +322,9 @@ body {
                         <div class="notice">Payment Full Amount</div>
                     </div>
                 </div>
-                {{-- <footer>
+                <footer>
                     Fast Response for Excellent Support © Amptron Instrumindo 1997 - 2020
-                </footer> --}}
+                </footer>
             </div>
             <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
             <div></div>

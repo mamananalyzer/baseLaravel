@@ -77,8 +77,8 @@ class SendMailController extends Controller
         }
 
 
-        $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('a4', 'landscape');
-        return $pdf->download('receipt.pdf')->redirect('product');
+        $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('a4', 'potrait');
+        return $pdf->download('receipt.pdf');
         return redirect('product');
     }
 

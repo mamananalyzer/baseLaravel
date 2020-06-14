@@ -94,7 +94,7 @@ class AdmincartsController extends Controller
     public function destroy(Cart $cart)
     {
         Cart::destroy($cart->id);
-        return redirect('/carts')->with('status',
+        return redirect('/admincarts')->with('status',
         'Data berhasil dihapus!');
     }
 }

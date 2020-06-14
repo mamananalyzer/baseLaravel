@@ -77,20 +77,9 @@ class SendMailController extends Controller
         }
 
 
-        $pdf = PDF::loadView('receipt2', ['receipt' => $request]);
-        // $pdf->setOption('enable-javascript', true);
-        // $pdf->setOption('javascript-delay', 5000);
-        // $pdf->setOption('enable-smart-shrinking', true);
-        // $pdf->setOption('no-stop-slow-scripts', true);
-        return $pdf->download('receipt.pdf');
-
-        // return view('/receipt2', ['receipt' => $request])->with('terkirim',
-        // 'Thank you for contacting us, your message has been sent.
-        //          Please wait for our admin to contact you.');
-
-        // return redirect('/')->with('terkirim',
-        // 'Thank you for contacting us, your message has been sent.
-        //          Please wait for our admin to contact you.');
+        $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('a4', 'landscape');
+        return $pdf->download('receipt.pdf')->redirect('product');
+        return redirect('product');
     }
 
     public function pdf($test = 'test')

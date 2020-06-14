@@ -37,9 +37,9 @@
           <a class="nav-item nav-link pr-4" href="{{ url('/') }}">Home</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/about') }}">About</a>
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Login</a>
+          {{-- <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a> --}}
           <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Profile</a>
             {{-- <div class="dropdown">
               <a class="nav-item nav-link pr-4" href="#">Product</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

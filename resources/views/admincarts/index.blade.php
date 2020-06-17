@@ -16,7 +16,7 @@
           <h1 class="mt-3">Request Customer</h1>
 
             <form method="GET" action="{{ url('/carts') }}" class="form-inline">
-                <a href="{{ ('/products') }}" class="btn btn-info ml-2">Back</a>
+                <a href="{{url('/products')}}" class="btn btn-light my-2">Back</a>
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
                 <a href="{{ ('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
             </form>

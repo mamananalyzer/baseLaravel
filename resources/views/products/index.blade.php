@@ -23,14 +23,16 @@
                 @endif
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
                 <a href="{{ ('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
-                <input name="cari" type="search" class="form-control ml-4 ml-auto mr-2">
-                <button class="btn btn-outline-primary" type="submit">Cari</button>
+                {{-- <input name="cari" type="search" class="form-control ml-4 ml-auto mr-2">
+                <button class="btn btn-outline-primary" type="submit">Cari</button> --}}
             </form>
             @if(auth()->user()->role == 'admin')
             <a href="{{url('/admincarts')}}" class="btn btn-success my-2">Show Request Product</a>
+            <a href="{{url('/product')}}" class="btn btn-success my-2">Product List</a>
             @endif
             @if(auth()->user()->role == 'user')
             <a href="{{url('/carts')}}" class="btn btn-success my-2">Show Request Product</a>
+            <a href="{{url('/product')}}" class="btn btn-success my-2">Product List</a>
             @endif
 
 

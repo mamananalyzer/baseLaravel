@@ -45,10 +45,14 @@ Route::get('/register', function () {
 });
 Route::post('/regis', 'AuthController@create');
 
+//display product
+Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+// Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
+
 
 Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
-    //display product
-    Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+    // //display product
+    // Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
     Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
 
     //products
@@ -87,7 +91,7 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
 });
 Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
     //display product
-    Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+    // Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
     Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
 
     //products

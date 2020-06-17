@@ -43,7 +43,7 @@ class BrandsController extends Controller
 
         Brand::create($request->all());
         return redirect('/brand')->with('status',
-        'Terima kasih sudah menginput data, data berhasil ditambahkan!');
+        'Terima kasih sudah menginput data, data Brand berhasil ditambahkan!');
     }
 
     /**
@@ -87,7 +87,7 @@ class BrandsController extends Controller
         $brand = Brand::find($id);
         $brand->update($request->all());
         return redirect('/brand')->with('status',
-            'Data berhasil diubah!');
+            'Data Brand berhasil diubah!');
     }
 
     /**
@@ -100,6 +100,6 @@ class BrandsController extends Controller
     {
         Brand::destroy($brand->id);
         return redirect('/brand')->with('status',
-        'Data berhasil dihapus!');
+        'Data Brand berhasil dihapus!');
     }
 }

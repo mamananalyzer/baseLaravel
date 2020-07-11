@@ -136,7 +136,7 @@
                         <br>
                             <img src="{{asset('/images/buktibayar/'.$admincart->picture)}}" width="650px"/>
                         <br>
-                        <form action="/admincarts/{{ $admincart->id }}" method="post" class="text-center my-4">
+                        <form action="{{ url('/admincarts') }}/{{ $admincart->id }}" method="post" class="text-center my-4">
                             @method('patch')
                             {{ csrf_field() }}
                             <button type="submit" onclick="return confirm('Are you sure Approve this request ?')" class="btn-lg btn-warning" value="confirm" name="status"><i class="fa fa-approve"></i>Approve</button>

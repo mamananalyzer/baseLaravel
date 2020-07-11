@@ -22,7 +22,7 @@
                 <a href="{{url('/procategorie')}}" class="btn btn-success my-2 ml-2">Categories</a>
                 @endif
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
-                <a href="{{ ('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
+                <a href="{{ url('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
                 {{-- <input name="cari" type="search" class="form-control ml-4 ml-auto mr-2">
                 <button class="btn btn-outline-primary" type="submit">Cari</button> --}}
             </form>

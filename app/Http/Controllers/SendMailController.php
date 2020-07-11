@@ -30,6 +30,7 @@ class SendMailController extends Controller
         ]);
 
         Cart::create($formInput);
+        // return redirect()->route('makepdf');
 
         try{
             Mail::send('isiemail',
@@ -79,14 +80,70 @@ class SendMailController extends Controller
 
         $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('a4', 'potrait');
         return $pdf->download('receipt.pdf');
-        // return redirect('product');
+        return redirect('product');
     }
 
-    public function pdf($test = 'test')
-    {
-        $pdf = PDF::loadView('test');
-        return $pdf->download('test.pdf');
-    }
+    // public function sentemail()
+    // {
+    //     try{
+    //         Mail::send('isiemail',
+    //         array(
+    //             'name' => $request->name,
+    //             // 'name2' => $request->name2,
+    //             'email' => $request->email,
+    //             'company' => $request->company,
+    //             'phone' => $request->phone,
+    //             'Address1' => $request->Address1,
+    //             'city' => $request->city,
+    //             'postcode' => $request->postcode,
+    //             'product' => $request->product,
+    //             'description' => $request->description,
+    //             'price' => $request->price,
+    //             'quantity' => $request->quantity,
+    //             'pesan' => $request->pesan,
+    //             'time' => $request->time,
+    //             'date' => $request->date
+    //         ) ,
+    //         function($pesan) use($request){
+    //             // $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
+    //             $pesan->to('dbasedown211@gmail.com')->subject('Request a Quote');
+    //             $pesan->cc('dbasedown@gmail.com', 'Maman@amptron.my.id');
+    //             $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');
+    //             // $pesan->from(env('MAIL_USERNAME','baseanalyzer@amptron.my.id'),'Inquiry');
+    //             $pesan->from(env('MAIL_USERNAME', 'baseanalyzer210@gmail.com'),'Amptron.my.id');
+    //             $name = $request->input('name');
+    //             // $name2 = $request->input('name2');
+    //             $email = $request->input('email');
+    //             $company = $request->input('company');
+    //             $phone = $request->input('phone');
+    //             $Address1 = $request->input('Address1');
+    //             $city = $request->input('city');
+    //             $postcode = $request->input('postcode');
+    //             $product = $request->input('product');
+    //             $description = $request->input('description');
+    //             $price = $request->input('price');
+    //             $quantity = $request->input('quantity');
+    //             $pesan = $request->input('pesan');
+    //         });
+    //         // dd($request->all());
+    //     }catch (Exception $e){
+    //         return response (['status' => false,'errors' => $e->getMessage()]);
+    //     }
+    // }
+
+    // public function makepdf(Request $request)
+    // {
+    //     $receipt = $request;
+    //     // dd($receipt->all());
+    //     $pdf = PDF::loadView('receipt2', ['receipt' => $receipt])->setPaper('a4', 'potrait');
+    //     return $pdf->download('receipt.pdf');
+    // }
+
+    // public function pdf($test = 'test')
+    // {
+    //     $pdf = PDF::loadView('test');
+    //     return $pdf->download('test.pdf');
+    // }
 
     public function reload(){
         return view('navbar/home');

@@ -17,7 +17,7 @@
 
             <form method="GET" action="{{ url('/carts') }}" class="form-inline">
                 <a href="" class="ml-auto"><img src="{{ asset('assets/img/user.png')}}" width="44px" alt=""><span>{{ auth()->user()->name }}</span></a>
-                <a href="{{ ('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
+                <a href="{{ url('/logout') }}" class="btn btn-warning ml-2 mr-auto">Logout</a>
             </form>
 
 
@@ -28,11 +28,11 @@
                 @if(auth()->user()->id == $cart->userid)
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ $cart -> name }}, {{ $cart -> email }}, {{ $cart -> company }}
-                    <a href="carts/{{ $cart->id }}" class="badge badge-info ml-auto mr-4"></i>Read more ...</a>
+                    <a href="{{ url('/carts') }}/{{ $cart->id }}" class="badge badge-info ml-auto mr-4"></i>Read more ...</a>
 
                     {{-- hapus pesanan --}}
                     @if( $cart->status == 'waiting')
-                    <form action="/carts/{{ $cart->id }}" method="post" class="d-inline">
+                    <form action="{{ url('/carts') }}/{{ $cart->id }}" method="post" class="d-inline">
                         @method('delete')
                         {{ csrf_field() }}
                         <button type="submit" onclick="return confirm('Are you sure delete this request ?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
@@ -41,7 +41,7 @@
                     @endif
 
                     @if( $cart->status =='waiting')
-                    <form enctype="multipart/form-data" action="/carts/{{ $cart->id }}" method="post" class="d-inline">
+                    <form enctype="multipart/form-data" action="{{ url('/carts') }}/{{ $cart->id }}" method="post" class="d-inline">
                         @method('patch')
                         {{ csrf_field() }}
                             <div class="form-group">

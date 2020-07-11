@@ -34,6 +34,7 @@ Route::get('/contact', 'ContactController@index');     //contact
 Route::post('contact/send', 'ContactController@send');  //contact send email
 Route::post('email/send', 'SendMailController@send');   //contact send request quote email, insert database
 Route::get('email/send', 'SendMailController@reload');   //contact send request quote email, insert database
+Route::name('makepdf')->get('makepdf', 'SendMailController@makepdf');   //contact send request quote email, insert database
 
 
 

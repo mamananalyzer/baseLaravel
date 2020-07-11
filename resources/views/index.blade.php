@@ -1,4 +1,4 @@
-@extends('layout/base')
+{{-- @extends('layout/base')
 
 @section('title', 'Amptron Instrumindo')
 
@@ -8,7 +8,8 @@
         <div class="alert alert-success container text-center" role="alert">
             {{session('terkirim')}}
         </div>
-    @endif
+    @endif --}}
+<html>
     <div class="jumbotron jumbotron-fluid" style="height:500px; background-image: url('img/bg-1.jpg'); background-position: 0 0px;">
       <div class="container text-center base">
         <img src="img/aii.png" class="rounded-circle">
@@ -125,4 +126,5 @@
       </div>
       <br>
     </div>
-@endsection
+</html>
+{{-- @endsection --}}

@@ -21,9 +21,6 @@
                     <div class="col-7">
                         <a href=" {{ url('/product') }} " class="btn btn-primary mt-2 mr-auto">Back to Product list</a>
                     </div>
-                    {{-- <div class="col">
-                        <a href=" {{ url('/cart') }} " class="btn btn-primary mt-2 mr-auto offset-md-5">Cart</a>
-                    </div> --}}
                 </div>
             </div>
 
@@ -56,15 +53,6 @@
                                             return false;
                                         }">
                                         {{ csrf_field() }}
-                                            {{-- <label for="exampleInputName">Name *</label>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                <input type="text" class="form-control" placeholder="First name" name="name" required>
-                                                </div>
-                                                <div class="col">
-                                                <input type="text" class="form-control" placeholder="Last name" name="name2" required>
-                                                </div>
-                                            </div> --}}
                                         <div class="form-group sr-only">
                                             <label for="exampleInputEmail1">Email *</label>
                                             <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="{{ auth()->user()->email }}" aria-describedby="emailHelp" required>
@@ -145,7 +133,6 @@
                         <p class="mt-2">{{$display->description}}</p>
                         <?php
                             $listdescription_explode=explode(",", $display->listdescription);
-                            // dd($listdescription_explode);
                             echo "
                             <ul>";
                                 foreach($listdescription_explode as $list) {

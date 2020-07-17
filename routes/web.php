@@ -91,8 +91,7 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
     Route::patch('/admincarts/{admincart}', 'AdmincartsController@update');
 });
 Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
-    //display product
-    // Route::get('/product', 'DisplaysController@index');             //display page for user searching tool
+
     Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
 
     //products

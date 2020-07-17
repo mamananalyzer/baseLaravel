@@ -50,16 +50,11 @@
 									<input name="password" type="password" class="form-control" id="signin-password" placeholder="Password">
 								</div>
 								<div class="form-group clearfix">
-									{{-- <label class="fancy-checkbox element-left">
-										<input type="checkbox">
-										<span>Remember me</span>
-									</label> --}}
+
 								</div>
 								<button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
 								<a href="{{ url('/register') }}" type="submit" class="btn btn-success btn-lg btn-block">REGISTER</a>
-								{{-- <div class="bottom">
-									<span class="helper-text"><i class="fa fa-lock"></i> <a href="#">Forgot password?</a></span>
-								</div> --}}
+
 							</form>
 						</div>
 					</div>

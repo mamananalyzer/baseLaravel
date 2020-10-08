@@ -24,6 +24,8 @@ Route::get('/email', function () {
     return new ContactMail();
 });
 
+
+
 Route::get('/', 'BaseController@root');                 //home
 // Route::get('/home', 'BaseController@home');                 //home
 Route::get('/about', 'BaseController@about');           //about
@@ -35,6 +37,12 @@ Route::post('contact/send', 'ContactController@send');  //contact send email
 Route::post('email/send', 'SendMailController@send');   //contact send request quote email, insert database
 Route::get('email/send', 'SendMailController@reload');   //contact send request quote email, insert database
 Route::name('makepdf')->get('makepdf', 'SendMailController@makepdf');   //contact send request quote email, insert database
+
+
+
+Route::get('/newmodel', function () {
+    return view('/newmodel');
+});
 
 
 

@@ -21,7 +21,7 @@
     {{-- header --}}
     <nav class="navbarbar navbar navbar-expand-lg navbar-dark bg-blue sticky-top">
       <a class="navbar-brand" href="{{ url('/') }}">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="img/aii.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Amptron Instrumindo
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

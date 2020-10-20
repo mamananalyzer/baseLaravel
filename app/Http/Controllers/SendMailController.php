@@ -44,7 +44,7 @@ class SendMailController extends Controller
                 'date' => $request->date
             ) ,
             function($pesan) use($request){
-                $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
+                // $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
                 $pesan->to('dbasedown211@gmail.com')->subject('Request a Quote');
                 $pesan->cc('dbasedown@gmail.com', 'Maman@amptron.my.id');
                 $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');

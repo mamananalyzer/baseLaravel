@@ -319,7 +319,7 @@
                 <p>{{ $phone  }}</p>
             </td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td scope="col-2">
                 <p>Address</p>
             </td>
@@ -327,7 +327,7 @@
             <td>
                 <p>{{ $Address1  }}, {{ $city  }}, {{ $postcode  }}</p>
             </td>
-        </tr>
+        </tr> --}}
         <tr>
             <td scope="col-2">
                 <p>Product Type</p>

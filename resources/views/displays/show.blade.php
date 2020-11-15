@@ -34,7 +34,7 @@
                         </button>
 
 
-                        <h3 class="pt-2 pb-2">Rp. {{ $fixprice = number_format($display->price, 0, ',', '.') }},-</h3>
+                        {{-- <h3 class="pt-2 pb-2">Rp. {{ $fixprice = number_format($display->price, 0, ',', '.') }},-</h3> --}}
 
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -53,22 +53,26 @@
                                             return false;
                                         }">
                                         {{ csrf_field() }}
-                                        <div class="form-group sr-only">
+                                        <div class="form-group">
+                                            <label for="name">Name *</label>
+                                            <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" value="" required>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="exampleInputEmail1">Email *</label>
-                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="{{ auth()->user()->email }}" aria-describedby="emailHelp" required>
+                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="" aria-describedby="emailHelp" required>
                                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                         </div>
-                                        <div class="row sr-only">
+                                        <div class="row">
                                             <div class="col-6 form-group">
                                                 <label for="Company">Company *</label>
-                                                <input type="company" name="company" class="form-control" id="Company" value="{{ auth()->user()->company }}" placeholder="PT. Amptron Instrumindo" required>
+                                                <input type="company" name="company" class="form-control" id="Company" value="" placeholder="PT. Amptron Instrumindo" required>
                                             </div>
                                             <div class="col-6 form-group">
                                                 <label for="PhoneNumber">Phone *</label>
-                                                <input type="tel" name="phone" class="form-control" id="PhoneNumber" value="{{ auth()->user()->phone }}" placeholder="+62 000" required>
+                                                <input type="tel" name="phone" class="form-control" id="PhoneNumber" value="" placeholder="+62 000" required>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        {{-- <div class="row">
                                             <div class="col-6 form-group">
                                                 <label for="Street and Number">Street and Number *</label>
                                                 <input type="Street and Number" name="Address1" class="form-control" id="Street and Number" placeholder="Address" required>
@@ -81,7 +85,7 @@
                                                 <label for="Post Code">Post Code *</label>
                                                 <input type="postcode" name="postcode" class="form-control" id="Post Code" placeholder="Post Code" required>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="form-group">
                                             <label for="product">Product *</label>
                                             <input type="product" name="product" class="form-control" id="product" aria-describedby="emailHelp" value="{{ $display->type }}" required>
@@ -90,18 +94,14 @@
                                             <label for="description">Description *</label>
                                             <input type="description" name="description" class="form-control" id="description" aria-describedby="emailHelp" value="{{ $display->description }}" required>
                                         </div>
-                                        <div class="form-group sr-only">
-                                            <label for="name">Name *</label>
-                                            <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp" value="{{ auth()->user()->name }}" required>
-                                        </div>
-                                        <div class="form-group sr-only">
+                                        {{-- <div class="form-group sr-only">
                                             <label for="userid">User ID *</label>
-                                            <input type="userid" name="userid" class="form-control" id="userid" aria-describedby="emailHelp" value="{{ auth()->user()->id }}" required>
-                                        </div>
-                                        <div class="form-group sr-only">
+                                            <input type="userid" name="userid" class="form-control" id="userid" aria-describedby="emailHelp" value="" required>
+                                        </div> --}}
+                                        {{-- <div class="form-group sr-only">
                                             <label for="price">Price *</label>
                                             <input type="price" name="price" class="form-control" id="price" aria-describedby="emailHelp" value="{{ $display->price }}" required>
-                                        </div>
+                                        </div> --}}
                                         <div class="form-group sr-only">
                                             <label for="status">Status *</label>
                                             <input type="status" name="status" class="form-control" id="status" aria-describedby="emailHelp" value="waiting" required>

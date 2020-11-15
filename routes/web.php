@@ -100,19 +100,19 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
 });
 Route::group(['middleware' => ['auth', 'checkRole:admin,user']], function () {
 
-    Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
-
-    //products
-    Route::get('/products', 'ProductsController@index')->middleware('auth');
-
-    //carts
-    Route::get('carts', 'CartsController@index');
-    Route::get('/carts/{cart}', 'CartsController@show');
-    Route::post('cart/send', 'CartsController@store');
-    Route::delete('/carts/{cart}', 'CartsController@destroy');
-    Route::patch('/carts/{cart}', 'CartsController@update');
 });
 
+Route::get('/product/{display}', 'DisplaysController@show');    //display detail individual product
+
+//products
+Route::get('/products', 'ProductsController@index')->middleware('auth');
+
+//carts
+Route::get('carts', 'CartsController@index');
+Route::get('/carts/{cart}', 'CartsController@show');
+Route::post('cart/send', 'CartsController@store');
+Route::delete('/carts/{cart}', 'CartsController@destroy');
+Route::patch('/carts/{cart}', 'CartsController@update');
 
 Route::get('/receipt', function () {
     return view('/receipt2');

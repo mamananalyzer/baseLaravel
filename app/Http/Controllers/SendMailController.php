@@ -19,7 +19,7 @@ class SendMailController extends Controller
             'name' => 'required',
             'product' => 'required',
             'description' => 'required',
-            'price' => 'required',
+            // 'price' => 'required',
             'quantity' => 'required',
         ]);
 
@@ -32,12 +32,12 @@ class SendMailController extends Controller
                 'email' => $request->email,
                 'company' => $request->company,
                 'phone' => $request->phone,
-                'Address1' => $request->Address1,
-                'city' => $request->city,
-                'postcode' => $request->postcode,
+                // 'Address1' => $request->Address1,
+                // 'city' => $request->city,
+                // 'postcode' => $request->postcode,
                 'product' => $request->product,
                 'description' => $request->description,
-                'price' => $request->price,
+                // 'price' => $request->price,
                 'quantity' => $request->quantity,
                 'pesan' => $request->pesan,
                 'time' => $request->time,
@@ -46,19 +46,19 @@ class SendMailController extends Controller
             function($pesan) use($request){
                 // $pesan->to('amptron@cbn.net.id')->subject('Request a Quote');
                 $pesan->to('dbasedown211@gmail.com')->subject('Request a Quote');
-                $pesan->cc('dbasedown@gmail.com', 'Maman@amptron.my.id');
-                $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');
-                $pesan->from(env('MAIL_USERNAME', 'baseanalyzer210@gmail.com'),'Amptron.my.id');
+                $pesan->cc('dbasedown@gmail.com', 'Maman@amptron-indo.com');
+                // $pesan->cc('baseanalyzer@amptron.my.id', 'Maman@amptron.my.id');
+                $pesan->from(env('MAIL_USERNAME', 'baseanalyzer210@gmail.com'),'amptron-indo.com');
                 $name = $request->input('name');
                 $email = $request->input('email');
                 $company = $request->input('company');
                 $phone = $request->input('phone');
-                $Address1 = $request->input('Address1');
-                $city = $request->input('city');
-                $postcode = $request->input('postcode');
+                // $Address1 = $request->input('Address1');
+                // $city = $request->input('city');
+                // $postcode = $request->input('postcode');
                 $product = $request->input('product');
                 $description = $request->input('description');
-                $price = $request->input('price');
+                // $price = $request->input('price');
                 $quantity = $request->input('quantity');
                 $pesan = $request->input('pesan');
             });
@@ -69,7 +69,7 @@ class SendMailController extends Controller
 
         $pdf = PDF::loadView('receipt2', ['receipt' => $request])->setPaper('a4', 'potrait');
         return $pdf->download('receipt.pdf');
-        return redirect('product');
+        return view('displays/index');
     }
 
     public function reload(){

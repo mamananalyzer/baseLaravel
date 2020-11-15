@@ -237,9 +237,9 @@ footer {
                         <tr class="row contacts">
                             <td class="col invoice-to">
                                 <div class="text-gray-light">INQUIRY FROM:</div>
-                                <h2 class="to">{{ auth()->user()->name }}</h2>
-                                <div class="address">{{$receipt->Address1}}</div>
-                                <div class="address">{{$receipt->city}} {{$receipt->postcode}}</div>
+                                <h2 class="to">{{ $receipt->name }}</h2>
+                                {{-- <div class="address">{{$receipt->Address1}}</div>
+                                <div class="address">{{$receipt->city}} {{$receipt->postcode}}</div> --}}
                                 <div class="email">{{$receipt->email}}, {{$receipt->company}}</div>
                                 <div class="email">{{$receipt->phone}}</div>
                             </td>
@@ -258,7 +258,7 @@ footer {
                                 <td class="text-left">DESCRIPTION</td>
                                 <td class="text-right"></td>
                                 <td class="text-right">Quantity</td>
-                                <td class="text-right">Price</td>
+                                {{-- <td class="text-right">Price</td> --}}
                             </tr>
                         </tbody>
                         {{-- <div class="sr-only">
@@ -274,9 +274,9 @@ footer {
                                 </td>
                                 <td class="unit"></td>
                                 <td class="qty">{{$receipt->quantity}}</td>
-                                <td class="total">Rp.{{ $fixprice = number_format($receipt->price, 0, ',', '.') }}</td>
+                                {{-- <td class="total">Rp.{{ $fixprice = number_format($receipt->price, 0, ',', '.') }}</td> --}}
                             </tr>
-                            <tr>
+                            {{-- <tr>
                                 <td></td>
                                 <td>Sub Total</td>
                                 <td class="unit"></td>
@@ -296,7 +296,7 @@ footer {
                                 <td class="unit"></td>
                                 <td class="qty"></td>
                                 <td class="total">Rp.{{ $fixsubtotal = number_format($subtotal=$total+$pajak, 0, ',', '.') }}</td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                         <tfoot>
                             <tr>
@@ -309,18 +309,15 @@ footer {
                     <div class="address">{{$receipt->pesan}}</div>
 
                     <div class="thanks mt-4">Thank you!</div>
-                    <div class="notices">
+                    {{-- <div class="notices">
                         <div>NOTICE:</div>
-                        {{-- <div class="notice">Save this page with click button PRINT on top
-                            and resend email to <a href="mailto:amptron@cbn.net.id">amptron@cbn.net.id .</a>
-                        </div> --}}
                         <br>
                         <div class="notice">Please Transfer to Our Account</div>
                         <div class="notice">Mandiri, Cab. Puri Kencana</div>
                         <div class="notice">PT. Amptron Instrumindo</div>
                         <div class="notice">ACC. No : 118.0053121.959 (IDR)</div>
                         <div class="notice">Payment Full Amount</div>
-                    </div>
+                    </div> --}}
                 </div>
                 <footer>
                     Fast Response for Excellent Support © Amptron Instrumindo 1997 - 2020

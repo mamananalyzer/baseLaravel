@@ -50,7 +50,7 @@
                     </div>
                 @enderror
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="price">Price *</label>
                 <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" placeholder="A2000, Analog Meter, Rish Eine+, Acuvim II" name="price" value="{{ $product->price }}">
                 @error('price')
@@ -58,7 +58,7 @@
                         {{ $message }}
                     </div>
                 @enderror
-            </div>
+            </div> --}}
             <div class="form-group">
                 <label for="picture">Picture *</label>
                 <input type="file" class="form-control @error('picture') is-invalid @enderror" id="picture" name="picture">

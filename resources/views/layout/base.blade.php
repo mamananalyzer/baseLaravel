@@ -3,7 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> --}}
+    <meta name="viewport" content="width=1360">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -39,7 +40,7 @@
           <a class="nav-item nav-link pr-4" href="{{ url('/principal') }}">Principal</a>
           {{-- <a class="nav-item nav-link pr-4" href="{{ url('/contact') }}">Contact Us</a> --}}
           <a class="nav-item nav-link pr-4" href="{{ url('/product') }}">Product</a>
-          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Profile</a>
+          <a class="nav-item nav-link pr-4" href="{{ url('/products') }}">Admin</a>
             {{-- <div class="dropdown">
               <a class="nav-item nav-link pr-4" href="#">Product</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
